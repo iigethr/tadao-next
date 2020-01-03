@@ -16,6 +16,7 @@ const Home = () => (
 
     <div className="root">
       <h1 className="title">Welcome to Next.js!</h1>
+      <img src={require("../assets/images/square.png")} />
     </div>
 
     <style jsx>{`
