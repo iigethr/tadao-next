@@ -1,0 +1,92 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:        Tadao
+// Version:     0.0.1.alpha
+// Project:     Tadao by IIGETHR
+// Description: A Minimal and Lightweight Design System.
+// -------------------------------------------------------------
+// Copyright 2020 IIGETHR Ltd
+// Licensed under MIT (https://github.com/iigethr/tadao/MIT-LICENSE)
+// -------------------------------------------------------------
+
+@charset "UTF-8";
+
+// 0) Vendor
+// ------------------------------------------------------------
+@import "lib/vendor/normalize";
+
+// 1) Variables
+// ------------------------------------------------------------
+@import "lib/variables/_breakpoints";
+@import "lib/variables/_fonts";
+@import "lib/variables/_palettes";
+
+// 2) Mixins
+// ------------------------------------------------------------
+@import "lib/mixins/_animations";
+@import "lib/mixins/_borders";
+@import "lib/mixins/_button_themes";
+@import "lib/mixins/_clearfixes";
+@import "lib/mixins/_link_themes";
+@import "lib/mixins/_lists";
+@import "lib/mixins/_shadows";
+@import "lib/mixins/_sizes";
+@import "lib/mixins/_visibilities";
+
+// 3) Global
+// ------------------------------------------------------------
+@import "lib/globals/base";
+@import "lib/globals/universal";
+@import "lib/globals/typography";
+@import "lib/globals/roles";
+@import "lib/globals/forms";
+@import "lib/globals/tables";
+
+// 4) Artboards
+// ------------------------------------------------------------
+@import "lib/artboards/artboard_xxs";
+@import "lib/artboards/artboard_xs";
+@import "lib/artboards/artboard_s";
+@import "lib/artboards/artboard_m";
+@import "lib/artboards/artboard_l";
+@import "lib/artboards/artboard_xl";
+@import "lib/artboards/artboard_xxl";
+
+// 5) Columns
+// ------------------------------------------------------------
+@import "lib/columns/col_xxs";
+@import "lib/columns/col_xs";
+@import "lib/columns/col_s";
+@import "lib/columns/col_m";
+@import "lib/columns/col_l";
+@import "lib/columns/col_xl";
+@import "lib/columns/col_xxl";
+
+// 6) Utilities
+// ------------------------------------------------------------
+@import "lib/utilities/_buttons";
+@import "lib/utilities/_icons";
+@import "lib/utilities/_links";
+@import "lib/utilities/_separators";
+
+
+// 7) Components
+// ------------------------------------------------------------
+@import "lib/components/_template";
+@import "lib/components/_logo";
+
+// 8) Overriders
+// ------------------------------------------------------------
+@import "lib/overriders/_alerts";
+@import "lib/overriders/_alignments";
+@import "lib/overriders/_centers";
+@import "lib/overriders/_colours";
+@import "lib/overriders/_cursors";
+@import "lib/overriders/_displays";
+@import "lib/overriders/_floats";
+@import "lib/overriders/_font_families";
+@import "lib/overriders/_font_weights";
+@import "lib/overriders/_margins";
+@import "lib/overriders/_misc";
+@import "lib/overriders/_paddings";
+@import "lib/overriders/_positions";
+@import "lib/overriders/_underlines";

@@ -1,0 +1,25 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Animations
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+@mixin hover-animation($time) {
+  transition: background-color $time ease, color $time ease, fill $time ease;
+}
+
+@mixin appear-animation($time) {
+  animation: $time appear;
+}
+
+// Keyframes
+// -------------------------------------------------------------
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+// Classes
+// -------------------------------------------------------------
+.hover-animation { @include hover-animation(.25s); }
+.appear-animation { @include appear-animation(1s); }

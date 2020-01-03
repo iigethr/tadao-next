@@ -1,0 +1,57 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Icons
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+@mixin link-default {
+  float: left;
+  letter-spacing: .030em;
+  text-align: left;
+  text-decoration: none;
+  width: auto;
+}
+
+@mixin link-xxs {
+  @include link-default;
+  @include font-xxs;
+}
+
+@mixin link-xs {
+  @include link-default;
+  @include font-xs;
+}
+
+@mixin link-s {
+  @include link-default;
+  @include font-s;
+}
+
+@mixin link-m {
+  @include link-default;
+  @include font-m;
+}
+
+@mixin link-l {
+  @include link-default;
+  @include font-l;
+}
+
+@mixin link-xl {
+  @include link-default;
+  @include font-xl;
+}
+
+@mixin link-xxl {
+  @include link-default;
+  @include font-xxl;
+}
+
+// Classes
+// -------------------------------------------------------------
+.link-xxs { @include link-xxs; }
+.link-xs  { @include link-xs; }
+.link-s   { @include link-s; }
+.link-m   { @include link-m; }
+.link-l   { @include link-l; }
+.link-xl  { @include link-xl; }
+.link-xxl { @include link-xxl; }

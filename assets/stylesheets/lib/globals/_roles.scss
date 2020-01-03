@@ -1,0 +1,90 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Roles
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+.header,
+.main,
+.footer,
+.container-top,
+.container-left,
+.container-middle,
+.container-right,
+.container-bottom {
+  float: left;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+  .container-box {
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    .container-item {
+      float: left;
+      margin: 0;
+      max-width: 100%;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+.header,
+.footer {
+  min-height: 72px;
+  padding: 16px;
+}
+
+.header {
+  min-height: 72px;
+}
+
+.footer {
+  min-height: 144px;
+}
+
+.container-top {
+  min-height: 52px;
+}
+
+.container-bottom {
+  min-height: 52px;
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}

@@ -1,0 +1,131 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Typography
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.text {
+  @include font-m;
+  font-family: $sans;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  width: 100%;
+  a,
+  img,
+  svg {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+  }
+  img,
+  svg {
+    max-width: 100%;
+    width: auto;
+  }
+  a {
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: underline;
+  }
+}
+
+blockquote {
+  @include font-m;
+  background-color: $gray;
+  margin: 32px;
+  padding: 16px;
+  width: auto;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  margin: 32px;
+  padding: 0;
+  width: auto;
+  li {
+    @include font-m;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gray-700;
+}
+
+p,
+.text {
+  color: $gray-500;
+}
+
+abbr,
+code,
+del,
+em,
+mark,
+small,
+strong {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+abbr   { cursor: help; }
+code   { @include font-s; }
+del    { text-decoration: line-through; }
+mark   { background-color: $yellow; }
+small  { font-size: 70%; }
+em     { font-style: italic; }
+strong { font-weight: bold; }
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}

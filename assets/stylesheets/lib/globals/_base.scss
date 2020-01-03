@@ -1,0 +1,130 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Base
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+*,
+*::after,
+*::before {
+  @include border-box;
+  letter-spacing: .03em;
+  margin: 0;
+  padding: 0;
+}
+
+html { height: 100%; }
+body,
+.root {
+  @include appear-animation(.50s);
+  min-height: 100%;
+}
+
+html,
+body,
+.root {
+  @include border-box;
+  @include clearfix;
+  @include font-m;
+  background-color: $gray-000;
+  color: $gray-400;
+  font-family: $sans;
+  letter-spacing: .03em;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  scrollbar-width: none;
+  width: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  visibility: hidden;
+}
+
+a,
+button,
+[type=button],
+[type=submit] {
+  @include hover-animation(.50s);
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: $tap;
+  text-decoration: none;
+  vertical-align: bottom;
+  width: auto !important;
+}
+
+figure {
+  background-color: $white;
+  border: 0;
+  display: block;
+  float: left;
+  height: inherit;
+  margin: 0;
+  max-width: 100%;
+  padding: 32px;
+  vertical-align: bottom;
+  width: 100%;
+  figcaption {
+    background-color: $white;
+    border: 0;
+    display: block;
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: bottom;
+    width: 100%;
+  }
+}
+
+img,
+svg {
+  @include appear-animation(10s);
+  border: 0;
+  display: block;
+  float: left;
+  height: inherit;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  vertical-align: bottom;
+  width: auto;
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}

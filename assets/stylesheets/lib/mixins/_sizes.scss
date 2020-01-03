@@ -1,0 +1,107 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Sizes
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+@mixin font-xxs {
+  font-size: 10px;
+  line-height: 18px;
+}
+
+@mixin font-xs {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@mixin font-s {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@mixin font-m {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin font-l {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin font-xl {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+@mixin font-xxl {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+/////
+
+@mixin button-size-xxs {
+  font-size: 12px;
+  line-height: 16px;
+  &.outline {
+    line-height: 16px;
+  }
+}
+
+@mixin button-size-xs {
+  font-size: 12px;
+  line-height: 18px;
+  &.outline {
+    line-height: 18px;
+  }
+}
+
+@mixin button-size-s {
+  font-size: 14px;
+  line-height: 20px;
+  &.outline {
+    line-height: 20px;
+  }
+}
+
+@mixin button-size-m {
+  font-size: 14px;
+  line-height: 22px;
+  &.outline {
+    line-height: 22px;
+  }
+}
+
+@mixin button-size-l {
+  font-size: 14px;
+  line-height: 30px;
+  &.outline {
+    line-height: 30px;
+  }
+}
+
+@mixin button-size-xl {
+  font-size: 16px;
+  line-height: 38px;
+  &.outline {
+    line-height: 38px;
+  }
+}
+
+@mixin button-size-xxl {
+  font-size: 16px;
+  line-height: 46px;
+  &.outline {
+    line-height: 46px;
+  }
+}
+
+// Classes
+// -------------------------------------------------------------
+.font-xxs  { @include font-xxs; }
+.font-xs   { @include font-xs; }
+.font-s    { @include font-s; }
+.font-m    { @include font-m; }
+.font-l    { @include font-l; }
+.font-xl   { @include font-xl; }
+.font-xxl  { @include font-xxl; }

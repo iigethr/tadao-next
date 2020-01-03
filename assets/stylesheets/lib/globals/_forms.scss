@@ -1,0 +1,447 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Forms
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+form {
+  @include border-box;
+  @include clearfix;
+  border: 0;
+  color: $gray;
+  float: left;
+  font-family: $sans;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+  *,
+  *::after,
+  *::before {
+    @include border-box;
+    vertical-align: bottom;
+  }
+
+  fieldset {
+    border: 0;
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    .form-row {
+      float: left;
+      max-width: 100%;
+      width: 100%;
+      .field {
+        float: left;
+        margin: 0;
+        max-width: 100%;
+        padding: 8px 16px;
+        text-align: left;
+        width: 100%;
+        // Form wrapper
+        .field-wrapper {
+          float: left;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      // &:first-of-type {
+      //   .field {
+      //     padding: 16px 16px 8px;
+      //   }
+      // }
+      // &:last-of-type {
+      //   .field {
+      //     padding: 8px 16px 16px;
+      //   }
+      // }
+    }
+  }
+
+  legend {
+    color: $gray-700;
+    float: left;
+    font-family: $sans;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 32px;
+    margin: 0;
+    max-width: 100%;
+    padding: 16px;
+    width: 100%;
+  }
+
+  label {
+    color: $gray-900;
+    float: left;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    i {
+      color: $gray-100;
+      font-weight: normal;
+    }
+    &.required:after,
+    &.required::after {
+      content: " *";
+    }
+  }
+
+  input,
+  textarea {
+    appearance: none;
+    background-color: $tap;
+    border: 0;
+    box-shadow: none;
+    color: $gray;
+    display: inline;
+    font-size: 16px;
+    max-width: 100%;
+    outline: none;
+    overflow: auto;
+    width: 100%;
+  }
+
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"] {
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    line-height: 24px;
+    margin: 0;
+    max-width: 100%;
+    min-height: 72px;
+    padding: 0;
+    resize: none;
+    width: 100%;
+  }
+
+  // scss-lint:disable PseudoElement
+  // scss-lint:disable VendorPrefix
+  ::-webkit-input-placeholder,
+  :-moz-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder {
+    color: $tap;
+    line-height: 1;
+  }
+
+  :focus::-webkit-input-placeholder,
+  :focus:-moz-placeholder,
+  :focus::-moz-placeholder,
+  :focus:-ms-input-placeholder {
+    color: $tap;
+    opacity: 0;
+  }
+
+  :invalid,
+  :invalid:focus {
+    box-shadow: 0 0 0 $tap;
+  }
+  // scss-lint:enable PseudoElement
+  // scss-lint:enable VendorPrefix
+
+  select {
+    appearance: none;
+    // background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='black'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+    background-color: $tap;
+    // background-position: right 4px bottom 2px;
+    // background-repeat: no-repeat;
+    // background-size: 12px;
+    border: 0;
+    box-shadow: none;
+    color: $tap;
+    display: inline;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 100%;
+    outline: none;
+    overflow: auto;
+    padding: 0 24px 0 0;
+    text-shadow: 0 0 0 $black;
+    width: 100%;
+    option {
+      background-color: $tap;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .input {
+    @include border-corner(4px);
+    background-color: $white;
+    border: 1px solid $gray-100;
+    float: left;
+    max-width: 100%;
+    padding: 3px 7px;
+    width: 100%;
+  }
+
+  .file {
+    @include border-corner(4px);
+    float: left;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    [type=file] {
+      appearance: none;
+      background-color: $tap;
+      filter: alpha(opacity = 0);
+      opacity: 0;
+      position: absolute;
+      width: 0;
+    }
+    label {
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
+  .textarea {
+    @include border-corner(4px);
+    background-color: $white;
+    border: 1px solid $gray-100;
+    float: left;
+    max-width: 100%;
+    min-height: 136px;
+    padding: 8px;
+    width: 100%;
+    textarea {
+      min-height: 120px;
+    }
+    trix-editor {
+      border: 1px solid $gray-100;
+      min-height: 128px;
+    }
+    &.body {
+      min-height: 512px;
+      trix-editor {
+        min-height: 512px;
+      }
+      textarea {
+        min-height: 512px;
+      }
+    }
+  }
+
+  .select {
+    @include border-corner(4px);
+    background-color: $white;
+    border: 1px solid $gray-100;
+    float: left;
+    max-width: 100%;
+    padding: 6px 8px;
+    width: 100%;
+    select {
+      text-shadow: 0 0 0 $black;
+      option {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .checkbox,
+  .radiobutton {
+    @include border-corner(4px);
+    background-color: $white;
+    border: 1px solid $gray-100;
+    float: left;
+    font-family: $sans;
+    font-size: 12px;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 7px;
+    width: 100%;
+    label {
+      display: inline;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      width: auto;
+    }
+    [type=checkbox],
+    [type=radio] {
+      float: left;
+      height: 13px;
+      margin: 5px 4px 0 0;
+      width: 13px;
+    }
+    [type=checkbox] {
+      appearance: checkbox;
+    }
+    [type=radio] {
+      appearance: radio;
+    }
+  }
+
+  .date {
+    @include border-corner(4px);
+    @include clearfix-left;
+    background-color: $white;
+    border: 1px solid $gray-100;
+    float: left;
+    padding: 7px;
+    width: auto;
+    [type=date],
+    [type=date]::-webkit-calendar-picker-indicator,
+    [type=date]::-webkit-input-placeholder,
+    [type=date]::-webkit-inner-spin-button {
+      appearance: none;
+      background-color: $tap;
+      border: 0;
+      display: inline-block;
+      visibility: hidden;
+      width: auto;
+    }
+    select {
+      width: auto;
+    }
+  }
+
+  .submit {
+    float: left;
+    max-width: 100%;
+    width: 100%;
+    [type=submit] {
+      appearance: none;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .label,
+  .label-reference,
+  .reference {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .label,
+  .label-reference {
+    line-height: inherit;
+    vertical-align: baseline;
+  }
+
+  .reference {
+    float: left;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form-card {
+    float: left;
+    max-width: 100%;
+    width: 100%;
+    .form-card-box {
+      background-color: $white;
+      border: 1px solid $gray-100;
+      border-radius: 4px;
+      float: left;
+      max-width: 100%;
+      padding: 16px;
+      width: 100%;
+      .form-card-item {
+        float: left;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .form-nav {
+    float: left;
+    max-width: 100%;
+    width: 100%;
+    .form-nav-box {
+      float: left;
+      max-width: 100%;
+      padding: 8px;
+      width: 100%;
+      .form-nav-item {
+        float: left;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  // Form errors
+  .form-errors {
+    float: left;
+    max-width: 100%;
+    width: 100%;
+    .form-errors-box {
+      @include clear-list;
+      float: left;
+      max-width: 100%;
+      padding: 4px;
+      width: 100%;
+      .form-errors-item {
+        float: left;
+        max-width: 100%;
+        padding: 4px;
+        width: 100%;
+        p {
+          color: $red;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}
