@@ -12,7 +12,7 @@ const Index = () => (
     <div className="root">
       <h1 className="font-xxl">Welcome to Next.js!</h1>
       <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-      <img src={require("../assets/images/square.png")} />
+      <img src={require("../assets/images/square.png")} alt="Tadao Next - Image" />
     </div>
   </Page>
 )
