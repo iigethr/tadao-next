@@ -13,15 +13,13 @@
 }
 
 html { height: 100%; }
-body,
-.root {
+body {
   @include appear-animation(.50s);
   min-height: 100%;
 }
 
 html,
-body,
-.root {
+body {
   @include border-box;
   @include clearfix;
   @include font-m;
@@ -40,6 +38,10 @@ body,
   display: none;
   scrollbar-width: none;
   visibility: hidden;
+}
+
+.root {
+  @include appear-animation(.50s);
 }
 
 a,
@@ -82,7 +84,7 @@ figure {
 
 img,
 svg {
-  @include appear-animation(10s);
+  @include appear-animation(0.50s);
   border: 0;
   display: block;
   float: left;

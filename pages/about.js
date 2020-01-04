@@ -4,10 +4,10 @@ import Nav from '../components/nav'
 
 import '../assets/stylesheets/tadao.scss'
 
-const Home = () => (
+const About = () => (
   <div>
     <Head>
-      <title>Tadao Next</title>
+      <title>Tadao Next - About</title>
       <meta name="description" content="Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla." />
       <link rel="icon" href="/favicon.ico" />
     </Head>
@@ -15,11 +15,11 @@ const Home = () => (
       <Nav />
 
       <div>
-        <h1 className="title">Welcome to Next.js!</h1>
+        <h1 className="title">Welcome to Next.js! - ABout</h1>
         <img src={require("../assets/images/square.png")} />
       </div>
     </div>
   </div>
 )
 
-export default Home
+export default About
