@@ -1,25 +1,20 @@
-import React from 'react'
+// Layout
+import Page from '../layouts/main'
+// SEO Setup
 import Head from 'next/head'
-import Nav from '../components/nav'
-
-import '../assets/stylesheets/tadao.scss'
 
 const About = () => (
-  <div>
+  <Page>
     <Head>
       <title>Tadao Next - About</title>
       <meta name="description" content="Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla." />
-      <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div>
-      <Nav />
-
-      <div>
-        <h1 className="title">Welcome to Next.js! - ABout</h1>
-        <img src={require("../assets/images/square.png")} />
-      </div>
+    <div className="root">
+      <h1 className="title">About Next.js!</h1>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <img src={require("../assets/images/square.png")} />
     </div>
-  </div>
+  </Page>
 )
 
 export default About
