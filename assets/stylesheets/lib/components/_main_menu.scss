@@ -1,13 +1,17 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Logo
+// File:    Main Menu
 // Project: Tadao by IIGETHR
 // -------------------------------------------------------------
 
-$class: "logo";
+$class: "main-menu";
 
 .#{$class} {
+  float: left;
   .#{$class}-box {
+    float: left;
     .#{$class}-item {
+      float: left;
+      padding: 16px;
     }
   }
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import MainMenu from '../components/main_menu'
 import Copyright from '../components/copyright'
 
+{/* Load all CSS/SCSS files */}
 import '../assets/stylesheets/tadao.scss'
 
 export default ({ children }) => (
@@ -17,7 +18,7 @@ export default ({ children }) => (
     <header className="universal">
       <div className="universal-box">
         <div className="universal-row">
-          <Nav />
+          <MainMenu />
         </div>
       </div>
     </header>
