@@ -10,9 +10,8 @@ const About = () => (
       <meta name="description" content="Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla." />
     </Head>
     <div className="root">
-      <h1 className="title">About Next.js!</h1>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <img src={require("../assets/images/square.png")} alt="Tadao Next - Image" />
+      <h1 className="font-l text-center">About Next.js!</h1>
+      <p className="text-center">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
     </div>
   </Page>
 )

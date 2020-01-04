@@ -1,4 +1,5 @@
-import React from 'react'
+/* Nav */
+
 import Link from 'next/link'
 
 const Nav = () => (
