@@ -29,11 +29,11 @@ class Index extends React.Component {
             <div className="container-box">
               <div className="container-row">
                 <h1 className="mono font-xxl lighter text-center white-cl">{ this.props.msg }</h1>
-                <p className="mono lighter text-center purple-100-cl">A basic kickstart setup for <a href="https://nextjs.org/" target="_blank">NextJS</a>. <br /> It comes pre-installed with Tadao - A Minimal and Lightweight Design System.</p>
+                <p className="mono lighter text-center purple-100-cl">A basic kickstart setup for <a href="https://nextjs.org/" target="_blank" rel="noreferrer">NextJS</a>. <br /> It comes pre-installed with Tadao - A Minimal and Lightweight Design System.</p>
                 <p className="mono font-s lighter text-center purple-900-cl">Named in tribute to my favourite architect Tadao Andō.</p>
               </div>
               <div className="container-row">
-                <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank">GitHub</a>
+                <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </div>
