@@ -229,18 +229,18 @@
 
 @mixin button-purple-dark-theme {
   background-color: $purple-700 !important;
-  border-color: $purple-700 !important;
+  border-color: $purple-800 !important;
   color: $white !important;
   &:link,
   &:visited {
     background-color: $purple-700 !important;
-    border-color: $purple-700 !important;
+    border-color: $purple-800 !important;
     color: $white !important;
   }
   &:hover,
   &:active {
     background-color: $purple-600 !important;
-    border-color: $purple-600 !important;
+    border-color: $purple-700 !important;
     color: $white !important;
   }
   &.no-bg {

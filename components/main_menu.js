@@ -10,11 +10,6 @@ const MainMenu = () => (
             <a className="link-m">Home</a>
           </Link>
         </div>
-        <div className="main-menu-item">
-          <Link href="/about">
-            <a className="link-m">About</a>
-          </Link>
-        </div>
     </div>
   </div>
 )

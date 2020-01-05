@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import MainMenu from '../components/main_menu'
+// import MainMenu from '../components/main_menu'
 import Copyright from '../components/copyright'
 
 {/* Load all CSS/SCSS files */}
@@ -10,8 +10,8 @@ export default ({ children }) => (
   <div>
     {/* Head */}
     <Head>
-      <title>Tadao Next</title>
-      <meta name="description" content="Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla." />
+      <title>Tadao + Next</title>
+      <meta name="description" content="A basic kickstart setup for NextJS." />
       <link rel="icon" href="favicon/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
@@ -22,7 +22,6 @@ export default ({ children }) => (
     <header className="universal">
       <div className="universal-box">
         <div className="universal-row">
-          <MainMenu />
         </div>
       </div>
     </header>
