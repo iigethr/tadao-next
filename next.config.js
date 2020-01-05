@@ -1,6 +1,7 @@
 // next.config.js
 
 const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules');
 const withCss = require('@zeit/next-css')
 const withSass = require('@zeit/next-sass')
 const withImages = require('next-optimized-images');
@@ -39,5 +40,8 @@ module.exports = withPlugins([
     imagesName: '[name]-[hash].[ext]',
     handleImages: ['jpg', 'jpeg', 'png', 'svg', 'webp', 'gif'],
     optimizeImages: true
+  }],
+  [withTM, {
+    transpileModules: ['@iigethr/zaha_alignments'],
   }],
 ]);

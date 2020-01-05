@@ -2,34 +2,10 @@
 import Page from '../layouts/main'
 // SEO Setup
 import Head from 'next/head'
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
-  // Align element horizontally
-  async centerH() {
-    const elements = document.querySelectorAll(".center-h");
-
-    if (elements) {
-      elements.forEach( (element) => {
-        // Log
-        console.log(element);
-
-        // centerHParent
-        const centerHParent = document.createElement("div");
-        centerHParent.setAttribute("class", "center-h-parent");
-
-        // centerHChild
-        const centerHChild = document.createElement("div");
-        centerHChild.setAttribute("class", "center-h-child");
-
-        // Insert centerHParent
-        element.parentNode.insertBefore(centerHParent, element);
-
-        // Append
-        centerHParent.appendChild(centerHChild);
-        centerHChild.appendChild(element);
-      });
-    }
-  }
 
   static async getInitialProps() {
     const msg = "Welcome to Next.js!"
@@ -37,7 +13,7 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    this.centerH()
+    ZahaAlignments.centerH()
     console.log("Registered a Component.");
   }
 
