@@ -6,6 +6,9 @@ const withCss       = require("@zeit/next-css");
 const withSass      = require("@zeit/next-sass");
 const withImages    = require("next-optimized-images");
 
+// NOTE: not working for now
+// const withPurgeCss  = require("next-purgecss");
+
 // const resourcesLoader = {
 //   loader: "sass-resources-loader",
 //   options: {
@@ -29,21 +32,33 @@ const withImages    = require("next-optimized-images");
 //   },
 // }
 
+// withTM
+const withTMConfig = {
+  transpileModules: [
+    "@iigethr/zaha_alignments"
+  ]
+}
+
+// withSass
+const withSassConfig = {
+  cssModules: false
+  // sassLoaderOptions: {
+  //   outputStyle: "compressed"
+  // }
+};
+
+// withImages
+const withImagesConfig = {
+  inlineImageLimit: 8192,
+  imagesFolder: "images",
+  imagesName: "[name]-[hash].[ext]",
+  handleImages: ["jpg", "jpeg", "png", "svg", "webp", "gif"],
+  optimizeImages: true
+}
+
 module.exports = withPlugins([
-  [withTM, {
-    transpileModules: [
-      "@iigethr/zaha_alignments"
-    ],
-  }],
+  [withTM, withTMConfig],
   [withCss],
-  [withSass, {
-    cssModules: false
-  }],
-  [withImages, {
-    inlineImageLimit: 8192,
-    imagesFolder: "images",
-    imagesName: "[name]-[hash].[ext]",
-    handleImages: ["jpg", "jpeg", "png", "svg", "webp", "gif"],
-    optimizeImages: true
-  }],
+  [withSass, withSassConfig],
+  [withImages, withImagesConfig]
 ]);
