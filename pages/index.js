@@ -1,7 +1,7 @@
 // Layout
-import Page from '../layouts/main'
+import Page from "../layouts/main"
 // SEO Setup
-import Head from 'next/head'
+import Head from "next/head"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
