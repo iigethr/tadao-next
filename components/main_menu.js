@@ -1,6 +1,6 @@
 /* Main Menu */
 
-import Link from 'next/link'
+import Link from "next/link"
 
 const MainMenu = () => (
   <div className="main-menu">

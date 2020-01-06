@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 tadao-next.code-workspace
+README-template.md
 
 # testing
 /coverage
