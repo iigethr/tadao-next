@@ -18,19 +18,18 @@ export default ({ children }) => (
       <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
       <link rel="manifest" href="favicon/site.webmanifest" />
       {/* Open Graph */}
-      <meta property="og:url"         content="https://tadao-next.now.sh/" />
       <meta property="og:type"        content="website" />
+      <meta property="og:url"         content="https://tadao-next.now.sh/" />
       <meta property="og:title"       content="Tadao + Next" />
       <meta property="og:description" content="A basic kickstart setup for NextJS." />
       <meta property="og:image"       content="https://og-image.now.sh/Tadao%20%2B%20Next.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-white-triangle.svg" />
       {/* Twitter */}
-      <meta name="twitter:card"       content="summary" />
-      <meta name="twitter:site"       content="@iigethr" />
-      <meta name="twitter:creator"    content="@iigethr" />
-      <meta property="og:url"         content="https://tadao-next.now.sh/" />
-      <meta property="og:title"       content="Tadao + Next" />
-      <meta property="og:description" content="A basic kickstart setup for NextJS." />
-      <meta property="og:image"       content="https://og-image.now.sh/Tadao%20%2B%20Next.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-white-triangle.svg" />
+      <meta name="twitter:card"         content="summary_large_image" />
+      <meta name="twitter:site"         content="@iigethr" />
+      <meta name="twitter:creator"      content="@iigethr" />
+      <meta name="twitter:title"        content="Tadao + Next" />
+      <meta name="twitter:description"  content="A basic kickstart setup for NextJS." />
+      <meta name="twitter:image"        content="https://og-image.now.sh/Tadao%20%2B%20Next.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-white-triangle.svg" />
     </Head>
     {/* Header */}
     <header className="universal">
