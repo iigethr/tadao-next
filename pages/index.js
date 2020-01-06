@@ -1,9 +1,7 @@
+// Base
+import Head from "next/head"
 // Layout
 import Page from "../layouts/main"
-// SEO Setup
-import Head from "next/head"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
 
@@ -13,8 +11,7 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
-    console.log("Registered a Component.");
+    console.log("Registered a Page.");
   }
 
   render () {
