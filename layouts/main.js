@@ -10,6 +10,7 @@ export default ({ children }) => (
   <div>
     {/* Head */}
     <Head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>Tadao + Next</title>
       <meta name="description" content="A basic kickstart setup for NextJS." />
       <meta name="application-name" content="Tadao + Next"/>
