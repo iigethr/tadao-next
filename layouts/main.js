@@ -2,6 +2,7 @@
 import React from "react"
 import Head from "next/head"
 // Components
+import MainMenu from "../components/main_menu"
 import Copyright from "../components/copyright"
 // CSS/SCSS
 import "../assets/stylesheets/tadao.scss"
@@ -54,14 +55,15 @@ export default ({ children }) => (
       <meta name="twitter:image"        content="https://og-image.now.sh/Tadao%20%2B%20Next.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-white-triangle.svg" />
     </Head>
     {/* Header */}
-    <header className="universal">
+    <header className="universal header">
       <div className="universal-box">
         <div className="universal-row">
+          <MainMenu />
         </div>
       </div>
     </header>
     {/* Main */}
-    <main className="universal">
+    <main className="universal main">
       <div className="universal-box">
         <div className="universal-row">
           { children }
@@ -69,7 +71,7 @@ export default ({ children }) => (
       </div>
     </main>
     {/* Footer */}
-    <footer className="universal">
+    <footer className="universal footer">
       <div className="universal-box">
         <div className="universal-row">
           <Copyright />
