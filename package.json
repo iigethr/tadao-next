@@ -8,10 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@iigethr/zaha_alignments": "^0.0.2",
+    "@iigethr/zaha_alignments": "^0.0.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "latest",
+    "autoprefixer": "^9.7.3",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^7.1.0",
