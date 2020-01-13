@@ -19,7 +19,7 @@ class Artboards extends React.Component {
 
   render () {
     return (
-      <Page>
+      <div>
         <Head>
         <title>{ this.props.title }</title>
         <meta name="description" content="A basic kickstart setup for NextJS." />
@@ -97,7 +97,7 @@ class Artboards extends React.Component {
             </div>
           </div>
         </div>
-      </Page>
+      </div>
     );
   }
 }

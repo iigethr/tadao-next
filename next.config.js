@@ -1,40 +1,17 @@
 // next.config.js
 
-const withPlugins   = require("next-compose-plugins");
-const withTM        = require("next-transpile-modules");
-const withCss       = require("@zeit/next-css");
-const withSass      = require("@zeit/next-sass");
-const withImages    = require("next-optimized-images");
-
-// NOTE: not working for now
-// const withPurgeCss  = require("next-purgecss");
-
-// const resourcesLoader = {
-//   loader: "sass-resources-loader",
-//   options: {
-//       resources: [
-//           "./assets/stylesheets/tadao.scss"
-//       ]
-//   }
-// };
-
-// const resourcesConfig = {
-//   webpack: (config, options) => {
-//     config.module.rules.map(rule => {
-//       if (
-//         rule.test.source.includes("scss") ||
-//         rule.test.source.includes("sass")
-//       ) {
-//         rule.use.push(resourcesLoader);
-//       }
-//     });
-//     return config;
-//   },
-// }
+const withPlugins       = require("next-compose-plugins");
+const withTM            = require("next-transpile-modules");
+const withCss           = require("@zeit/next-css");
+const withSass          = require("@zeit/next-sass");
+const withImages        = require("next-optimized-images");
+const withYml           = require("js-yaml-loader");
+const nextRuntimeDotenv = require("next-runtime-dotenv");
 
 // withTM
 const withTMConfig = {
   transpileModules: [
+    "@hankyo/hankyo",
     "@iigethr/zaha_alignments"
   ]
 }
@@ -56,9 +33,31 @@ const withImagesConfig = {
   optimizeImages: true
 }
 
-module.exports = withPlugins([
+const withConfig = nextRuntimeDotenv({
+  public: [
+    "PROJECT_SLUG",
+    "HANKYO_ACCESS_TOKEN"
+  ],
+  server: [
+    "HANKYO_SECRET_ACCESS_TOKEN"
+  ],
+});
+
+const nextConfig = {
+  webpack: (config) => {
+    // Fixes npm packages that depend on `fs` module.
+    config.node = { // eslint-disable-line no-param-reassign
+      fs: "empty",
+    };
+    return config;
+  },
+};
+
+module.exports = withConfig(withPlugins([
+  [withConfig],
   [withTM, withTMConfig],
   [withCss],
   [withSass, withSassConfig],
-  [withImages, withImagesConfig]
-]);
+  [withImages, withImagesConfig],
+  [withYml]
+], nextConfig));

@@ -1,15 +1,36 @@
 // Base
 import Head from "next/head"
-// Layout
-import Page from "../layouts/main"
+import withConfig from "next/config"
+import fetch from "isomorphic-unfetch";
+// Dummy
+import dummy from 'js-yaml-loader!../data/dummy.yml';
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
 
+  // TODO: need to add errorHandling
   static async getInitialProps() {
-    const title = "Tadao + Next"
-    return { title }
+    const {
+      publicRuntimeConfig: {PROJECT_SLUG, HANKYO_ACCESS_TOKEN}
+      // serverRuntimeConfig: {HANKYO_SECRET_ACCESS_TOKEN}
+    } = withConfig()
+
+    const devURL = `http://localhost:4000/mies/team/projects/${PROJECT_SLUG}`
+    const proURL = `http://localhost:4000/mies/team/projects/${PROJECT_SLUG}`
+    const API_ENDPOINT = process.env.NODE_ENV == "development" ? devURL : proURL
+    const token = `Token token=${HANKYO_ACCESS_TOKEN}`;
+    const response = await fetch(
+      API_ENDPOINT, {
+        method: "GET",
+        headers: {
+          "Authorization": token,
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+    const data = await response.json()
+    return { data, dummy }
   }
 
   componentDidMount() {
@@ -18,19 +39,21 @@ class Index extends React.Component {
   }
 
   render () {
+    const project = this.props.data.project;
+    const dummy = this.props.dummy.project;
     return (
-      <Page>
+      <div>
         <Head>
-        <title>{ this.props.title }</title>
+        <title>Tadao + Next</title>
         <meta name="description" content="A basic kickstart setup for NextJS." />
         </Head>
         <div className="root">
           <div className="container">
             <div className="container-box">
               <div className="container-row">
-                <h1 className="mono font-xxl lighter text-center white-cl">{ this.props.title }</h1>
-                <p className="mono lighter text-center purple-100-cl">A basic kickstart setup for <a href="https://nextjs.org/" target="_blank" rel="noreferrer">NextJS</a>. <br /> It comes pre-installed with Tadao - A Minimal and Lightweight Design System.</p>
-                <p className="mono font-s lighter text-center purple-900-cl">Named in tribute to my favourite architect Tadao Andō.</p>
+                <h1 className="mono font-xxl lighter text-center white-cl">{ project.name || dummy.name }</h1>
+                <p className="mono lighter text-center purple-100-cl">{ project.description || dummy.description }</p>
+                <p className="mono font-s lighter text-center purple-900-cl">{ project.subtitle || dummy.subtitle }</p>
               </div>
               <div className="container-row">
                 <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
@@ -38,7 +61,7 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
-      </Page>
+      </div>
     );
   }
 }
