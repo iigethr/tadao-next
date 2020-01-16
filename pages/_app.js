@@ -7,6 +7,7 @@ class MyApp extends App {
   componentDidMount() {
     console.log("Registered Custom '_app.js' for Global Node Modules.");
   }
+
   render() {
     const { Component, pageProps } = this.props;
     return (
