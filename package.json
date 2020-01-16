@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@hankyo/hankyo": "^0.0.1",
+    "@hankyo/hankyo": "^0.0.3",
     "@iigethr/zaha_alignments": "^0.0.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",

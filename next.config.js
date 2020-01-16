@@ -35,11 +35,11 @@ const withImagesConfig = {
 
 const withConfig = nextRuntimeDotenv({
   public: [
-    "PROJECT_SLUG",
-    "HANKYO_ACCESS_TOKEN"
+    "project_slug",
+    "hankyo_access_token"
   ],
   server: [
-    "HANKYO_SECRET_ACCESS_TOKEN"
+    "hankyo_secret_access_token"
   ],
 });
 

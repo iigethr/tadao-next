@@ -879,10 +879,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hankyo/hankyo@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@hankyo/hankyo/-/hankyo-0.0.1.tgz#eec84aae7bf128f2d34e8338f89bc4d5e14d909f"
-  integrity sha512-ao2MNou4SNLH7FEJiLUhdgmwyE5XfeXWAtm7C+vd3BEiXDnT+i9YFHCN3AhUwJZLpFz5k3SGq3KZCHeL61m9Bg==
+"@hankyo/hankyo@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@hankyo/hankyo/-/hankyo-0.0.3.tgz#3be09f0f4ac4a2d20252549af580d0be8501342a"
+  integrity sha512-NGhaFxxcrnYmUkMvkBYh2fDnaJXOixIgbHSXM2ICdSOh2d1Hst+minLOUcaHvOLQjSGJ1hVI+At9tinWeXqoeA==
 
 "@iigethr/zaha_alignments@^0.0.3":
   version "0.0.3"
