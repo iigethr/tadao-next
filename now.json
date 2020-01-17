@@ -1,4 +1,11 @@
 {
+  "name": "tadao-next",
+  "version": 2,
+  "alias": "tadao-next-git-master.iigethr.now.sh",
+  // "builds": [{
+  //   "src": "package.json",
+  //   "use": "@now/static-build"
+  // }],
   "build": {
     "env": {
       "HANKYO_ACCESS_TOKEN": "@hankyo_access_token",
