@@ -2,7 +2,7 @@
 
 const withPlugins       = require("next-compose-plugins");
 const withTM            = require("next-transpile-modules");
-const withEnv           = require("next-env");
+// const withEnv           = require("next-env");
 const withCss           = require("@zeit/next-css");
 const withSass          = require("@zeit/next-sass");
 const withImages        = require("next-optimized-images");
@@ -19,7 +19,9 @@ const withTMConfig = {
 
 // withSass
 const withEnvConfig = {
-  PROJECT_SLUG: process.env.PROJECT_SLUG
+  env: {
+    PROJECT_SLUG: process.env.PROJECT_SLUG
+  }
 };
 
 // withSass
@@ -62,7 +64,7 @@ const nextConfig = {
 module.exports = withPlugins([
   // [withConfig],
   [withTM, withTMConfig],
-  [withEnv, withEnvConfig],
+  [withEnvConfig],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
