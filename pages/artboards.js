@@ -4,12 +4,23 @@ import Head from "next/head"
 import Page from "../layouts/main"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
+import Hankyo from "@hankyo/hankyo";
+// Dummy
+import dummy from "js-yaml-loader!../data/dummy.yml";
 
 class Artboards extends React.Component {
-
   static async getInitialProps() {
     const title = "Artboards"
-    return { title }
+    if (process.env.NODE_ENV == "production") {
+      const PROJECT_SLUG = process.env.PROJECT_SLUG
+      const HANKYO_ACCESS_TOKEN = process.env.HANKYO_ACCESS_TOKEN
+      const myHankyo = new Hankyo()
+      const response = await myHankyo.project(PROJECT_SLUG, HANKYO_ACCESS_TOKEN)
+      const data = await response.json()
+      return { data: data }
+    } else {
+      return { data: dummy, title }
+    }
   }
 
   componentDidMount() {
