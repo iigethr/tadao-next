@@ -6,7 +6,7 @@ const withCss           = require("@zeit/next-css");
 const withSass          = require("@zeit/next-sass");
 const withImages        = require("next-optimized-images");
 const withYml           = require("js-yaml-loader");
-const nextRuntimeDotenv = require("next-runtime-dotenv");
+// const nextRuntimeDotenv = require("next-runtime-dotenv");
 
 // withTM
 const withTMConfig = {
@@ -33,15 +33,15 @@ const withImagesConfig = {
   optimizeImages: true
 }
 
-const withConfig = nextRuntimeDotenv({
-  public: [
-    "PROJECT_SLUG",
-    "HANKYO_ACCESS_TOKEN"
-  ],
-  server: [
-    "HANKYO_SECRET_ACCESS_TOKEN"
-  ],
-});
+// const withConfig = nextRuntimeDotenv({
+//   public: [
+//     "PROJECT_SLUG",
+//     "HANKYO_ACCESS_TOKEN"
+//   ],
+//   server: [
+//     "HANKYO_SECRET_ACCESS_TOKEN"
+//   ],
+// });
 
 const nextConfig = {
   webpack: (config) => {
@@ -53,11 +53,11 @@ const nextConfig = {
   },
 };
 
-module.exports = withConfig(withPlugins([
-  [withConfig],
+module.exports = withPlugins([
+  // [withConfig],
   [withTM, withTMConfig],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
   [withYml]
-], nextConfig));
+], nextConfig);
