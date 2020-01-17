@@ -9,14 +9,17 @@ import Hankyo from "@hankyo/hankyo";
 class Index extends React.Component {
   // TODO: need to add errorHandling
   static async getInitialProps() {
+    const PROJECT_SLUG = process.env.PROJECT_SLUG
+    const HANKYO_ACCESS_TOKEN = process.env.HANKYO_ACCESS_TOKEN
     const myHankyo = new Hankyo()
-    const response = await myHankyo.project()
+    const response = await myHankyo.project(PROJECT_SLUG, HANKYO_ACCESS_TOKEN)
     const data = await response.json()
     if (process.env.NODE_ENV == "development") {
       console.log(data)
       console.log(dummy)
     }
-    return { data, dummy}
+    console.log(PROJECT_SLUG)
+    return { data, dummy }
   }
 
   // TODO: need to add errorHandling
@@ -34,10 +37,12 @@ class Index extends React.Component {
         </Head>
         <div className="root">
           <div className="container">
+            <p>{process.env.NODE_ENV}</p>
+            <p>{process.env.PROJECT_SLUG}</p>
             <div className="container-box">
               <div className="container-row">
                 <h1 className="mono font-xxl lighter text-center white-cl">{this.props.data.project.name || this.props.dummy.project.name}</h1>
-                <p className="mono lighter text-center purple-100-cl">Description</p>
+                <p className="mono lighter text-center purple-100-cl">{process.env.PROJECT_SLUG}</p>
                 <p className="mono font-s lighter text-center purple-900-cl">Subtitle</p>
               </div>
               <div className="container-row">

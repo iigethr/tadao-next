@@ -43,15 +43,15 @@ const withImagesConfig = {
 //   ],
 // });
 
-const nextConfig = {
-  webpack: (config) => {
-    // Fixes npm packages that depend on `fs` module.
-    config.node = { // eslint-disable-line no-param-reassign
-      fs: "empty",
-    };
-    return config;
-  },
-};
+// const nextConfig = {
+//   webpack: (config) => {
+//     // Fixes npm packages that depend on `fs` module.
+//     config.node = { // eslint-disable-line no-param-reassign
+//       fs: "empty",
+//     };
+//     return config;
+//   },
+// };
 
 module.exports = withPlugins([
   // [withConfig],
@@ -60,4 +60,4 @@ module.exports = withPlugins([
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
   [withYml]
-], nextConfig);
+]);
