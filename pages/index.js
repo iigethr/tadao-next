@@ -35,7 +35,6 @@ class Index extends React.Component {
         </Head>
         <div className="root">
           <div className="container">
-            <p>{process.env.PROJECT_SLUG}</p>
             <div className="container-box">
               <div className="container-row">
                 <h1 className="mono font-xxl lighter text-center white-cl">{this.props.data.project.name}</h1>

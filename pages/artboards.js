@@ -17,7 +17,7 @@ class Artboards extends React.Component {
       const myHankyo = new Hankyo()
       const response = await myHankyo.project(PROJECT_SLUG, HANKYO_ACCESS_TOKEN)
       const data = await response.json()
-      return { data: data }
+      return { data: data, title }
     } else {
       return { data: dummy, title }
     }
