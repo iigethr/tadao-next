@@ -18,7 +18,7 @@ class Index extends React.Component {
       console.log(data)
       console.log(dummy)
     }
-    console.log(PROJECT_SLUG)
+    console.log(process.env.PROJECT_SLUG)
     return { data, dummy }
   }
 
