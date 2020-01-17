@@ -2689,7 +2689,7 @@ dot-prop@^5.0.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^8.0.0, dotenv@^8.2.0:
+dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -4961,13 +4961,6 @@ next-purgecss@^3.1.2:
   dependencies:
     glob-all "^3.1.0"
     purgecss-webpack-plugin "^1.3.1"
-
-next-runtime-dotenv@latest:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/next-runtime-dotenv/-/next-runtime-dotenv-1.2.0.tgz#8392d99a639f49d2ee48e086f000321632280653"
-  integrity sha512-5Tnoey7U0JZb6M5StHtcFjT0ZBWXRbwnWZgbXqI+XKmMMUVH3lD1ogPSMoXMZcH2Q5stZUsyyfQfzDOIoHPBHw==
-  dependencies:
-    dotenv "^8.0.0"
 
 next-transpile-modules@^2.3.1:
   version "2.3.1"
