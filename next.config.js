@@ -2,6 +2,7 @@
 
 const withPlugins       = require("next-compose-plugins");
 const withTM            = require("next-transpile-modules");
+const withEnv           = require("next-env");
 const withCss           = require("@zeit/next-css");
 const withSass          = require("@zeit/next-sass");
 const withImages        = require("next-optimized-images");
@@ -15,6 +16,11 @@ const withTMConfig = {
     "@iigethr/zaha_alignments"
   ]
 }
+
+// withSass
+const withEnvConfig = {
+  PROJECT_SLUG: process.env.PROJECT_SLUG
+};
 
 // withSass
 const withSassConfig = {
@@ -43,21 +49,22 @@ const withImagesConfig = {
 //   ],
 // });
 
-// const nextConfig = {
-//   webpack: (config) => {
-//     // Fixes npm packages that depend on `fs` module.
-//     config.node = { // eslint-disable-line no-param-reassign
-//       fs: "empty",
-//     };
-//     return config;
-//   },
-// };
+const nextConfig = {
+  webpack: (config) => {
+    // Fixes npm packages that depend on `fs` module.
+    config.node = { // eslint-disable-line no-param-reassign
+      fs: "empty",
+    };
+    return config;
+  }
+};
 
 module.exports = withPlugins([
   // [withConfig],
   [withTM, withTMConfig],
+  [withEnv, withEnvConfig],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
   [withYml]
-]);
+], nextConfig);
