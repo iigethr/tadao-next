@@ -1,7 +1,7 @@
 // Base
 import Head from "next/head"
 // Dummy
-import dummy from 'js-yaml-loader!../data/dummy.yml';
+import dummy from "js-yaml-loader!../data/dummy.yml";
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 import Hankyo from "@hankyo/hankyo";
@@ -9,16 +9,22 @@ import Hankyo from "@hankyo/hankyo";
 class Index extends React.Component {
   // TODO: need to add errorHandling
   static async getInitialProps() {
-    const PROJECT_SLUG = "jcZ4VWJdm3jPRz8S"
-    const HANKYO_ACCESS_TOKEN = "2a916b8097efc340"
+    const PROJECT_SLUG = process.env.PROJECT_SLUG
+    const HANKYO_ACCESS_TOKEN = process.env.HANKYO_ACCESS_TOKEN
+    const HANKYO_SECRET_ACCESS_TOKEN = process.env.HANKYO_SECRET_ACCESS_TOKEN
+
     const myHankyo = new Hankyo()
     const response = await myHankyo.project(PROJECT_SLUG, HANKYO_ACCESS_TOKEN)
     const data = await response.json()
+
     if (process.env.NODE_ENV == "development") {
       console.log(data)
       console.log(dummy)
     }
-    console.log(process.env.PROJECT_SLUG)
+
+    console.log(PROJECT_SLUG)
+    console.log(HANKYO_ACCESS_TOKEN)
+    console.log(HANKYO_SECRET_ACCESS_TOKEN)
     return { data, dummy }
   }
 

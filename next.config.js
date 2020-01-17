@@ -2,12 +2,10 @@
 
 const withPlugins       = require("next-compose-plugins");
 const withTM            = require("next-transpile-modules");
-// const withEnv           = require("next-env");
 const withCss           = require("@zeit/next-css");
 const withSass          = require("@zeit/next-sass");
 const withImages        = require("next-optimized-images");
 const withYml           = require("js-yaml-loader");
-// const nextRuntimeDotenv = require("next-runtime-dotenv");
 
 // withTM
 const withTMConfig = {
@@ -16,13 +14,6 @@ const withTMConfig = {
     "@iigethr/zaha_alignments"
   ]
 }
-
-// withSass
-const withEnvConfig = {
-  env: {
-    PROJECT_SLUG: process.env.PROJECT_SLUG
-  }
-};
 
 // withSass
 const withSassConfig = {
@@ -41,15 +32,14 @@ const withImagesConfig = {
   optimizeImages: true
 }
 
-// const withConfig = nextRuntimeDotenv({
-//   public: [
-//     "PROJECT_SLUG",
-//     "HANKYO_ACCESS_TOKEN"
-//   ],
-//   server: [
-//     "HANKYO_SECRET_ACCESS_TOKEN"
-//   ],
-// });
+// nextEnvConfig
+const nextEnvConfig = {
+  env: {
+    HANKYO_ACCESS_TOKEN: process.env.HANKYO_ACCESS_TOKEN,
+    HANKYO_SECRET_ACCESS_TOKEN: process.env.HANKYO_SECRET_ACCESS_TOKEN,
+    PROJECT_SLUG: process.env.PROJECT_SLUG
+  }
+};
 
 const nextConfig = {
   webpack: (config) => {
@@ -62,9 +52,8 @@ const nextConfig = {
 };
 
 module.exports = withPlugins([
-  // [withConfig],
+  [nextEnvConfig],
   [withTM, withTMConfig],
-  [withEnvConfig],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
