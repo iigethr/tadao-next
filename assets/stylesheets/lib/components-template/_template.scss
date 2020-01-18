@@ -1,33 +1,13 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Roles
+// File:    Template
 // Project: Tadao by IIGETHR
 // -------------------------------------------------------------
 
-.header,
-.main,
-.footer,
-.container-top,
-.container-left,
-.container-middle,
-.container-right,
-.container-bottom {
-  float: left;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-  width: 100%;
-  .container-box {
-    float: left;
-    margin: 0;
-    max-width: 100%;
-    padding: 0;
-    width: 100%;
-    .container-item {
-      float: left;
-      margin: 0;
-      max-width: 100%;
-      padding: 0;
-      width: 100%;
+$class: "template";
+
+.#{$class} {
+  .#{$class}-box {
+    .#{$class}-item {
     }
   }
 }
@@ -35,34 +15,76 @@
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$xs} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }
 
 // Media Query 480px
 // -------------------------------------------------------------
 @media #{$s} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }
 
 // Media Query 720px
 // -------------------------------------------------------------
 @media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }
 
 // Media Query 960px
 // -------------------------------------------------------------
 @media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }
 
 // Media Query 1440px
 // -------------------------------------------------------------
 @media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }
 
 // Media Query 1920px
 // -------------------------------------------------------------
 @media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
 }

@@ -3,7 +3,85 @@
 // Project: Tadao by IIGETHR
 // -------------------------------------------------------------
 
+.header,
+.footer {
+  padding: 16px;
+}
+
+.header {
+  min-height: 72px;
+  margin: 0 0 48px;
+}
+
+.footer {
+  min-height: 144px;
+}
+
+.container-top {
+  min-height: 52px;
+}
+
+.container-bottom {
+  min-height: 52px;
+}
+
 .chip {
   float: left;
   min-height: 48px;
+}
+
+// Media Query 240px
+// -------------------------------------------------------------
+@media #{$xxs} {
+  .header {
+    margin: 0;
+  }
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+  .header {
+    margin: 0 0 4px;
+  }
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+  .header {
+    margin: 0 0 8px;
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .header {
+    margin: 0 0 16px;
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .header {
+    margin: 0 0 24px;
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .header {
+    margin: 0 0 32px;
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .header {
+    margin: 0 0 48px;
+  }
 }
