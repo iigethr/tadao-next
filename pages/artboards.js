@@ -1,26 +1,14 @@
 // Base
 import Head from "next/head"
-// Layout
-import Page from "../layouts/main"
+// Data
+// import Hankyo from "@hankyo/hankyo";
+import artboards from "js-yaml-loader!../data/artboards.yml";
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
-import Hankyo from "@hankyo/hankyo";
-// Dummy
-import dummy from "js-yaml-loader!../data/dummy.yml";
 
 class Artboards extends React.Component {
   static async getInitialProps() {
-    const title = "Artboards"
-    if (process.env.NODE_ENV == "production") {
-      const PROJECT_SLUG = process.env.PROJECT_SLUG
-      const HANKYO_ACCESS_TOKEN = process.env.HANKYO_ACCESS_TOKEN
-      const myHankyo = new Hankyo()
-      const response = await myHankyo.project(PROJECT_SLUG, HANKYO_ACCESS_TOKEN)
-      const data = await response.json()
-      return { data: data, title }
-    } else {
-      return { data: dummy, title }
-    }
+    return { data: artboards }
   }
 
   componentDidMount() {
@@ -29,18 +17,19 @@ class Artboards extends React.Component {
   }
 
   render () {
+    const { data: { section: { name, description }}} = this.props;
     return (
       <div>
         <Head>
-        <title>{ this.props.title }</title>
-        <meta name="description" content="A basic kickstart setup for NextJS." />
+          <title>Tadao + Next</title>
+          <meta name="description" content="A basic kickstart setup for NextJS." />
         </Head>
         <div className="root">
           <div className="container">
             <div className="container-box">
               <div className="container-row">
-                <h1 className="mono font-xxl lighter text-center white-cl">{ this.props.title }</h1>
-                <p className="mono lighter text-center purple-100-cl">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.</p>
+                <h1 className="mono font-xxl lighter text-center white-cl">{name}</h1>
+                <p className="mono lighter text-center purple-100-cl">{description}</p>
               </div>
             </div>
           </div>
