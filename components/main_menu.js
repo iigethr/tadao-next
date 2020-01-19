@@ -7,12 +7,12 @@ const MainMenu = () => (
      <div className="main-menu-box">
         <div className="main-menu-item">
           <Link href="/">
-            <a className="link-m">Home</a>
+            <a className="link-m white mono">Home</a>
           </Link>
         </div>
         <div className="main-menu-item">
           <Link href="/artboards">
-            <a className="link-m">Artboards</a>
+            <a className="link-m white mono">Artboards</a>
           </Link>
         </div>
     </div>

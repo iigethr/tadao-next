@@ -3,6 +3,7 @@ import React from "react"
 import Head from "next/head"
 // Components
 import MainMenu from "../components/main_menu"
+import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
 // CSS/SCSS
 import "../assets/stylesheets/tadao.scss"
@@ -77,6 +78,7 @@ export default (props) => {
         <div className="universal-box">
           <div className="universal-row">
             <Copyright />
+            <Cookies />
           </div>
         </div>
       </footer>

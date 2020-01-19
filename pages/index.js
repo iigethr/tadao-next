@@ -7,7 +7,7 @@ import project from "js-yaml-loader!../data/project.yml";
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
-  static async getInitialProps() {
+  static async getInitialProps(ctx) {
     // if (process.env.NODE_ENV == "production") {
     //   const PROJECT_SLUG = process.env.PROJECT_SLUG
     //   const HANKYO_ACCESS_TOKEN = process.env.HANKYO_ACCESS_TOKEN
