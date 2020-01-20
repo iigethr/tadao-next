@@ -57,22 +57,24 @@ export default (props) => {
         <meta name="twitter:description"  content="A basic kickstart setup for NextJS." />
         <meta name="twitter:image"        content="https://og-image.now.sh/Tadao%20%2B%20Next.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-white-triangle.svg" />
       </Head>
-      {/* Header */}
-      <header className="universal header">
-        <div className="universal-box">
-          <div className="universal-row">
-            <MainMenu />
+      <div className="sticky">
+        {/* Header */}
+        <header className="universal header">
+          <div className="universal-box">
+            <div className="universal-row">
+              <MainMenu />
+            </div>
           </div>
-        </div>
-      </header>
-      {/* Main */}
-      <main className="universal main">
-        <div className="universal-box">
-          <div className="universal-row">
-            { props.children }
+        </header>
+        {/* Main */}
+        <main className="universal main">
+          <div className="universal-box">
+            <div className="universal-row">
+              { props.children }
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
       {/* Footer */}
       <footer className="universal footer">
         <div className="universal-box">
