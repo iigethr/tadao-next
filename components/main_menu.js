@@ -13,11 +13,13 @@ class MainMenu extends React.Component {
                 <a className="link-m white mono">Home</a>
               </Link>
             </div>
-            <div className="main-menu-item">
-              <Link href="/design">
-                <a className="link-m white mono">Design</a>
-              </Link>
-            </div>
+            {/*
+              <div className="main-menu-item">
+                <Link href="/design">
+                  <a className="link-m white mono">Design</a>
+                </Link>
+              </div>
+            */}
         </div>
       </div>
     )
