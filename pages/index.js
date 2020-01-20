@@ -3,6 +3,8 @@ import Head from "next/head"
 // Data
 // import Hankyo from "@hankyo/hankyo";
 import project from "js-yaml-loader!../data/project.yml";
+// Components
+import Hero from "../components/hero"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
@@ -28,7 +30,7 @@ class Index extends React.Component {
   }
 
   render () {
-    const { data: { project: {name, description, subtitle }}} = this.props;
+    const project = this.props.data.project;
     return (
       <div>
         <Head>
@@ -39,11 +41,7 @@ class Index extends React.Component {
           <div className="container">
             <div className="container-box">
               <div className="container-row">
-                {/* should be a component and not "hardcoded"! :) */}
-                <h1 className="mono font-xxl lighter text-center white-cl">{name}</h1>
-                <p className="mono lighter text-center purple-100-cl">{description}</p>
-                <p className="mono font-s lighter text-center purple-900-cl">{subtitle}</p>
-                <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
+                <Hero project={project} />
               </div>
             </div>
           </div>

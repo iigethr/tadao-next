@@ -11,6 +11,10 @@
   animation: $time appear;
 }
 
+@mixin disappear-animation($time) {
+  animation: $time disappear;
+}
+
 // Keyframes
 // -------------------------------------------------------------
 
@@ -19,7 +23,13 @@
   100% { opacity: 1; }
 }
 
+@keyframes disappear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 // Classes
 // -------------------------------------------------------------
 .hover-animation { @include hover-animation(.25s); }
 .appear-animation { @include appear-animation(1s); }
+.disappear-animation { @include disappear-animation(1s); }

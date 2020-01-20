@@ -1,14 +1,19 @@
 // Base
 import Head from "next/head"
 // Data
-// import Hankyo from "@hankyo/hankyo";
-import design from "js-yaml-loader!../data/design.yml";
+import project from "js-yaml-loader!../data/project.yml";
+import section from "js-yaml-loader!../data/design.yml";
+// Components
+import PromoCard from "../components/promo_card"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
   static async getInitialProps() {
-    return { data: design }
+    return {
+      data: project,
+      section: section
+    }
   }
 
   componentDidMount() {
@@ -17,7 +22,8 @@ class Design extends React.Component {
   }
 
   render () {
-    const { data: { section: { name, description }}} = this.props;
+    const project = this.props.data.project;
+    const { section: { section: { name, description }}} = this.props;
     return (
       <div>
         <Head>
@@ -33,10 +39,7 @@ class Design extends React.Component {
                 <p className="mono lighter text-center purple-100-cl">{description}</p>
               </div>
               <div className="container-row">
-                {/* should be a component and not "hardcoded"! :) */}
-                <h3 className="mono font-l lighter text-center white-cl">Tadao + Next</h3>
-                <p className="mono lighter text-center purple-100-cl">A basic kickstart setup for <a href="https://nextjs.org/" target="_blank" rel="noreferrer">NextJS</a>. <br /> It comes pre-installed with Tadao - A Minimal and Lightweight Design System.</p>
-                <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
+                <PromoCard project={project} />
               </div>
             </div>
           </div>

@@ -72,12 +72,14 @@
 // 7) Components
 // ------------------------------------------------------------
 @import "lib/components/_template";
-@import "lib/components/_main_menu";
-@import "lib/components/_copyright";
-@import "lib/components/_cookies";
-
 @import "lib/components/_misc";
 @import "lib/components/_wrapper";
+
+@import "lib/components/_main_menu";
+@import "lib/components/_hero";
+@import "lib/components/_promo_card";
+@import "lib/components/_copyright";
+@import "lib/components/_cookies";
 
 // 8) Overriders
 // ------------------------------------------------------------

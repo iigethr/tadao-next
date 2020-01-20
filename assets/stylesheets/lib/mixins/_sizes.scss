@@ -36,6 +36,10 @@
 @mixin font-xxl {
   font-size: 32px;
   line-height: 48px;
+  &.magnify {
+    font-size: 64px;
+    line-height: 80px;
+  }
 }
 
 /////
