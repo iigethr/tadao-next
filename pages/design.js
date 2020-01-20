@@ -28,23 +28,14 @@ class Design extends React.Component {
           <div className="container">
             <div className="container-box">
               <div className="container-row">
+                {/* should be a component and not "hardcoded"! :) */}
                 <h1 className="mono font-xxl lighter text-center white-cl">{name}</h1>
                 <p className="mono lighter text-center purple-100-cl">{description}</p>
               </div>
-            </div>
-          </div>
-
-          <div className="separator-m"></div>
-
-          <div className="separator-m"></div>
-
-          <div className="container">
-            <div className="container-box">
               <div className="container-row">
+                {/* should be a component and not "hardcoded"! :) */}
                 <h3 className="mono font-l lighter text-center white-cl">Tadao + Next</h3>
                 <p className="mono lighter text-center purple-100-cl">A basic kickstart setup for <a href="https://nextjs.org/" target="_blank" rel="noreferrer">NextJS</a>. <br /> It comes pre-installed with Tadao - A Minimal and Lightweight Design System.</p>
-              </div>
-              <div className="container-row">
                 <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>

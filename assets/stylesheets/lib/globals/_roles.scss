@@ -14,14 +14,19 @@
   width: 100%;
 }
 
-.sticky {
-  min-height: calc(100vh - 144px); // 80px is the height of the footer.
+.footer {
+  min-height: 88px;
 }
 
 .footer {
   min-height: 144px;
 }
 
+.sticky {
+  min-height: calc(100vh - (88px + 144px)); // Minus the height of the header and footer.
+}
+
+.container,
 .container-top,
 .container-left,
 .container-middle,
@@ -32,13 +37,23 @@
   max-width: 100%;
   padding: 0;
   width: 100%;
-  .container-box {
+  .container-box,
+  .container-top-box,
+  .container-left-box,
+  .container-middle-box,
+  .container-right-box,
+  .container-bottom-box {
     float: left;
     margin: 0;
     max-width: 100%;
     padding: 0;
     width: 100%;
-    .container-item {
+    .container-row,
+    .container-top-row,
+    .container-left-row,
+    .container-middle-row,
+    .container-right-row,
+    .container-bottom-row {
       float: left;
       margin: 0;
       max-width: 100%;

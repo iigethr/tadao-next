@@ -39,11 +39,10 @@ class Index extends React.Component {
           <div className="container">
             <div className="container-box">
               <div className="container-row">
+                {/* should be a component and not "hardcoded"! :) */}
                 <h1 className="mono font-xxl lighter text-center white-cl">{name}</h1>
                 <p className="mono lighter text-center purple-100-cl">{description}</p>
                 <p className="mono font-s lighter text-center purple-900-cl">{subtitle}</p>
-              </div>
-              <div className="container-row">
                 <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
