@@ -1,6 +1,5 @@
 // Base
 import Head from "next/head"
-import Favicons from "../components/favicons"
 
 class Meta extends React.Component {
   render () {
@@ -11,7 +10,6 @@ class Meta extends React.Component {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="application-name" content={title}/>
-        <Favicons/>
         {/* Open Graph */}
         <meta property="og:type"        content={type} />
         <meta property="og:url"         content={url} />

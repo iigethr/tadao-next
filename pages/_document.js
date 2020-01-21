@@ -1,6 +1,8 @@
 // Base
 import Document, { Html, Head, Main, NextScript } from "next/document"
 import Meta from "../components/meta"
+import Favicons from "../components/favicons"
+
 // Data
 import meta from "js-yaml-loader!../data/meta.yml";
 
@@ -16,6 +18,7 @@ class MyDocument extends Document {
       <Html lang="en-GB">
         <Head>
           <Meta meta={meta} />
+          <Favicons/>
         </Head>
         <body className="purple-500-bg">
           <Main />
