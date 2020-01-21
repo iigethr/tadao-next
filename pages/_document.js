@@ -1,19 +1,22 @@
-// _document is only rendered on the server side and not on the client side
-// Event handlers like onClick can't be added to this file
-
-// ./pages/_document.js
+// Base
 import Document, { Html, Head, Main, NextScript } from "next/document"
+import Meta from "../components/meta"
+// Data
+import meta from "js-yaml-loader!../data/meta.yml";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    return { ...initialProps, meta: meta }
   }
 
   render() {
+    const meta = this.props.meta.meta;
     return (
       <Html lang="en-GB">
-        <Head />
+        <Head>
+          <Meta meta={meta} />
+        </Head>
         <body className="purple-500-bg">
           <Main />
           <NextScript />
