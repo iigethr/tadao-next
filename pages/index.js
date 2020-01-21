@@ -25,7 +25,7 @@ class Index extends React.Component {
     return (
       <div>
         <Head>
-          <title>{project.title}</title>
+          <title>{project.name}</title>
           <meta name="description" content={project.description} />
         </Head>
         <div className="root">
