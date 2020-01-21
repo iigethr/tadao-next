@@ -7,8 +7,10 @@ class Meta extends React.Component {
     return (
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        {/* Base */}
         <title>{title}</title>
         <meta name="description" content={description} />
+        {/* Application Name */}
         <meta name="application-name" content={title}/>
         {/* Open Graph */}
         <meta property="og:type"        content={type} />

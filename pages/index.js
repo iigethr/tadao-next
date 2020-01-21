@@ -1,4 +1,5 @@
 // Base
+import Head from "next/head"
 // Data
 import project from "js-yaml-loader!../data/project.yml";
 // Components
@@ -23,6 +24,10 @@ class Index extends React.Component {
     const project = this.props.project.project;
     return (
       <div>
+        <Head>
+          <title>{project.title}</title>
+          <meta name="description" content={project.description} />
+        </Head>
         <div className="root">
           <div className="container">
             <div className="container-box">
