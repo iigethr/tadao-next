@@ -7,7 +7,7 @@ class Copyright extends React.Component {
       <div className="copyright">
         <div className="copyright-box">
           <div className="copyright-row">
-            <p className="mono font-s purple-900-cl auto left center-h">2020 © <a href="https://www.iigethr.com/" target="_blank" rel="noreferrer">IIGETHR Ltd</a>. All rights reserved.</p>
+            <p className="mono font-s purple-900-cl text-center">2020 © <a href="https://www.iigethr.com/" target="_blank" rel="noreferrer">IIGETHR Ltd</a>. All rights reserved.</p>
           </div>
         </div>
       </div>

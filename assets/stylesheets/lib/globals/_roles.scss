@@ -14,16 +14,8 @@
   width: 100%;
 }
 
-.footer {
-  min-height: 88px;
-}
-
-.footer {
-  min-height: 144px;
-}
-
 .sticky {
-  min-height: calc(100vh - (88px + 144px)); // Minus the height of the header and footer.
+  min-height: calc(100vh - (80px + 80px)); // Minus the height of the header and footer.
 }
 
 .container,
