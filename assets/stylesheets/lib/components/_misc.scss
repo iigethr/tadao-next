@@ -5,19 +5,16 @@
 
 .header,
 .footer {
-  padding: 16px;
-}
-
-.header {
   min-height: 80px;
+  padding: 16px;
 }
 
 .main {
   padding: 32px 0;
 }
 
-.footer {
-  min-height: 80px;
+.sticky {
+  min-height: calc(100vh - (80px + 80px)); // Minus the height of the header and footer.
 }
 
 .chip {
@@ -28,11 +25,17 @@
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
+  .header {
+    min-height: 40px;
+  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$xs} {
+  .header {
+    min-height: 40px;
+  }
 }
 
 // Media Query 480px
