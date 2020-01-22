@@ -11,9 +11,11 @@ class Hero extends React.Component {
           </div>
           <div className="hero-row">
             <p className="mono font-l lighter text-center purple-100-cl">{description}</p>
+            <div className="separator-xxs"></div>
             <p className="mono font-m lighter text-center purple-900-cl">{subtitle}</p>
           </div>
           <div className="hero-row">
+            <div className="separator-xs"></div>
             <a className="mono button-xxl purple-dark center-h" href="https://github.com/iigethr/tadao-next" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
