@@ -13,7 +13,6 @@ export default (props) => {
       <header className="universal header">
         <div className="universal-box">
           <div className="universal-row">
-            {/* <MainMenu /> */}
           </div>
         </div>
       </header>
