@@ -15,11 +15,7 @@ class MyDocument extends Document {
   // TODO: need to add errorHandling
   componentDidMount() {
     ZahaAlignments.centerH()
-
-    const header = document.getElementById("header");
-    header.prepend(body);
-
-    console.log("Registered a Page.")
+    console.log("Registered Document.")
   }
 
   render() {

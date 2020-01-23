@@ -17,7 +17,7 @@ class Index extends React.Component {
   // TODO: need to add errorHandling
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered a Page.")
+    console.log("Registered a Page - Index")
   }
 
   render () {
