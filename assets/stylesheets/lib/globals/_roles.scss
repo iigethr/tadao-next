@@ -19,11 +19,11 @@
 }
 
 .footer {
-  min-height: 80px;
+  min-height: 88px;
 }
 
 .sticky {
-  min-height: calc(100vh - (80px + 80px)); // Minus the height of the header and footer.
+  min-height: calc(100vh - (80px + 88px)); // Minus the height of the header and footer.
 }
 
 .container,

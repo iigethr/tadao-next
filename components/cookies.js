@@ -43,9 +43,9 @@ class Cookies extends React.Component {
   render() {
     const { value, message, label, klass } = this.state;
     return (
-      <div onLoad={this.handleLoad} >
+      <div onLoad={this.handleLoad}>
         <div className={klass}>
-          <div className="cookies-box">
+          <div className="cookies-box `#{klass}`">
             <div className="cookies-row">
               <p className="text-center">{message}</p>
             </div>
