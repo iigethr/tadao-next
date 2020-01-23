@@ -33,13 +33,7 @@ body {
   padding: 0;
   scrollbar-width: none;
   width: auto;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
-  -webkit-perspective: none;
-  perspective: none;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
 }
 
 ::-webkit-scrollbar {

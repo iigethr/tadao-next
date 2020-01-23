@@ -10,9 +10,10 @@ export default (props) => {
   return (
     <div>
       {/* Header */}
-      <header className="universal header">
+      <header className="universal header fixeed" id="header">
         <div className="universal-box">
           <div className="universal-row">
+            <h1>Header</h1>
           </div>
         </div>
       </header>
@@ -23,6 +24,9 @@ export default (props) => {
         <main className="universal main">
           <div className="universal-box">
             <div className="universal-row">
+              { props.children }
+              { props.children }
+              { props.children }
               { props.children }
             </div>
           </div>

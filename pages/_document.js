@@ -12,6 +12,16 @@ class MyDocument extends Document {
     return { ...initialProps, meta: meta }
   }
 
+  // TODO: need to add errorHandling
+  componentDidMount() {
+    ZahaAlignments.centerH()
+
+    const header = document.getElementById("header");
+    header.prepend(body);
+
+    console.log("Registered a Page.")
+  }
+
   render() {
     const meta = this.props.meta.meta;
     return (
