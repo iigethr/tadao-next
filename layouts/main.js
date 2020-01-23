@@ -13,7 +13,6 @@ export default (props) => {
       <header className="universal header" id="header">
         <div className="universal-box">
           <div className="universal-row">
-            <h1>Header</h1>
           </div>
         </div>
       </header>
@@ -24,9 +23,6 @@ export default (props) => {
         <main className="universal main">
           <div className="universal-box">
             <div className="universal-row">
-              { props.children }
-              { props.children }
-              { props.children }
               { props.children }
             </div>
           </div>
