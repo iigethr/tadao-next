@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <Meta meta={meta} />
           <Favicons/>
         </Head>
-        <body className="purple-500-bg">
+        <body>
           <Main />
           <NextScript />
         </body>

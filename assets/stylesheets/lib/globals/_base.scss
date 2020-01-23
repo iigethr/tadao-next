@@ -23,7 +23,7 @@ body {
   @include border-box;
   @include clearfix;
   @include font-m;
-  background-color: $gray-000;
+  background-color: $purple-500;
   color: $gray-400;
   font-family: $sans;
   letter-spacing: .03em;
@@ -33,6 +33,13 @@ body {
   padding: 0;
   scrollbar-width: none;
   width: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-perspective: none;
+  perspective: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 ::-webkit-scrollbar {
@@ -57,7 +64,6 @@ button,
   -webkit-tap-highlight-color: $tap;
   text-decoration: none;
   vertical-align: bottom;
-  width: auto !important;
 }
 
 figure {
@@ -69,7 +75,6 @@ figure {
   margin: 0;
   max-width: 100%;
   padding: 32px;
-  vertical-align: bottom;
   width: 100%;
   figcaption {
     background-color: $white;
@@ -78,7 +83,6 @@ figure {
     float: left;
     margin: 0;
     max-width: 100%;
-    vertical-align: bottom;
     width: 100%;
   }
 }
@@ -93,7 +97,6 @@ svg {
   margin: 0;
   max-width: 100%;
   padding: 0;
-  vertical-align: bottom;
   width: auto;
 }
 
