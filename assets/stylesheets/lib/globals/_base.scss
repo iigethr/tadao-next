@@ -13,9 +13,9 @@
 }
 
 html {
-  background-color: $purple-500;
-  height: 100%;
-  overscroll-behavior: contain;
+  background-color: green;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   margin: 0;
   min-height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overscroll-behavior: contain;
   padding: 0;
   scrollbar-width: none;
@@ -45,8 +45,6 @@ body {
 
 body > .body-wrapper {
   @include appear-animation(.50s);
-  width: 100vw;
-  height: 100vh;
   background-color: green;
   margin: 0;
   overflow-x: hidden;
