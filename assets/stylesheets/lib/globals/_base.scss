@@ -13,7 +13,6 @@
 }
 
 html {
-  background-color: green;
   margin: 0;
   padding: 0;
 }
@@ -30,38 +29,32 @@ body {
   margin: 0;
   min-height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overscroll-behavior: contain;
   padding: 0;
   scrollbar-width: none;
   width: auto;
 }
 
-::-webkit-scrollbar {
+.body-wrapper {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.body-wrapper::-webkit-scrollbar {
   display: none;
   scrollbar-width: none;
   visibility: hidden;
 }
 
-body > .body-wrapper {
-  @include appear-animation(.50s);
-  background-color: green;
-  margin: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 0;
-  -webkit-overflow-scrolling: touch;
-}
-
 .root {
-  background-color: green;
   @include appear-animation(.50s);
-  margin: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 0;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
 }
 
 a,
