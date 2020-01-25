@@ -12,11 +12,6 @@ class MyDocument extends Document {
     return { ...initialProps, meta: meta }
   }
 
-  componentDidMount() {
-    ZahaAlignments.centerH()
-    console.log("Registered Document.")
-  }
-
   render() {
     const meta = this.props.meta.meta;
     return (

@@ -13,26 +13,13 @@ class Index extends React.Component {
       project: project
     }
   }
-  targetElement = null;
+
+  // targetElement = null;
+
   componentDidMount() {
     ZahaAlignments.centerH()
     console.log("Registered a Page - Index")
-    this.targetElement = document.querySelector('#targetElementId');
-  }
-
-  hideTargetElement = () => {
-    // ... some logic to hide target element
-
-    // 4. Re-enable body scroll
-    enableBodyScroll(this.targetElement);
-  }
-
-  componentWillUnmount() {
-    // 5. Useful if we have called disableBodyScroll for multiple target elements,
-    // and we just want a kill-switch to undo all that.
-    // OR useful for if the `hideTargetElement()` function got circumvented eg. visitor
-    // clicks a link which takes him/her to a different page within the app.
-    clearAllBodyScrollLocks();
+    // this.targetElement = document.querySelector('#targetElementId');
   }
 
   render () {
