@@ -36,10 +36,10 @@ export default (props) => {
         <div className="universal-box">
           <div className="universal-row">
             <Copyright />
-            <Cookies />
           </div>
         </div>
       </footer>
+      <Cookies />
     </div>
   )
 }
