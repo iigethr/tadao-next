@@ -15,6 +15,7 @@
 html {
   background-color: $purple-500;
   height: 100%;
+  overscroll-behavior: contain;
 }
 
 body {
