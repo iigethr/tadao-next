@@ -1,4 +1,4 @@
-/* Main Menu */
+// Main Menu
 
 import Link from "next/link"
 

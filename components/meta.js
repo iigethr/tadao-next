@@ -1,4 +1,5 @@
-// Base
+// Meta
+
 import Head from "next/head"
 
 class Meta extends React.Component {

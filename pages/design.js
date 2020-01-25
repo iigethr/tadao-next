@@ -1,12 +1,11 @@
-// Base
+// Design
+
 import Head from "next/head"
-// Data
+import PromoCard from "../components/promo_card"
+import ZahaAlignments from "@iigethr/zaha_alignments"
+
 import project from "js-yaml-loader!../data/project.yml";
 import section from "js-yaml-loader!../data/design.yml";
-// Components
-import PromoCard from "../components/promo_card"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
   static async getInitialProps() {

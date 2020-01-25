@@ -1,4 +1,5 @@
-// Base
+// _app
+
 import React from "react";
 import App from "next/app";
 import Layout from "../layouts/main"

@@ -1,11 +1,10 @@
-// Base
+// Index
+
 import Head from "next/head"
-// Data
-import project from "js-yaml-loader!../data/project.yml";
-// Components
 import Hero from "../components/hero"
-// Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
+
+import project from "js-yaml-loader!../data/project.yml";
 
 class Index extends React.Component {
   static async getInitialProps(ctx) {
@@ -14,7 +13,6 @@ class Index extends React.Component {
     }
   }
 
-  // TODO: need to add errorHandling
   componentDidMount() {
     ZahaAlignments.centerH()
     console.log("Registered a Page - Index")

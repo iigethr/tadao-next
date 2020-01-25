@@ -1,4 +1,4 @@
-/* Hero */
+// Hero
 
 class Hero extends React.Component {
   render () {

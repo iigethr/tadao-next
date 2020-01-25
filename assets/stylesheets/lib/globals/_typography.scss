@@ -49,6 +49,7 @@ blockquote {
 
 ol,
 ul {
+  @include font-m;
   list-style-position: inside;
   margin: 32px;
   padding: 0;

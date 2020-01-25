@@ -6,7 +6,7 @@
 .header,
 .main,
 .footer,
-.sticky {
+.sticky-footer {
   float: left;
   margin: 0;
   max-width: 100%;
@@ -19,9 +19,12 @@
 }
 
 .fixed-header {
+  background-color: red;
+  height: 80px;
   left: 0;
-  position: fixed;
+  position: absolute;
   right: 0;
+  top: 0;
   z-index: 9999;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -36,8 +39,15 @@
   min-height: 80px;
 }
 
-.sticky {
+.sticky-footer {
   min-height: calc(100vh - (80px + 80px)); // Minus the height of the header and footer.
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-perspective: none;
+  perspective: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .main {

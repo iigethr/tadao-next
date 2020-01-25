@@ -1,16 +1,16 @@
-// Base
+// Main
+
 import React from "react"
-// Components
 import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
-// CSS/SCSS
+
 import "../assets/stylesheets/tadao.scss"
 
 export default (props) => {
   return (
     <div>
       {/* Header */}
-      <header className="universal header" id="header">
+      <header className="universal header fixed-header" id="header">
         <div className="universal-box">
           <div className="universal-row">
           </div>
@@ -18,7 +18,7 @@ export default (props) => {
       </header>
 
       {/* Sticky */}
-      <div className="sticky">
+      <div className="sticky-footer">
         {/* Main */}
         <main className="universal main">
           <div className="universal-box">

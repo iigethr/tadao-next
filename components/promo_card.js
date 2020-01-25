@@ -1,4 +1,4 @@
-/* Promo Card */
+// Promo Card
 
 class PromoCard extends React.Component {
   render () {

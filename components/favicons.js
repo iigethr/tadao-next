@@ -1,4 +1,5 @@
-// Base
+// Favicons
+
 import Head from "next/head"
 
 class Favicons extends React.Component {

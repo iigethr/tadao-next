@@ -1,4 +1,4 @@
-/* Cookies */
+// Cookies
 
 import cookies from "next-cookies"
 
