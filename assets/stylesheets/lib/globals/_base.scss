@@ -42,7 +42,20 @@ body {
   visibility: hidden;
 }
 
+body > .body-wrapper {
+  @include appear-animation(.50s);
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
 .root {
+  background-color: green;
   @include appear-animation(.50s);
   margin: 0;
   overflow-x: hidden;

@@ -26,8 +26,10 @@ class MyDocument extends Document {
           <Favicons/>
         </Head>
         <body>
-          <Main />
-          <NextScript />
+          <div className="body-wrapper">
+            <Main />
+            <NextScript />
+          </div>
         </body>
       </Html>
     )
