@@ -10,6 +10,9 @@
   letter-spacing: .03em;
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch
 }
 
 html {
@@ -25,7 +28,7 @@ body {
 }
 
 body {
-  @include appear-animation(.50s);
+  @include appear-animation(.25s);
   @include border-box;
   @include clearfix;
   @include font-m;
@@ -38,7 +41,15 @@ body {
   overflow-y: scroll;
   overscroll-behavior: contain;
   scrollbar-width: none;
+  -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch
+}
+
+*::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  visibility: hidden;
 }
 
 .body-root,

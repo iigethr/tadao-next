@@ -8,7 +8,7 @@ import "../assets/stylesheets/tadao.scss"
 
 export default (props) => {
   return (
-    <div>
+    <div className="root">
       {/* Header */}
       <header className="universal header fixed-header">
         <div className="universal-box">
