@@ -16,9 +16,11 @@ class Index extends React.Component {
   componentDidMount() {
     ZahaAlignments.centerH();
     const body = document.getElementsByTagName("body")[0];
-    body.ontouchstart = (e) => {
-      e.preventDefault();
-    };
+
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode("Water");
+    node.appendChild(textnode);
+    document.getElementsByTagName("html")[0].prepend(node);
     console.log("Registered a Page - Index")
   }
 
