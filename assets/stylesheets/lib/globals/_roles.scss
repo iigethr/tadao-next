@@ -19,6 +19,7 @@
 }
 
 .fixed-header {
+  background-color: $purple-900;
   height: 80px;
   left: 0;
   position: fixed;
@@ -27,7 +28,6 @@
   z-index: 9999;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch;
   -webkit-perspective: none;
   perspective: none;
   -webkit-transform: translate3d(0, 0, 0);

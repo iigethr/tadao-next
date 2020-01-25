@@ -12,33 +12,38 @@
   padding: 0;
 }
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
+  height: auto;
   width: 100%;
-  min-height: 100%;
 }
 
 body {
   @include appear-animation(.50s);
   @include border-box;
+  @include clearfix;
   @include font-m;
   background-color: $purple-500;
   color: $gray-400;
   font-family: $sans;
   letter-spacing: .03em;
-  margin: 0;
   min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
   overscroll-behavior: contain;
-  padding: 0;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch
 }
 
-.body-wrapper {
-}
-
+.body-root,
 .root {
   @include appear-animation(.50s);
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 a,
