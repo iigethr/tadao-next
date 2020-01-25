@@ -4,7 +4,7 @@ import Head from "next/head"
 
 class Meta extends React.Component {
   render () {
-    const { title, description, type, url, image, card, handle } = this.props.meta;
+    const { title, description, type, url, image, card, handle } = this.props.meta
     return (
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

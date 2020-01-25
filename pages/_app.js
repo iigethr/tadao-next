@@ -1,12 +1,12 @@
 // _app
 
-import React from "react";
-import App from "next/app";
+import React from "react"
+import App from "next/app"
 import Layout from "../layouts/main"
 
 class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps } = this.props
     return (
       <Layout>
         <Component {...pageProps} />
@@ -15,4 +15,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default MyApp

@@ -4,8 +4,8 @@ import Head from "next/head"
 import PromoCard from "../components/promo_card"
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
-import project from "js-yaml-loader!../data/project.yml";
-import section from "js-yaml-loader!../data/design.yml";
+import project from "js-yaml-loader!../data/project.yml"
+import section from "js-yaml-loader!../data/design.yml"
 
 class Design extends React.Component {
   static async getInitialProps() {
@@ -21,8 +21,8 @@ class Design extends React.Component {
   }
 
   render () {
-    const project = this.props.data.project;
-    const { section: { section: { name, description }}} = this.props;
+    const project = this.props.data.project
+    const { section: { section: { name, description }}} = this.props
     return (
       <div>
         <Head>
@@ -62,8 +62,8 @@ class Design extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Design;
+export default Design

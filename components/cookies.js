@@ -41,7 +41,7 @@ class Cookies extends React.Component {
   }
 
   render() {
-    const { value, message, label, klass } = this.state;
+    const { value, message, label, klass } = this.state
     return (
       <div onLoad={this.handleLoad}>
         <div className={klass}>

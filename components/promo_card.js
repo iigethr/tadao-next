@@ -2,7 +2,7 @@
 
 class PromoCard extends React.Component {
   render () {
-    const { name, description, subtitle } = this.props.project;
+    const { name, description, subtitle } = this.props.project
     return (
       <div className="promo-card">
         <div className="promo-card-box">

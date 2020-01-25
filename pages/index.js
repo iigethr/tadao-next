@@ -4,7 +4,7 @@ import Head from "next/head"
 import Hero from "../components/hero"
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
-import project from "js-yaml-loader!../data/project.yml";
+import project from "js-yaml-loader!../data/project.yml"
 
 class Index extends React.Component {
   static async getInitialProps(ctx) {
@@ -19,7 +19,7 @@ class Index extends React.Component {
   }
 
   render () {
-    const project = this.props.project.project;
+    const project = this.props.project.project
     return (
       <div>
         <Head>
@@ -34,8 +34,8 @@ class Index extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index

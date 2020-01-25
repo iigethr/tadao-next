@@ -3,7 +3,7 @@
 context("Cookies", () => {
   beforeEach(() => {
     Cypress.Cookies.debug(true)
-    cy.visit("/");
+    cy.visit("/")
     cy.clearCookies()
   })
 

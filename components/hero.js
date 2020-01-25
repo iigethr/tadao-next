@@ -2,7 +2,7 @@
 
 class Hero extends React.Component {
   render () {
-    const { name, description, subtitle } = this.props.project;
+    const { name, description, subtitle } = this.props.project
     return (
       <div className="hero">
         <div className="hero-box">
