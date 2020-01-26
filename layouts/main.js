@@ -10,7 +10,7 @@ export default (props) => {
   return (
     <div className="root">
       {/* Header */}
-      <header className="universal header fixed-header">
+      <header className="universal header">
         <div className="universal-box">
           <div className="universal-row">
           </div>
