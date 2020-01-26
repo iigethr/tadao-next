@@ -9,7 +9,7 @@ $class: "overlay";
   // @include appear-animation(1s);
   background-color: $black;
   bottom: 0;
-  display: none;
+  display: block;
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -18,7 +18,7 @@ $class: "overlay";
   top: 0;
   width: 100%;
   z-index: 1;
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 .#{$class}-button {

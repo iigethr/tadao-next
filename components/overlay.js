@@ -13,7 +13,7 @@ class Overlay extends React.Component {
     buttonOff.style.display = "block"
     // Overlay
     overlay.style.display = "block"
-    overlay.style.visibility = "visible"
+    // overlay.style.visibility = "visible"
   }
 
   off(event) {
@@ -26,7 +26,7 @@ class Overlay extends React.Component {
     buttonOff.style.display = "none"
     // Overlay
     overlay.style.display = "none"
-    overlay.style.visibility = "hidden"
+    // overlay.style.visibility = "hidden"
   }
 
   componentDidMount() {
