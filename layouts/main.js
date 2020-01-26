@@ -1,6 +1,7 @@
 // Main
 
 import React from "react"
+import Overlay from "../components/overlay"
 import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
 
@@ -13,6 +14,7 @@ export default (props) => {
       <header className="universal header">
         <div className="universal-box">
           <div className="universal-row">
+            <Overlay />
           </div>
         </div>
       </header>
