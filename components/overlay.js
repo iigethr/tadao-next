@@ -50,7 +50,7 @@ class Overlay extends React.Component {
           <Link href="#">
             <a onClick={this.off} className="link-m white overlay-button overlay-off center-h" id="overlay-off">Close Overlay</a>
           </Link>
-          <p>Curabitur blandit tempus porttitor. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus.</p>
+          <p className="left">Curabitur blandit tempus porttitor. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus.</p>
         </div>
       </div>
     )
