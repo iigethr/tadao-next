@@ -95,7 +95,7 @@
   .header {
     min-height: 40px;
   }
-  .sticky {
+  .sticky-footer {
     min-height: calc(100vh - (40px + 80px)); // Minus the height of the header and footer.
   }
 }
@@ -106,7 +106,7 @@
   .header {
     min-height: 40px;
   }
-  .sticky {
+  .sticky-footer {
     min-height: calc(100vh - (40px + 80px)); // Minus the height of the header and footer.
   }
 }
@@ -117,7 +117,7 @@
   .header {
     min-height: 40px;
   }
-  .sticky {
+  .sticky-footer {
     min-height: calc(100vh - (40px + 80px)); // Minus the height of the header and footer.
   }
 }
