@@ -5,8 +5,15 @@ const withImages        = require("next-optimized-images")
 const withCss           = require("@zeit/next-css")
 const withSass          = require("@zeit/next-sass")
 const withYml           = require("js-yaml-loader")
+
 // Note: Keep it Last here and withPlugins()
-const withTM            = require("next-transpile-modules")(["js-cookie", "next-cookies", "@hankyo/hankyo", "@iigethr/zaha_alignments"])
+const withTM  = require("next-transpile-modules")([
+  "js-cookie",
+  "next-cookies",
+  "@hankyo/hankyo",
+  "@iigethr/zaha_alignments",
+  "@iigethr/zaha_overlay"
+])
 
 // withSass
 const withSassConfig = {

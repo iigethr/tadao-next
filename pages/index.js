@@ -3,6 +3,7 @@
 import Head from "next/head"
 import Hero from "../components/hero"
 import ZahaAlignments from "@iigethr/zaha_alignments"
+import ZahaOverlay from "@iigethr/zaha_overlay"
 
 import project from "js-yaml-loader!../data/project.yml"
 

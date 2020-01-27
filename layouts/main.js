@@ -11,7 +11,6 @@ export default (props) => {
   return (
     <div className="root">
       {/* Header */}
-      <Overlay />
       <header className="universal header">
         <div className="universal-box">
           <div className="universal-row">
