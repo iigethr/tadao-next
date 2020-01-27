@@ -6,7 +6,6 @@
 $class: "overlay";
 
 .#{$class} {
-  // @include appear-animation(1s);
   background-color: $black;
   bottom: 0;
   display: none;
