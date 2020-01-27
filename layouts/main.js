@@ -10,10 +10,12 @@ import "../assets/stylesheets/tadao.scss"
 export default (props) => {
   return (
     <div className="root">
+      <Overlay />
       {/* Header */}
       <header className="universal header">
         <div className="universal-box">
           <div className="universal-row">
+            <a href="#" id="overlay-on" className="link-m white">Overlay On Button</a>
           </div>
         </div>
       </header>

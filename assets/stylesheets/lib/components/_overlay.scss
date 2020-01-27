@@ -9,30 +9,17 @@ $class: "overlay";
   // @include appear-animation(1s);
   background-color: $black;
   bottom: 0;
-  display: block;
+  display: none;
   height: 100%;
+  height: 100vh;
   left: 0;
   overflow: hidden;
   position: fixed;
   right: 0;
   top: 0;
   width: 100%;
-  // visibility: hidden;
+  visibility: hidden;
   z-index: 1;
-}
-
-.#{$class}-button {
-  float: left;
-  margin: 28px 0;
-  cursor: pointer;
-}
-
-.#{$class}-on {
-  @include appear-animation(1s);
-}
-
-.#{$class}-off {
-  @include appear-animation(2s);
 }
 
 // Media Query 240px

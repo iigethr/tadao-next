@@ -8,11 +8,11 @@
 }
 
 @mixin appear-animation($time) {
-  animation: $time appear;
+  animation: appear ease $time;
 }
 
 @mixin disappear-animation($time) {
-  animation: $time disappear;
+  animation: disappear ease $time forwards;
 }
 
 // Keyframes

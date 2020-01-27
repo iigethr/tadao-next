@@ -908,10 +908,10 @@
   resolved "https://registry.yarnpkg.com/@iigethr/zaha_alignments/-/zaha_alignments-0.0.4.tgz#dac988f3fb296439e9b54ab1b6f80b3ac28b60b7"
   integrity sha512-GV8leYdnHMAkcOSNm8szIAHZROfASVPOW6TL2BGefwAbUXkaa+8kiOrR8YZHfawsCYVH9oJoDIDryfOlvdf/9g==
 
-"@iigethr/zaha_overlay@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@iigethr/zaha_overlay/-/zaha_overlay-0.0.1.tgz#f167a6093a5e02fcb92abd61141272befb487072"
-  integrity sha512-1jXqpjHEv9vmCR31rihmbLiNwD731pgdWt0ienJlv4CRL9xGOkKfHuh3sgEtG5RcWwzg/h/PD/xxPgHGKCQx5w==
+"@iigethr/zaha_overlay@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@iigethr/zaha_overlay/-/zaha_overlay-0.0.3.tgz#1b90ecfa1959977251c48972f63d9004edb03601"
+  integrity sha512-vXTVfbfgqAteVQ08CJMevdpYjBFX8JmBHfWHLgYTrkHykgwVBDsLhGcGhVNO4j4egTntFBLHNC7ygxSrC8/1Cw==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"

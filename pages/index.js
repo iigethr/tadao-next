@@ -15,6 +15,7 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
+    ZahaOverlay.basic()
     ZahaAlignments.centerH()
     console.log("Registered a Page - Index")
   }
