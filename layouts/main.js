@@ -2,6 +2,7 @@
 
 import React from "react"
 import Overlay from "../components/overlay"
+import OverlaySecondary from "../components/overlay_secondary"
 import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
 
@@ -11,11 +12,13 @@ export default (props) => {
   return (
     <div className="root">
       <Overlay />
+      <OverlaySecondary />
       {/* Header */}
       <header className="universal header">
         <div className="universal-box">
           <div className="universal-row">
-            <a href="#" id="overlay-on" className="link-m white">Overlay On Button</a>
+            <a href="#" id="overlay-on" className="link-m white left">Overlay On Button</a>
+            <a href="#" id="overlay-on-secondary" className="link-m white right">Overlay On Button</a>
           </div>
         </div>
       </header>

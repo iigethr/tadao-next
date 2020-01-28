@@ -15,7 +15,8 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    ZahaOverlay.basic()
+    ZahaOverlay.basic("overlay", "overlay-on", "overlay-off")
+    ZahaOverlay.basic("overlay-secondary", "overlay-on-secondary", "overlay-off-secondary")
     ZahaAlignments.centerH()
     console.log("Registered a Page - Index")
   }
