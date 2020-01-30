@@ -3,10 +3,23 @@
 // Project: Tadao by IIGETHR
 // -------------------------------------------------------------
 
-// Black & White
+// Transparent
+// -------------------------------------------------------------
+.transparent-bg { background-color: $transparent !important; }
+.transparent-cl { background-color: $transparent !important; }
+
+// Black
 // -------------------------------------------------------------
 .black-bg { background-color: $black !important; }
 .black-cl { color: $black !important; }
+
+// Deep Black
+// -------------------------------------------------------------
+.deep-black-bg { background-color: $deep-black !important; }
+.deep-black-cl { color: $deep-black !important; }
+
+// White
+// -------------------------------------------------------------
 .white-bg { background-color: $white !important; }
 .white-cl { color: $white !important; }
 
@@ -82,6 +95,30 @@
 .blue-800-cl { color: $blue-800 !important; }
 .blue-900-cl { color: $blue-900 !important; }
 
+// Aqua
+// -------------------------------------------------------------
+.aqua-000-bg { background-color: $aqua-000 !important; }
+.aqua-100-bg { background-color: $aqua-100 !important; }
+.aqua-200-bg { background-color: $aqua-200 !important; }
+.aqua-300-bg { background-color: $aqua-300 !important; }
+.aqua-400-bg { background-color: $aqua-400 !important; }
+.aqua-500-bg { background-color: $aqua-500 !important; }
+.aqua-600-bg { background-color: $aqua-600 !important; }
+.aqua-700-bg { background-color: $aqua-700 !important; }
+.aqua-800-bg { background-color: $aqua-800 !important; }
+.aqua-900-bg { background-color: $aqua-900 !important; }
+
+.aqua-000-cl { color: $aqua-000 !important; }
+.aqua-100-cl { color: $aqua-100 !important; }
+.aqua-200-cl { color: $aqua-200 !important; }
+.aqua-300-cl { color: $aqua-300 !important; }
+.aqua-400-cl { color: $aqua-400 !important; }
+.aqua-500-cl { color: $aqua-500 !important; }
+.aqua-600-cl { color: $aqua-600 !important; }
+.aqua-700-cl { color: $aqua-700 !important; }
+.aqua-800-cl { color: $aqua-800 !important; }
+.aqua-900-cl { color: $aqua-900 !important; }
+
 // Green
 // -------------------------------------------------------------
 .green-000-bg { background-color: $green-000 !important; }
@@ -105,6 +142,30 @@
 .green-700-cl { color: $green-700 !important; }
 .green-800-cl { color: $green-800 !important; }
 .green-900-cl { color: $green-900 !important; }
+
+// Lime
+// -------------------------------------------------------------
+.lime-000-bg { background-color: $lime-000 !important; }
+.lime-100-bg { background-color: $lime-100 !important; }
+.lime-200-bg { background-color: $lime-200 !important; }
+.lime-300-bg { background-color: $lime-300 !important; }
+.lime-400-bg { background-color: $lime-400 !important; }
+.lime-500-bg { background-color: $lime-500 !important; }
+.lime-600-bg { background-color: $lime-600 !important; }
+.lime-700-bg { background-color: $lime-700 !important; }
+.lime-800-bg { background-color: $lime-800 !important; }
+.lime-900-bg { background-color: $lime-900 !important; }
+
+.lime-000-cl { color: $lime-000 !important; }
+.lime-100-cl { color: $lime-100 !important; }
+.lime-200-cl { color: $lime-200 !important; }
+.lime-300-cl { color: $lime-300 !important; }
+.lime-400-cl { color: $lime-400 !important; }
+.lime-500-cl { color: $lime-500 !important; }
+.lime-600-cl { color: $lime-600 !important; }
+.lime-700-cl { color: $lime-700 !important; }
+.lime-800-cl { color: $lime-800 !important; }
+.lime-900-cl { color: $lime-900 !important; }
 
 // Yellow
 // -------------------------------------------------------------
@@ -177,3 +238,27 @@
 .red-700-cl { color: $red-700 !important; }
 .red-800-cl { color: $red-800 !important; }
 .red-900-cl { color: $red-900 !important; }
+
+// Pink
+// -------------------------------------------------------------
+.pink-000-bg { background-color: $pink-000 !important; }
+.pink-100-bg { background-color: $pink-100 !important; }
+.pink-200-bg { background-color: $pink-200 !important; }
+.pink-300-bg { background-color: $pink-300 !important; }
+.pink-400-bg { background-color: $pink-400 !important; }
+.pink-500-bg { background-color: $pink-500 !important; }
+.pink-600-bg { background-color: $pink-600 !important; }
+.pink-700-bg { background-color: $pink-700 !important; }
+.pink-800-bg { background-color: $pink-800 !important; }
+.pink-900-bg { background-color: $pink-900 !important; }
+
+.pink-000-cl { color: $pink-000 !important; }
+.pink-100-cl { color: $pink-100 !important; }
+.pink-200-cl { color: $pink-200 !important; }
+.pink-300-cl { color: $pink-300 !important; }
+.pink-400-cl { color: $pink-400 !important; }
+.pink-500-cl { color: $pink-500 !important; }
+.pink-600-cl { color: $pink-600 !important; }
+.pink-700-cl { color: $pink-700 !important; }
+.pink-800-cl { color: $pink-800 !important; }
+.pink-900-cl { color: $pink-900 !important; }
