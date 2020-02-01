@@ -37,38 +37,14 @@ class Design extends React.Component {
         <div className="container-middle">
           <div className="container-middle-box">
             <div className="container-middle-row">
-              {/* Sans-serif */}
-              <div className="design-cards">
-                <div className="design-cards-box">
-                  <div className="design-cards-row">
-                    <h3 className="font-l lighter">Sans-serif</h3>
-                    <p className="sans">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="separator-s" />
-              {/* Serif */}
-              <div className="design-cards">
-                <div className="design-cards-box">
-                  <div className="design-cards-row">
-                    <h3 className="font-l lighter">Serif</h3>
-                    <p className="serif">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="separator-s" />
-              {/* Monospaced */}
-              <div className="design-cards">
-                <div className="design-cards-box">
-                  <div className="design-cards-row">
-                    <h3 className="font-l lighter">Monospaced</h3>
-                    <p className="mono">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="separator-s" />
-
+              <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+              </blockquote>
+              <ol>
+                <li>Pellentesque Cursus Fermentum Etiam Vehicula Magna Fusce</li>
+                <li>Nibh Lorem Sem Lorem Pellentesque</li>
+                <li>Magna Mattis Dolor Adipiscing Pellentesque</li>
+              </ol>
               {/* Elements */}
               <div className="design-cards">
                 <div className="design-cards-box">
@@ -84,6 +60,11 @@ class Design extends React.Component {
                   </div>
                 </div>
               </div>
+              <ul>
+                <li>Pellentesque Cursus Fermentum Etiam Vehicula Magna Fusce</li>
+                <li>Nibh Lorem Sem Lorem Pellentesque</li>
+                <li>Magna Mattis Dolor Adipiscing Pellentesque</li>
+              </ul>
               {/* Elements */}
               <div className="design-cards">
                 <div className="design-cards-box">

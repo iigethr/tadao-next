@@ -73,7 +73,7 @@ class Design extends React.Component {
                       <div className="media-box">
                         <div className="media-item center-h">
                           <div className="video">
-                            <iframe src="https://player.vimeo.com/video/386831576" width="228" height="128" frameBorder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/386831576" width="228" height="128" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                             <div className="vidcaption">This is a caption</div>
                           </div>
                         </div>

@@ -98,7 +98,8 @@ form {
     border: 0;
     box-shadow: none;
     color: $gray;
-    display: inline;
+    display: block;
+    float: left;
     font-size: 16px;
     max-width: 100%;
     outline: none;

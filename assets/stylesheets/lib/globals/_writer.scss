@@ -9,21 +9,25 @@
   h3,
   h4,
   h5,
-  h6,
-  ul,
-  ol {
+  h6 {
     float: left;
     width: 100%;
   }
-
-  p,
-  .text {
-    text-align: top;
-    @include clearfix;
+  blockquote {
+    margin: 32px;
+    padding: 32px;
+    width: calc(100% - 64px); // minus the left (32px) & right (32px) margin
   }
-}
-
-.writer {
+  ol,
+  ul {
+    padding: 28px 32px;
+    li {
+      float: left;
+      margin: 4px 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
   h1 {
     @include font-xxl;
     margin: 1.6em 0 .4em;
@@ -33,19 +37,19 @@
     margin: 1.6em 0 .4em;
   }
   h3 {
-    @include font-m;
+    @include font-l;
     margin: 1.6em 0 .4em;
   }
   h4 {
-    @include font-s;
+    @include font-m;
     margin: 1.6em 0 .4em;
   }
   h5 {
-    @include font-xs;
+    @include font-s;
     margin: 1.6em 0 .2em;
   }
   h6 {
-    @include font-xxs;
+    @include font-xs;
     margin: 2em 0 0;
   }
   p,
@@ -53,17 +57,159 @@
     @include font-m;
     margin: 1em 0;
   }
+  .media {
+    float: left;
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0;
+    .media-box {
+      float: left;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      .media-item {
+        float: left;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+      }
+    }
+    figcaption,
+    .vidcaption {
+      text-align: center;
+    }
+    &.left {
+      max-height: 60%;
+      max-width: 60%;
+      .media-box {
+        .media-item {
+          padding: 8px 16px 8px 0;
+        }
+      }
+    }
+    &.right {
+      max-height: 60%;
+      max-width: 60%;
+      .media-box {
+        .media-item {
+          padding: 8px 0 8px 16px;
+        }
+      }
+    }
+    &.wide {
+      max-height: 100%;
+      max-width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+  }
 }
 
 
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
+  .writer {
+    .media {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        height: 100%;
+        width: 100%;
+        .media-item {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &.left {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        .media-box {
+          .media-item {
+            padding: 8px 0;
+          }
+        }
+      }
+      &.right {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        .media-box {
+          .media-item {
+            padding: 8px 0;
+          }
+        }
+      }
+      &.wide {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        .media-box {
+          .media-item {
+            padding: 8px 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$xs} {
+  .writer {
+    .media {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        height: 100%;
+        width: 100%;
+        .media-item {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &.left {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        .media-box {
+          .media-item {
+            padding: 8px 0;
+          }
+        }
+      }
+      &.right {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        .media-box {
+          .media-item {
+            padding: 8px 0;
+          }
+        }
+      }
+      &.wide {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        .media-box {
+          .media-item {
+            padding: 8px 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Media Query 480px

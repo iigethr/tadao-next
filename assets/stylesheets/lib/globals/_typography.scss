@@ -15,7 +15,6 @@ p,
   display: block;
   margin: 0;
   padding: 0;
-  width: auto;
   a {
     color: inherit;
     display: inline;
@@ -32,9 +31,9 @@ p,
 blockquote {
   background-color: $gray-000;
   float: left;
-  margin: 32px;
-  padding: 32px;
-  width: calc(100% - 64px);
+  margin: 0;
+  padding: 16px;
+  width: 100%;
 }
 
 ol,
@@ -43,11 +42,11 @@ ul {
   display: block;
   list-style-position: inside;
   margin: 0;
-  padding: 28px 32px;
+  padding: 0;
   width: 100%;
   li {
     float: left;
-    margin: 4px 0;
+    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -68,7 +67,6 @@ strong {
   vertical-align: baseline;
 }
 
-
 abbr   { cursor: help; text-decoration: underline dashed; }
 code   { @include font-s; }
 del    { text-decoration: line-through; }
@@ -82,43 +80,16 @@ strong { font-weight: bold; }
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
-  blockquote {
-    margin: 16px 0;
-    padding: 16px;
-    width: 100%;
-  }
-  ol,
-  ul {
-    margin: 16px 0;
-  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$xs} {
-  blockquote {
-    margin: 16px 0;
-    padding: 16px;
-    width: 100%;
-  }
-  ol,
-  ul {
-    margin: 16px 0;
-  }
 }
 
 // Media Query 480px
 // -------------------------------------------------------------
 @media #{$s} {
-  blockquote {
-    margin: 16px;
-    padding: 16px;
-    width: calc(100% - 32px);
-  }
-  ol,
-  ul {
-    margin: 16px;
-  }
 }
 
 // Media Query 720px
