@@ -20,6 +20,7 @@
   }
   ol,
   ul {
+    margin: 0 0 8px;
     padding: 28px 32px;
     li {
       float: left;
@@ -55,7 +56,7 @@
   p,
   .text {
     @include font-m;
-    margin: 1em 0;
+    margin: 0 0 1em;
   }
   .media {
     float: left;

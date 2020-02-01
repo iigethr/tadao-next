@@ -1,12 +1,13 @@
 // Design
 
+// React
 import React from "react"
 import Head from "next/head"
-
-import DesignAside from "../components/design/design_aside"
+// Components
 import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
-
+import DesignAside from "../components/design/design_aside"
+// SCSS
 import "../assets/stylesheets/tadao.scss"
 
 export default (props) => {

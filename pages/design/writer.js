@@ -1,27 +1,23 @@
 // Design
 
+// React
 import Head from "next/head"
-import ZahaAlignments from "@iigethr/zaha_alignments"
+// Data
+import writer from "js-yaml-loader!../../data/writer.yml"
 
-import project from "js-yaml-loader!../../data/project.yml"
-import section from "js-yaml-loader!../../data/design.yml"
-
-class Design extends React.Component {
+class Writer extends React.Component {
   static async getInitialProps() {
     return {
-      data: project,
-      section: section
+      writer: writer
     }
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Page - Colours")
   }
 
   render () {
-    const project = this.props.data.project
-    const { section: { section: { name, description }}} = this.props
+    const writer = this.props.writer.writer
     return (
       <div>
         <Head>
@@ -29,11 +25,10 @@ class Design extends React.Component {
           <meta name="description" content="A basic kickstart setup for NextJS." />
         </Head>
         <div className="container-top">
-          <h1 className="font-xl lighter">Writer</h1>
+          <h1 className="font-xl lighter">{writer.name}</h1>
           <div className="separator-xs" />
-          <p>Utilities for controlling the font family of an element.</p>
+          <p>{writer.description}</p>
         </div>
-        <div className="separator-s" />
         <div className="container-middle">
           <div className="container-middle-box">
             <div className="container-middle-row">
@@ -41,7 +36,6 @@ class Design extends React.Component {
               <div className="design-cards">
                 <div className="design-cards-box">
                   <div className="design-cards-row writer">
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <abbr>Donec</abbr> ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
                     <h1>Header 1</h1>
                     <p>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. <a href="#">Etiam porta sem malesuada magna mollis euismod.</a> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
                     <div className="media left">
@@ -55,12 +49,12 @@ class Design extends React.Component {
                       </div>
                     </div>
                     <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.
-
+                    <br />
                     Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
                     <br />
                     <br />
                     Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
+                    <br />
                     Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
                     <ul>
                       <li>Pellentesque Cursus Fermentum Etiam Vehicula Magna Fusce</li>
@@ -79,7 +73,13 @@ class Design extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <p>Donec sed odio dui. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <br /><br /> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /><br /> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    <p>Donec sed odio dui. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                    <br />
+                    <br />
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br />
+                    <br />
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
                     <ol>
                       <li>Pellentesque Cursus Fermentum</li>
                       <li>Nibh Lorem</li>
@@ -89,7 +89,10 @@ class Design extends React.Component {
                     <h3>Header 3</h3>
                     <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum.</p>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod.
-                    Nullam id dolor id nibh ultricies vehicula ut id elit. <br /> <br /> Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    Nullam id dolor id nibh ultricies vehicula ut id elit.
+                    <br />
+                    <br />
+                    Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
                     <h4>Header 4</h4>
                     <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. <mark>Sed posu consectetur est at lobortis.</mark> Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
                     <blockquote cite="http://www.worldwildlife.org/who/index.html">
@@ -112,4 +115,4 @@ class Design extends React.Component {
   }
 }
 
-export default Design
+export default Writer

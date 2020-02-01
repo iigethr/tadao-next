@@ -23,6 +23,11 @@ class AsideMenu extends React.Component {
                 <a className="link-m white mono">Colours</a>
               </Link>
             </div>
+            <div className="design-aside-item">
+              <Link href="/design/writer">
+                <a className="link-m white mono">Writer</a>
+              </Link>
+            </div>
         </div>
       </div>
     )
