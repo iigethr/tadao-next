@@ -1,4 +1,7 @@
 User-agent: *
+Crawl-delay: 120
 Disallow: /assets
+Disallow: /design
+Disallow: /design/*
 Disallow: /components
 Disallow: /layouts

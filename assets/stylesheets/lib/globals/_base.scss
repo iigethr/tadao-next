@@ -72,40 +72,35 @@ button,
   vertical-align: bottom;
 }
 
-figure {
-  @include hover-animation(.50s);
-  background-color: $white;
+figure,
+.video {
   border: 0;
   display: block;
   float: left;
-  height: inherit;
   margin: 0;
+  max-height: 100%;
   max-width: 100%;
-  padding: 32px;
-  width: 100%;
-  figcaption {
-    @include hover-animation(.50s);
-    background-color: $white;
+  padding: 0;
+  figcaption,
+  .vidcaption {
+    @include font-xs;
     border: 0;
-    display: block;
-    float: left;
     margin: 0;
-    max-width: 100%;
-    width: 100%;
+    vertical-align: bottom;
   }
 }
 
 img,
-svg {
-  @include appear-animation(0.50s);
+svg,
+iframe {
+  @include appear-animation(2s);
   border: 0;
   display: block;
   float: left;
-  height: inherit;
   margin: 0;
+  max-height: 100%;
   max-width: 100%;
   padding: 0;
-  width: auto;
 }
 
 // Media Query 240px

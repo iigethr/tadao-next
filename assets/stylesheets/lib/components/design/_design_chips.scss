@@ -1,9 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Colour Chips
+// File:    Design Chips
 // Project: Tadao by IIGETHR
 // -------------------------------------------------------------
 
-$class: "colour-chips";
+$class: "design-chips";
 
 .#{$class} {
   float: left;
@@ -13,13 +13,8 @@ $class: "colour-chips";
     width: 100%;
     .#{$class}-item {
       float: left;
-      height: auto;
-      padding: 8px 0;
-      width: 10%;
-      p {
-        padding: 32px 0;
-        text-align: center;
-      }
+      padding: 8px;
+      width: 50%;
     }
   }
 }

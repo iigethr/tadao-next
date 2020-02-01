@@ -36,7 +36,9 @@
 // ------------------------------------------------------------
 @import "lib/globals/base";
 @import "lib/globals/universal";
+@import "lib/globals/media";
 @import "lib/globals/typography";
+@import "lib/globals/writer";
 @import "lib/globals/roles";
 @import "lib/globals/forms";
 @import "lib/globals/tables";
@@ -70,16 +72,12 @@
 
 // 7) Components
 // ------------------------------------------------------------
-@import "lib/components/_misc";
-@import "lib/components/_main_menu";
-@import "lib/components/_aside_menu";
-@import "lib/components/_colour_chips";
-@import "lib/components/_promo_card";
-
 @import "lib/components/_hero";
 @import "lib/components/_overlay";
-@import "lib/components/_copyright";
 @import "lib/components/_cookies";
+@import "lib/components/_copyright";
+@import "lib/components/design/_design_aside";
+@import "lib/components/design/_design_chips";
 
 // 8) Overriders
 // ------------------------------------------------------------

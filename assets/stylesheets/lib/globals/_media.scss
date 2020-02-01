@@ -1,0 +1,178 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Base
+// Project: Tadao by IIGETHR
+// -------------------------------------------------------------
+
+.media {
+  float: left;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  .media-box {
+    float: left;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    .media-item {
+      float: left;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  figcaption,
+  .vidcaption {
+    text-align: center;
+  }
+  &.left {
+    max-height: 60%;
+    max-width: 60%;
+    .media-box {
+      .media-item {
+        padding: 8px 16px 8px 0;
+      }
+    }
+  }
+  &.right {
+    max-height: 60%;
+    max-width: 60%;
+    .media-box {
+      .media-item {
+        padding: 8px 0 8px 16px;
+      }
+    }
+  }
+  &.wide {
+    max-height: 100%;
+    max-width: 100%;
+    .media-box {
+      .media-item {
+        padding: 8px 0;
+      }
+    }
+  }
+}
+
+// Media Query 240px
+// ------------------------------------------------------------
+@media #{$xxs} {
+  .media {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    .media-box {
+      height: 100%;
+      width: 100%;
+      .media-item {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &.left {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+    &.right {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+    &.wide {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+}
+
+// Media Query 360px
+// ------------------------------------------------------------
+@media #{$xs} {
+  .media {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    .media-box {
+      height: 100%;
+      width: 100%;
+      .media-item {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &.left {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+    &.right {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+    &.wide {
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      .media-box {
+        .media-item {
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+}
+
+// Media Query 480px
+// -------------------------------------------------------------
+@media #{$s} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}

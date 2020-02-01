@@ -1,7 +1,9 @@
-// Main
+// Design
 
 import React from "react"
-import AsideMenu from "../components/aside_menu"
+import Head from "next/head"
+
+import DesignAside from "../components/design/design_aside"
 import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
 
@@ -10,6 +12,9 @@ import "../assets/stylesheets/tadao.scss"
 export default (props) => {
   return (
     <div className="root white-bg">
+      <Head>
+        <meta name="robots" content="noindex, nofollow, nosnippet, nocache, noimageindex, noarchive" />
+      </Head>
       {/* Header */}
       <header className="universal header">
         <div className="universal-box">
@@ -25,7 +30,7 @@ export default (props) => {
           <div className="universal-box">
             <div className="universal-row">
               <div className="artboard-l">
-                <AsideMenu />
+                <DesignAside />
                 <div className="artboard-m">
                   { props.children }
                 </div>
