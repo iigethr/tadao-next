@@ -1,8 +1,9 @@
-// Design
+// Colours
 
 // Core
 import Head from "next/head"
 // Components
+import DesignHeader from "../../components/design/design_header"
 import Gray from "../../components/design/colours/gray"
 import Purple from "../../components/design/colours/purple"
 import Blue from "../../components/design/colours/blue"
@@ -14,64 +15,51 @@ import Orange from "../../components/design/colours/orange"
 import Red from "../../components/design/colours/red"
 import Pink from "../../components/design/colours/pink"
 // Data
-import project from "js-yaml-loader!../../data/project.yml"
-import section from "js-yaml-loader!../../data/design.yml"
+import colours from "js-yaml-loader!../../data/colours.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
   static async getInitialProps() {
     return {
-      data: project,
-      section: section
+      colours: colours
     }
   }
 
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered a Page - Colours")
+    console.log("Registered a Design Page - Colours")
   }
 
   render () {
-    const project = this.props.data.project
-    const { section: { section: { name, description }}} = this.props
+    const data = this.props.colours.colours
     return (
       <div>
         <Head>
-          <title>Tadao + Next</title>
-          <meta name="description" content="A basic kickstart setup for NextJS." />
+          <title>{data.name}</title>
+          <meta name="description" content={data.description} />
         </Head>
-        <div className="container-top">
-          <h1 className="font-xl lighter">Default Colour Palette</h1>
-          <div className="separator-xs" />
-          <p>Tadao includes a generous palette of great-looking, well-balanced colors that are perfect for prototyping or for kicking off a brand new project.</p>
-        </div>
-        <div className="separator-s" />
-        <div className="container-middle">
-          <div className="container-middle-box">
-            <div className="container-middle-row">
-              <Gray />
-              <div className="separator-s" />
-              <Purple />
-              <div className="separator-s" />
-              <Blue />
-              <div className="separator-s" />
-              <Aqua />
-              <div className="separator-s" />
-              <Green />
-              <div className="separator-s" />
-              <Lime />
-              <div className="separator-s" />
-              <Yellow />
-              <div className="separator-s" />
-              <Orange />
-              <div className="separator-s" />
-              <Red />
-              <div className="separator-s" />
-              <Pink />
-            </div>
-          </div>
-        </div>
+        <DesignHeader data={data} />
+        <div className="separator-xs" />
+        <Gray />
+        <div className="separator-xs" />
+        <Purple />
+        <div className="separator-xs" />
+        <Blue />
+        <div className="separator-xs" />
+        <Aqua />
+        <div className="separator-xs" />
+        <Green />
+        <div className="separator-xs" />
+        <Lime />
+        <div className="separator-xs" />
+        <Yellow />
+        <div className="separator-xs" />
+        <Orange />
+        <div className="separator-xs" />
+        <Red />
+        <div className="separator-xs" />
+        <Pink />
       </div>
     )
   }

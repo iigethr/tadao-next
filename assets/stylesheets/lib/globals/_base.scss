@@ -82,8 +82,7 @@ figure,
   display: block;
   float: left;
   margin: 0;
-  max-height: 100%;
-  max-width: 100%;
+  overflow: hidden;
   padding: 0;
   figcaption,
   .vidcaption {
@@ -95,14 +94,21 @@ figure,
 }
 
 img,
-svg,
-iframe {
+svg {
   @include appear-animation(2s);
   border: 0;
   display: block;
   float: left;
-  margin: 0;
   max-height: 100%;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+iframe {
+  border: 0;
+  height: auto;
+  margin: 0;
   max-width: 100%;
   padding: 0;
 }

@@ -1,6 +1,6 @@
 // Typography
 
-// React
+// Core
 import Head from "next/head"
 // Components
 import DesignHeader from "../../components/design/design_header"
@@ -21,7 +21,7 @@ class Typography extends React.Component {
 
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered a Page - Typography")
+    console.log("Registered a Design Page - Typography")
   }
 
   render () {
@@ -29,22 +29,14 @@ class Typography extends React.Component {
     return (
       <div>
         <Head>
-          <title>Tadao + Next</title>
-          <meta name="description" content="A basic kickstart setup for NextJS." />
+          <title>{data.name}</title>
+          <meta name="description" content={data.description} />
         </Head>
-        <div className="container right col-m-1-1">
-          <div className="container-box">
-            <div className="container-row">
-              <DesignHeader data={data} />
-            </div>
-            <div className="separator-xs" />
-            <div className="container-row">
-              <Sans />
-              <Serif />
-              <Mono />
-            </div>
-          </div>
-        </div>
+        <DesignHeader data={data} />
+        <div className="separator-xs" />
+        <Sans />
+        <Serif />
+        <Mono />
       </div>
     )
   }

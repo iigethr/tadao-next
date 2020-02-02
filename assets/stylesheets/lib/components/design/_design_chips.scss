@@ -10,6 +10,7 @@ $class: "design-chips";
   width: 100%;
   .#{$class}-box {
     float: left;
+    padding: 16px;
     width: 100%;
     .#{$class}-item {
       float: left;

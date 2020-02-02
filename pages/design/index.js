@@ -1,4 +1,4 @@
-// Design
+// Index
 
 // Core
 import Head from "next/head"
@@ -15,16 +15,17 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Registered a Page - Design Index")
+    ZahaAlignments.centerH()
+    console.log("Registered a Design Page - Index")
   }
 
   render () {
-    const design = this.props.design.design
+    const data = this.props.design.design
     return (
       <div>
         <Head>
-          <title>Tadao + Next</title>
-          <meta name="description" content="A basic kickstart setup for NextJS." />
+          <title>{data.name}</title>
+          <meta name="description" content={data.description} />
         </Head>
       </div>
     )
