@@ -1,4 +1,4 @@
-// Main Layout
+// Template Layout
 
 // Core
 import React from "react"
@@ -11,7 +11,7 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 class Design extends React.Component {
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered Main Layout")
+    console.log("Registered - Template Layout")
   }
 
   render () {

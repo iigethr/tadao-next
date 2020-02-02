@@ -11,13 +11,21 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 class Design extends React.Component {
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered Main Layout")
+    console.log("Registered - Main Layout")
   }
 
   render () {
     const { children } = this.props;
     return (
       <div className="root">
+        {/* Notifications */}
+        <div className="universal notifications">
+          <div className="universal-box">
+            <div className="universal-row">
+            </div>
+          </div>
+        </div>
+
         {/* Header */}
         <header className="universal header">
           <div className="universal-box">

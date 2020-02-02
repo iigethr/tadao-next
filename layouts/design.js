@@ -13,7 +13,7 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 class Design extends React.Component {
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered Main Layout")
+    console.log("Registered - Design Layout")
   }
 
   render () {
@@ -24,6 +24,14 @@ class Design extends React.Component {
         <Head>
           <meta name="robots" content="noindex, nofollow, nosnippet, nocache, noimageindex, noarchive" />
         </Head>
+
+        {/* Notifications */}
+        <div className="universal notifications">
+          <div className="universal-box">
+            <div className="universal-row">
+            </div>
+          </div>
+        </div>
 
         {/* Header */}
         <header className="universal header">
@@ -71,7 +79,15 @@ class Design extends React.Component {
             </div>
           </div>
         </footer>
-        <Cookies />
+
+        {/* Advisory */}
+        <div className="universal advisory">
+          <div className="universal-box">
+            <div className="universal-row">
+              <Cookies />
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
