@@ -18,6 +18,14 @@ class Design extends React.Component {
     const { children } = this.props;
     return (
       <div className="root">
+        {/* Notifications */}
+        <div className="universal notifications">
+          <div className="universal-box">
+            <div className="universal-row">
+            </div>
+          </div>
+        </div>
+
         {/* Header */}
         <header className="universal header">
           <div className="universal-box">
