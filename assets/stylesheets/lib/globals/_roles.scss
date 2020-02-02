@@ -7,50 +7,50 @@
 .header,
 .main,
 .footer,
-.sticky-footer {
+.advisory {
   float: left;
   margin: 0;
   max-width: 100%;
   padding: 0;
   width: 100%;
-  z-index: 1;
 }
 
 .header {
   min-height: 80px;
 }
 
-.fixed-header {
-  background-color: $purple-900;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: none;
-  perspective: none;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.main {
+  padding: 32px 0;
 }
 
 .footer {
   min-height: 80px;
 }
 
-.sticky-footer {
-  min-height: calc(100vh - (80px + 80px)); // Minus the height of the header and footer.
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch;
-  -webkit-perspective: none;
-  perspective: none;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.advisory {
+  @include fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.main {
-  padding: 32px 0;
+.fixed-header {
+  @include fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+// Note: when using sticky footer it's important
+// header & footer have fixed heights.
+.sticky-footer {
+  @include sticky;
+  float: left;
+  margin: 0;
+  max-width: 100%;
+  min-height: calc(100vh - (80px + 80px)); // Minus the height of the header and footer.
+  padding: 0;
+  width: 100%;
 }
 
 .container,

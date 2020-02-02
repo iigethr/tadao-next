@@ -12,7 +12,7 @@ class Cookies extends React.Component {
       klass: "cookies hide-block-element",
       value: cookie,
       message: "Cookies and IP addresses allow us to deliver and improve our web content and to provide you with a personalized experience. Our website uses cookies and collects your IP address for these purposes.",
-      label: "Click me for COOOOOOOOOKIES!!!!"
+      label: "Click me for COOOOKIES!!!!"
     }
   }
 
@@ -47,10 +47,10 @@ class Cookies extends React.Component {
         <div className={klass}>
           <div className="cookies-box `#{klass}`">
             <div className="cookies-row">
-              <p className="text-center">{message}</p>
+              <p className="font-s text-center">{message}</p>
             </div>
             <div className="cookies-row">
-              <a href="#" onClick={this.setCookie} className="button-l black center-h">{label}</a>
+              <a href="#" onClick={this.setCookie} className="button-m black center-h">{label}</a>
             </div>
           </div>
         </div>

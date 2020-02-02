@@ -7,19 +7,8 @@ $class: "cookies";
 
 .#{$class} {
   background-color: $white;
-  bottom: 0;
   float: left;
-  left: 0;
-  position: fixed;
-  right: 0;
   width: 100%;
-  z-index: 9999;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: none;
-  perspective: none;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   .#{$class}-box {
     float: left;
     padding: 24px;

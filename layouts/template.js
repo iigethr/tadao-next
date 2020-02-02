@@ -54,10 +54,18 @@ class Design extends React.Component {
           <div className="universal-box">
             <div className="universal-row">
               <Copyright />
-              <Cookies />
             </div>
           </div>
         </footer>
+
+        {/* Advisory */}
+        <div className="universal advisory">
+          <div className="universal-box">
+            <div className="universal-row">
+              <Cookies />
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
