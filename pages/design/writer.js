@@ -4,6 +4,8 @@
 import Head from "next/head"
 // Data
 import writer from "js-yaml-loader!../../data/writer.yml"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Writer extends React.Component {
   static async getInitialProps() {
@@ -13,7 +15,7 @@ class Writer extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Registered a Page - Colours")
+    console.log("Registered a Page - Writer")
   }
 
   render () {

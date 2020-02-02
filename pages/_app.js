@@ -1,9 +1,13 @@
 // _app
 
+// Core
 import React from "react"
 import App from "next/app"
+// Layouts
 import MainLayout from "../layouts/main"
 import DesignLayout from "../layouts/design"
+// SCSS
+import "../assets/stylesheets/tadao.scss"
 
 class MyApp extends App {
   render() {

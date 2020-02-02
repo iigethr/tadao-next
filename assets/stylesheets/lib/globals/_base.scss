@@ -25,7 +25,6 @@ body {
 }
 
 body {
-  @include appear-animation(.25s);
   @include border-box;
   @include clearfix;
   @include font-m;
@@ -42,8 +41,9 @@ body {
   -webkit-overflow-scrolling: touch
 }
 
-*::-webkit-scrollbar,
+::-webkit-scrollbar,
 body::-webkit-scrollbar {
+  appearance: none;
   display: none;
   scrollbar-width: none;
   visibility: hidden;
@@ -51,12 +51,15 @@ body::-webkit-scrollbar {
 
 .body-root,
 .root {
-  @include appear-animation(.50s);
   display: block;
   float: left;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.body-root {
+  @include appear-animation(.50s);
 }
 
 a,

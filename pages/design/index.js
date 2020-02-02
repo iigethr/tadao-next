@@ -1,8 +1,11 @@
 // Design
 
+// Core
 import Head from "next/head"
-
+// Data
 import design from "js-yaml-loader!../../data/design.yml"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {

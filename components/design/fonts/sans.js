@@ -16,7 +16,6 @@ class Sans extends React.Component {
             </div>
           </div>
         </div>
-        <div className="separator-s" />
       </div>
     )
   }

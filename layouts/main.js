@@ -1,47 +1,58 @@
-// Main
+// Main Layout
 
-// React
+// Core
 import React from "react"
 // Components
 import Cookies from "../components/cookies"
 import Copyright from "../components/copyright"
-// SCSS
-import "../assets/stylesheets/tadao.scss"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
-export default (props) => {
-  return (
-    <div className="root">
-      {/* Header */}
-      <header className="universal header">
-        <div className="universal-box">
-          <div className="universal-row">
-          </div>
-        </div>
-      </header>
+class Design extends React.Component {
+  componentDidMount() {
+    ZahaAlignments.centerH()
+    console.log("Registered Main Layout")
+  }
 
-      {/* Sticky */}
-      <div className="sticky-footer">
-        {/* Main */}
-        <main className="universal main">
+  render () {
+    const { children } = this.props;
+    return (
+      <div className="root">
+        {/* Header */}
+        <header className="universal header">
           <div className="universal-box">
             <div className="universal-row">
-              <div>
-                { props.children }
-              </div>
             </div>
           </div>
-        </main>
-      </div>
+        </header>
 
-      {/* Footer */}
-      <footer className="universal footer">
-        <div className="universal-box">
-          <div className="universal-row">
-            <Copyright />
-          </div>
+        {/* Sticky */}
+        <div className="sticky-footer">
+          {/* Main */}
+          <main className="universal main">
+            <div className="universal-box">
+              <div className="universal-row">
+                {/* Artboard */}
+                <div className="artboard-l center-h">
+                  { children }
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
-      </footer>
-      <Cookies />
-    </div>
-  )
+
+        {/* Footer */}
+        <footer className="universal footer">
+          <div className="universal-box">
+            <div className="universal-row">
+              <Copyright />
+            </div>
+          </div>
+        </footer>
+        <Cookies />
+      </div>
+    )
+  }
 }
+
+export default Design

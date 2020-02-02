@@ -3,11 +3,14 @@
 // React
 import Head from "next/head"
 // Components
+import DesignHeader from "../../components/design/design_header"
 import Sans from "../../components/design/fonts/sans"
 import Serif from "../../components/design/fonts/serif"
 import Mono from "../../components/design/fonts/mono"
 // Data
 import typography from "js-yaml-loader!../../data/typography.yml"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Typography extends React.Component {
   static async getInitialProps() {
@@ -17,26 +20,25 @@ class Typography extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Registered a Page - Colours")
+    ZahaAlignments.centerH()
+    console.log("Registered a Page - Typography")
   }
 
   render () {
-    const typography = this.props.typography.typography
+    const data = this.props.typography.typography
     return (
       <div>
         <Head>
           <title>Tadao + Next</title>
           <meta name="description" content="A basic kickstart setup for NextJS." />
         </Head>
-        <div className="container-top">
-          <h1 className="font-xl lighter">{typography.name}</h1>
-          <div className="separator-xs" />
-          <p>{typography.description}</p>
-        </div>
-        <div className="separator-s" />
-        <div className="container-middle">
-          <div className="container-middle-box">
-            <div className="container-middle-row">
+        <div className="container right col-m-1-1">
+          <div className="container-box">
+            <div className="container-row">
+              <DesignHeader data={data} />
+            </div>
+            <div className="separator-xs" />
+            <div className="container-row">
               <Sans />
               <Serif />
               <Mono />

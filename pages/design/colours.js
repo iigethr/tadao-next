@@ -1,6 +1,8 @@
 // Design
 
+// Core
 import Head from "next/head"
+// Components
 import Gray from "../../components/design/colours/gray"
 import Purple from "../../components/design/colours/purple"
 import Blue from "../../components/design/colours/blue"
@@ -11,11 +13,11 @@ import Yellow from "../../components/design/colours/yellow"
 import Orange from "../../components/design/colours/orange"
 import Red from "../../components/design/colours/red"
 import Pink from "../../components/design/colours/pink"
-
-import ZahaAlignments from "@iigethr/zaha_alignments"
-
+// Data
 import project from "js-yaml-loader!../../data/project.yml"
 import section from "js-yaml-loader!../../data/design.yml"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
   static async getInitialProps() {

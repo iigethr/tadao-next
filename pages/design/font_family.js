@@ -1,10 +1,12 @@
 // Design
 
+// Core
 import Head from "next/head"
-import ZahaAlignments from "@iigethr/zaha_alignments"
-
+// Data
 import project from "js-yaml-loader!../../data/project.yml"
 import section from "js-yaml-loader!../../data/design.yml"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class FontFamily extends React.Component {
   componentDidMount() {

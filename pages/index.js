@@ -1,11 +1,13 @@
 // Index
 
+// Core
 import Head from "next/head"
+// Components
 import Hero from "../components/hero"
-import ZahaAlignments from "@iigethr/zaha_alignments"
-import ZahaOverlay from "@iigethr/zaha_overlay"
-
+// Data
 import project from "js-yaml-loader!../data/project.yml"
+// Modules
+import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps(ctx) {
@@ -15,8 +17,6 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    ZahaOverlay.basic("overlay", "overlay-on", "overlay-off")
-    ZahaOverlay.basic("overlay-secondary", "overlay-on-secondary", "overlay-off-secondary")
     ZahaAlignments.centerH()
     console.log("Registered a Page - Index")
   }
@@ -29,13 +29,7 @@ class Index extends React.Component {
           <title>{project.name}</title>
           <meta name="description" content={project.description} />
         </Head>
-        <div className="container">
-          <div className="container-box">
-            <div className="container-row">
-              <Hero project={project} />
-            </div>
-          </div>
-        </div>
+        <Hero project={project} />
       </div>
     )
   }

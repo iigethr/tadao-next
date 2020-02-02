@@ -1,6 +1,7 @@
 # Meta Data
 
 meta:
+  lang: "en-GB"
   title: "Tadao + Next"
   description: "A basic kickstart setup for NextJS. It comes pre-installed with Tadao - A Minimal and Lightweight Design System."
   type: "website"
