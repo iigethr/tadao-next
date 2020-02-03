@@ -140,12 +140,11 @@
   font-size: 11px;
   line-height: 20px;
   padding: 0 10px;
-  &.has-icon {
-    padding: 0 4px;
-  }
   &.outline {
     line-height: 18px;
-    padding: 0 9px;
+  }
+  &.has-icon {
+    padding: 0 4px;
   }
 }
 
@@ -153,12 +152,11 @@
   font-size: 12px;
   line-height: 22px;
   padding: 0 11px;
-  &.has-icon {
-    padding: 0 4px;
-  }
   &.outline {
     line-height: 20px;
-    padding: 0 10px;
+  }
+  &.has-icon {
+    padding: 0 4px;
   }
 }
 
@@ -166,12 +164,11 @@
   font-size: 13px;
   line-height: 24px;
   padding: 0 12px;
-  &.has-icon {
-    padding: 0 4px;
-  }
   &.outline {
     line-height: 22px;
-    padding: 0 11px;
+  }
+  &.has-icon {
+    padding: 0 4px;
   }
 }
 
@@ -179,12 +176,11 @@
   font-size: 14px;
   line-height: 32px;
   padding: 0 16px;
-  &.has-icon {
-    padding: 0 6px;
-  }
   &.outline {
     line-height: 30px;
-    padding: 0 15px;
+  }
+  &.has-icon {
+    padding: 0 6px;
   }
 }
 
@@ -192,12 +188,11 @@
   font-size: 15px;
   line-height: 40px;
   padding: 0 20px;
-  &.has-icon {
-    padding: 0 8px;
-  }
   &.outline {
     line-height: 38px;
-    padding: 0 19px;
+  }
+  &.has-icon {
+    padding: 0 8px;
   }
 }
 
@@ -205,11 +200,11 @@
   font-size: 16px;
   line-height: 48px;
   padding: 0 24px;
+  &.outline {
+    line-height: 46px !important;
+  }
   &.has-icon {
     padding: 0 8px;
-  }
-  &.outline {
-    line-height: 46px;
   }
 }
 
