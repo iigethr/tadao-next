@@ -24,6 +24,11 @@ class DesignMenu extends React.Component {
             </Link>
           </div>
           <div className="design-menu-item">
+            <Link href="/design/utilities">
+              <a className="link-m blue wide hover-underline">Utilities</a>
+            </Link>
+          </div>
+          <div className="design-menu-item">
             <Link href="/design/writer">
               <a className="link-m blue wide hover-underline">Writer</a>
             </Link>

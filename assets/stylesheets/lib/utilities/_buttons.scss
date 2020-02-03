@@ -5,86 +5,53 @@
 
 @mixin button-default {
   @include border-corner(.25em);
+  @include button-blue-theme;
   appearance: none;
-  background-color: $blue-500;
-  border: 1px solid $blue-500;
-  color: $white;
   float: left;
   font-weight: 100;
   letter-spacing: .030em;
   text-align: center;
   text-decoration: none;
-  // text-transform: uppercase;
   white-space: nowrap;
   width: auto;
   &.outline {
-    background-color: $transparent;
-    border: 1px solid $blue-500;
-    color: $blue-500;
+    border: 1px solid;
   }
 }
 
 @mixin button-xxs {
   @include button-default;
   @include button-size-xxs;
-  padding: 0 4px;
-  &.outline {
-    padding: 0 3px;
-  }
 }
 
 @mixin button-xs {
   @include button-default;
   @include button-size-xs;
-  padding: 0 4px;
-  &.outline {
-    padding: 0 3px;
-  }
 }
 
 @mixin button-s {
   @include button-default;
   @include button-size-s;
-  padding: 0 4px;
-  &.outline {
-    padding: 0 3px;
-  }
 }
 
 @mixin button-m {
   @include button-default;
   @include button-size-m;
-  padding: 0 4px;
-  &.outline {
-    padding: 0 3px;
-  }
 }
 
 @mixin button-l {
   @include button-default;
   @include button-size-l;
-  padding: 0 6px;
-  &.outline {
-    padding: 0 5px;
-  }
 }
 
 @mixin button-xl {
   @include button-default;
   @include button-size-xl;
-  padding: 0 12px;
-  &.outline {
-    padding: 0 11px;
-  }
 }
 
 @mixin button-xxl {
   @include button-default;
   @include button-size-xxl;
-  padding: 0 16px;
-  &.outline {
-    padding: 0 15px;
-  }
 }
 
 // Classes

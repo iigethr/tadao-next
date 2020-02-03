@@ -310,19 +310,21 @@
     border-color: $blue-500 !important;
     color: $white !important;
   }
-  &.no-bg {
+  &.outline {
+    background-color: $transparent !important;
     border-color: $blue-500 !important;
     color: $blue-500 !important;
     &:link,
     &:visited {
+      background-color: $transparent !important;
       border-color: $blue-500 !important;
       color: $blue-500 !important;
     }
     &:hover,
     &:active {
-      background-color: $blue-500 !important;
-      border-color: $blue-500 !important;
-      color: $blue-100 !important;
+      background-color: $transparent !important;
+      border-color: $blue-300 !important;
+      color: $blue-300 !important;
     }
   }
 }

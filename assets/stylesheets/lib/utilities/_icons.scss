@@ -14,136 +14,69 @@
   position: relative;
   vertical-align: bottom;
   width: auto;
-  &.left {
-    margin-right: .4em !important;
-    svg,
-    img {
-      float: left;
-      margin: 0;
-      padding: 0;
-    }
-  }
-  &.right {
-    margin: .4em !important;
-    svg,
-    img {
-      float: left;
-      margin: 0;
-      padding: 0;
-    }
-  }
 }
 
 @mixin icon-xxs {
   @include icon-default;
   height: 10px;
   margin: 4px 0;
-  &.border-radius {
-    border-radius: 5px;
-    img,
-    svg {
-      border-radius: 5px;
-    }
-  }
-  @at-root .outline .icon-xxs {
-    margin: 3px 0;
-  }
+  &.left { margin-right: 2px; }
+  &.right { margin-left: 2px; }
+  @at-root .outline .icon-xxs { height: 8px; }
 }
 
 @mixin icon-xs {
   @include icon-default;
   height: 12px;
   margin: 4px 0;
-  &.border-radius {
-    border-radius: 6px;
-    img,
-    svg {
-      border-radius: 6px;
-    }
-  }
-  @at-root .outline .icon-xs {
-    margin: 3px 0;
-  }
+  &.left { margin-right: 3px; }
+  &.right { margin-left: 3px; }
+  @at-root .outline .icon-xs { height: 10px; }
 }
 
 @mixin icon-s {
   @include icon-default;
   height: 14px;
   margin: 4px 0;
-  &.border-radius {
-    border-radius: 7px;
-    img,
-    svg {
-      border-radius: 7px;
-    }
-  }
-  @at-root .outline .icon-s {
-    margin: 3px 0;
-  }
+  &.left { margin-right: 4px; }
+  &.right { margin-left: 4px; }
+  @at-root .outline .icon-s { height: 12px; }
 }
 
 @mixin icon-m {
   @include icon-default;
   height: 16px;
   margin: 4px 0;
-  &.border-radius {
-    border-radius: 8px;
-    img,
-    svg {
-      border-radius: 8px;
-    }
-  }
-  @at-root .outline .icon-m {
-    margin: 3px 0;
-  }
+  &.left { margin-right: 4px; }
+  &.right { margin-left: 4px; }
+  @at-root .outline .icon-m { height: 14px; }
 }
 
 @mixin icon-l {
   @include icon-default;
   height: 20px;
   margin: 6px 0;
-  &.border-radius {
-    border-radius: 10px;
-    img,
-    svg {
-      border-radius: 10px;
-    }
-  }
-  @at-root .outline .icon-l {
-    margin: 5px 0;
-  }
+  &.left { margin-right: 6px; }
+  &.right { margin-left: 6px; }
+  @at-root .outline .icon-l { height: 18px; }
 }
 
 @mixin icon-xl {
   @include icon-default;
   height: 24px;
   margin: 8px 0;
-  &.border-radius {
-    border-radius: 12px;
-    img,
-    svg {
-      border-radius: 12px;
-    }
-  }
-  @at-root .outline .icon-xl {
-    margin: 7px 0;
-  }
+  &.left { margin-right: 8px; }
+  &.right { margin-left: 8px; }
+  @at-root .outline .icon-xl { height: 22px; }
 }
 
 @mixin icon-xxl {
   @include icon-default;
   height: 32px;
   margin: 8px 0;
-  &.border-radius {
-    border-radius: 16px;
-    img,
-    svg {
-      border-radius: 16px;
-    }
-  }
-  @at-root .outline .icon-xxl {
-    margin: 7px 0;
-  }
+  &.left { margin-right: 8px; }
+  &.right { margin-left: 8px; }
+  @at-root .outline .icon-xxl { height: 30px; }
 }
 
 // Classes

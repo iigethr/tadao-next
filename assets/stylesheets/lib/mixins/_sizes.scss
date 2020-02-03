@@ -6,330 +6,211 @@
 @mixin font-xxs {
   font-size: 10px;
   line-height: 18px;
-  // Media Queries
   @media #{$xxs} {
     font-size: 8px;
     line-height: 16px;
-    &.magnify {
-      font-size: 10px;
-      line-height: 18px;
-    }
   }
   @media #{$xs} {
     font-size: 8px;
     line-height: 16px;
-    &.magnify {
-      font-size: 10px;
-      line-height: 18px;
-    }
   }
   @media #{$s} {
     font-size: 8px;
     line-height: 16px;
-    &.magnify {
-      font-size: 10px;
-      line-height: 18px;
-    }
   }
 }
 
 @mixin font-xs {
   font-size: 12px;
   line-height: 20px;
-  // Media Queries
   @media #{$xxs} {
     font-size: 10px;
     line-height: 18px;
-    &.magnify {
-      font-size: 12px;
-      line-height: 20px;
-    }
   }
   @media #{$xs} {
     font-size: 10px;
     line-height: 18px;
-    &.magnify {
-      font-size: 12px;
-      line-height: 20px;
-    }
   }
   @media #{$s} {
     font-size: 10px;
     line-height: 18px;
-    &.magnify {
-      font-size: 12px;
-      line-height: 20px;
-    }
   }
 }
 
 @mixin font-s {
   font-size: 14px;
   line-height: 22px;
-  // Media Queries
   @media #{$xxs} {
     font-size: 12px;
     line-height: 20px;
-    &.magnify {
-      font-size: 14px;
-      line-height: 22px;
-    }
   }
   @media #{$xs} {
     font-size: 12px;
     line-height: 20px;
-    &.magnify {
-      font-size: 14px;
-      line-height: 22px;
-    }
   }
   @media #{$s} {
     font-size: 12px;
     line-height: 20px;
-    &.magnify {
-      font-size: 14px;
-      line-height: 22px;
-    }
   }
 }
 
 @mixin font-m {
   font-size: 16px;
   line-height: 24px;
-  // Media Queries
   @media #{$xxs} {
     font-size: 14px;
     line-height: 22px;
-    &.magnify {
-      font-size: 16px;
-      line-height: 24px;
-    }
   }
   @media #{$xs} {
     font-size: 14px;
     line-height: 22px;
-    &.magnify {
-      font-size: 16px;
-      line-height: 24px;
-    }
   }
   @media #{$s} {
     font-size: 14px;
     line-height: 22px;
-    &.magnify {
-      font-size: 16px;
-      line-height: 24px;
-    }
   }
 }
 
 @mixin font-l {
   font-size: 20px;
   line-height: 32px;
-  // Media Queries
   @media #{$xxs} {
     font-size: 16px;
     line-height: 24px;
-    &.magnify {
-      font-size: 20px;
-      line-height: 32px;
-    }
   }
   @media #{$xs} {
     font-size: 16px;
     line-height: 24px;
-    &.magnify {
-      font-size: 20px;
-      line-height: 32px;
-    }
   }
   @media #{$s} {
     font-size: 16px;
     line-height: 24px;
-    &.magnify {
-      font-size: 20px;
-      line-height: 32px;
-    }
   }
 }
 
 @mixin font-xl {
   font-size: 24px;
   line-height: 40px;
-  // Media Queries
   @media #{$xxs} {
     font-size: 20px;
     line-height: 32px;
-    &.magnify {
-      font-size: 24px;
-      line-height: 40px;
-    }
   }
   @media #{$xs} {
     font-size: 20px;
     line-height: 32px;
-    &.magnify {
-      font-size: 24px;
-      line-height: 40px;
-    }
   }
   @media #{$s} {
     font-size: 20px;
     line-height: 32px;
-    &.magnify {
-      font-size: 24px;
-      line-height: 40px;
-    }
   }
 }
 
-// Font XXL
 @mixin font-xxl {
   font-size: 32px;
   line-height: 48px;
-  &.magnify {
-    font-size: 64px;
-    line-height: 80px;
-  }
-  // Media Queries
   @media #{$xxs} {
     font-size: 24px;
     line-height: 40px;
-    &.magnify {
-      font-size: 32px;
-      line-height: 48px;
-    }
   }
   @media #{$xs} {
     font-size: 24px;
     line-height: 40px;
-    &.magnify {
-      font-size: 32px;
-      line-height: 48px;
-    }
   }
   @media #{$s} {
     font-size: 24px;
     line-height: 40px;
-    &.magnify {
-      font-size: 32px;
-      line-height: 48px;
-    }
   }
 }
 
 /////
 
 @mixin button-size-xxs {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 10px;
+  line-height: 18px;
+  padding: 0 9px;
   &.outline {
     line-height: 16px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
+  &.has-icon {
+    padding: 0 4px;
+  }
 }
 
 @mixin button-size-xs {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0 10px;
+  &.has-icon {
+    padding: 0 4px;
+  }
   &.outline {
     line-height: 18px;
+    padding: 0 9px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
 }
 
 @mixin button-size-s {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0 11px;
+  &.has-icon {
+    padding: 0 4px;
+  }
   &.outline {
     line-height: 20px;
+    padding: 0 10px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
 }
 
 @mixin button-size-m {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 12px;
+  &.has-icon {
+    padding: 0 4px;
+  }
   &.outline {
     line-height: 22px;
+    padding: 0 11px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
 }
 
 @mixin button-size-l {
   font-size: 14px;
-  line-height: 30px;
+  line-height: 32px;
+  padding: 0 16px;
+  &.has-icon {
+    padding: 0 6px;
+  }
   &.outline {
     line-height: 30px;
+    padding: 0 15px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
 }
 
 @mixin button-size-xl {
-  font-size: 16px;
-  line-height: 38px;
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0 20px;
+  &.has-icon {
+    padding: 0 8px;
+  }
   &.outline {
     line-height: 38px;
+    padding: 0 19px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
 }
 
 @mixin button-size-xxl {
   font-size: 16px;
-  line-height: 46px;
+  line-height: 48px;
+  padding: 0 24px;
+  &.has-icon {
+    padding: 0 8px;
+  }
   &.outline {
     line-height: 46px;
   }
-  // Media Queries
-  @media #{$xxs} {}
-  @media #{$xs} {}
-  @media #{$s} {}
-  @media #{$m} {}
-  @media #{$l} {}
-  @media #{$xl} {}
-  @media #{$xxl} {}
 }
 
 // Classes
