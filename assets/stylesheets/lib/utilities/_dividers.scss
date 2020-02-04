@@ -52,16 +52,16 @@
   margin: 0 96px !important;
 }
 
-@mixin dashed-line {
+@mixin divider-solid-line {
+  border-left: 1px solid $gray-300 !important;
+}
+
+@mixin divider-dashed-line {
   border-left: 1px dashed $gray-300 !important;
 }
 
-@mixin dotted-line {
+@mixin divider-dotted-line {
   border-left: 1px dotted $gray-300 !important;
-}
-
-@mixin solid-line {
-  border-left: 1px solid $gray-300 !important;
 }
 
 // Classes
@@ -74,6 +74,6 @@
 .divider-l    { @include divider-l; }
 .divider-xl   { @include divider-xl; }
 .divider-xxl  { @include divider-xxl; }
-.divider-dashed-line  { @include dashed-line; }
-.divider-dotted-line  { @include dotted-line; }
-.divider-solid-line   { @include solid-line; }
+.divider-solid-line   { @include divider-solid-line; }
+.divider-dashed-line  { @include divider-dashed-line; }
+.divider-dotted-line  { @include divider-dotted-line; }

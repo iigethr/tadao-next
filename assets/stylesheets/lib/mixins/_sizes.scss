@@ -1,133 +1,49 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Sizes
+// File:    Font Sizes
 // Project: Tadao by IIGETHR
 // -------------------------------------------------------------
 
 @mixin font-xxs {
   font-size: 10px;
   line-height: 18px;
-  @media #{$xxs} {
-    font-size: 8px;
-    line-height: 16px;
-  }
-  @media #{$xs} {
-    font-size: 8px;
-    line-height: 16px;
-  }
-  @media #{$s} {
-    font-size: 8px;
-    line-height: 16px;
-  }
 }
 
 @mixin font-xs {
   font-size: 12px;
   line-height: 20px;
-  @media #{$xxs} {
-    font-size: 10px;
-    line-height: 18px;
-  }
-  @media #{$xs} {
-    font-size: 10px;
-    line-height: 18px;
-  }
-  @media #{$s} {
-    font-size: 10px;
-    line-height: 18px;
-  }
 }
 
 @mixin font-s {
   font-size: 14px;
   line-height: 22px;
-  @media #{$xxs} {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  @media #{$xs} {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  @media #{$s} {
-    font-size: 12px;
-    line-height: 20px;
-  }
 }
 
 @mixin font-m {
   font-size: 16px;
   line-height: 24px;
-  @media #{$xxs} {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  @media #{$xs} {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  @media #{$s} {
-    font-size: 14px;
-    line-height: 22px;
-  }
 }
 
 @mixin font-l {
   font-size: 20px;
   line-height: 32px;
-  @media #{$xxs} {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  @media #{$xs} {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  @media #{$s} {
-    font-size: 16px;
-    line-height: 24px;
-  }
 }
 
 @mixin font-xl {
   font-size: 24px;
   line-height: 40px;
-  @media #{$xxs} {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  @media #{$xs} {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  @media #{$s} {
-    font-size: 20px;
-    line-height: 32px;
-  }
 }
 
 @mixin font-xxl {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 48px;
-  @media #{$xxs} {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  @media #{$xs} {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  @media #{$s} {
-    font-size: 24px;
-    line-height: 40px;
-  }
 }
 
 // Classes
 // -------------------------------------------------------------
-.font-xxs  { @include font-xxs; }
-.font-xs   { @include font-xs; }
-.font-s    { @include font-s; }
-.font-m    { @include font-m; }
-.font-l    { @include font-l; }
-.font-xl   { @include font-xl; }
-.font-xxl  { @include font-xxl; }
+.font-xxs { @include font-xxs; }
+.font-xs  { @include font-xs; }
+.font-s   { @include font-s; }
+.font-m   { @include font-m; }
+.font-l   { @include font-l; }
+.font-xl  { @include font-xl; }
+.font-xxl { @include font-xxl; }

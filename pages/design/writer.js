@@ -30,8 +30,6 @@ class Writer extends React.Component {
           <title>{data.name}</title>
           <meta name="description" content={data.description} />
         </Head>
-        <DesignHeader data={data} />
-        <div className="separator-xs" />
         <DesignWriter />
       </div>
     )

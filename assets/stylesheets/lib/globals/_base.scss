@@ -76,17 +76,15 @@ button,
   vertical-align: bottom;
 }
 
-figure,
-.video {
+figure {
   border: 0;
   display: block;
   float: left;
   margin: 0;
   overflow: hidden;
   padding: 0;
-  figcaption,
-  .vidcaption {
-    @include font-xs;
+  figcaption {
+    @include font-s;
     border: 0;
     margin: 0;
     vertical-align: bottom;
@@ -96,19 +94,12 @@ figure,
 img,
 svg {
   @include appear-animation(2s);
+  background-color: red;
   border: 0;
   display: block;
   float: left;
+  margin: 0;
   max-height: 100%;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-}
-
-iframe {
-  border: 0;
-  height: auto;
-  margin: 0;
   max-width: 100%;
   padding: 0;
 }

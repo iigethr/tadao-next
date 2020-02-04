@@ -13,137 +13,142 @@
     float: left;
     width: 100%;
   }
-  blockquote {
-    margin: 32px;
-    padding: 32px;
-    width: calc(100% - 64px); // minus the left (32px) & right (32px) margin
-  }
-  ol,
-  ul {
-    margin: 0 0 8px;
-    padding: 28px 32px;
-    li {
-      float: left;
-      margin: 4px 0;
-      padding: 0;
-      width: 100%;
-    }
+  h1,
+  h2,
+  h3 {
+    font-weight: lighter;
   }
   h1 {
     @include font-xxl;
-    margin: 1.6em 0 .4em;
+    margin: 40px 0 24px;
   }
   h2 {
     @include font-xl;
-    margin: 1.6em 0 .4em;
+    margin: 32px 0 20px;
   }
   h3 {
     @include font-l;
-    margin: 1.6em 0 .4em;
+    margin: 24px 0 16px;
   }
   h4 {
     @include font-m;
-    margin: 1.6em 0 .4em;
+    margin: 22px 0 14px;
   }
   h5 {
     @include font-s;
-    margin: 1.6em 0 .2em;
+    margin: 20px 0 12px;
   }
   h6 {
     @include font-xs;
-    margin: 2em 0 0;
+    margin: 18px 0 10px;
   }
   p,
   .text {
+    @include clearfix;
     @include font-m;
-    margin: 0 0 1em;
+    margin: 0 0 24px;
   }
-  .media {
+  ol,
+  ul {
+    padding: 16px 32px 32px;
+    li {
+      float: left;
+      margin: 8px 0;
+      padding: 0;
+      width: 100%;
+    }
+    li:first-child {
+      margin-top: 0;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  blockquote {
+    @include font-l;
+    float: left;
+    padding: 32px 32px 64px;
+    max-width: 80%;
+  }
+  .floater {
+    display: block;
     float: left;
     margin: 0;
     padding: 0;
     max-width: 100%;
-    .media-box {
+    .floater-box {
+      display: block;
       float: left;
       margin: 0;
       padding: 0;
       width: 100%;
-      .media-item {
+      .floater-item {
+        display: block;
         float: left;
         margin: 0;
         padding: 0;
         width: 100%;
       }
     }
-    figcaption,
-    .vidcaption {
-      text-align: center;
-    }
     &.left {
       max-width: 60%;
-      .media-box {
-        .media-item {
-          padding: 8px 16px 8px 0;
+      .floater-box {
+        .floater-item {
+          padding: 8px 16px 16px 0;
         }
       }
     }
     &.right {
       max-width: 60%;
-      .media-box {
-        .media-item {
-          padding: 8px 0 8px 16px;
+      .floater-box {
+        .floater-item {
+          padding: 8px 0 16px 16px;
         }
       }
     }
     &.wide {
       max-width: 100%;
-      .media-box {
-        .media-item {
-          padding: 8px 0;
+      .floater-box {
+        .floater-item {
+          padding: 8px 0 16px;
         }
       }
     }
   }
 }
 
+.writer :first-child {
+  margin-top: 0;
+}
+
+.writer :last-child {
+  margin-bottom: 0;
+}
 
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
   .writer {
-    .media {
+    blockquote {
       max-width: 100%;
+    }
+    .floater {
       width: 100%;
-      .media-box {
+      .floater-box {
         width: 100%;
-        .media-item {
+        .floater-item {
           width: 100%;
         }
       }
-      &.left {
-        max-width: 100%;
-        width: 100%;
-        .media-box {
-          .media-item {
-            padding: 8px 0;
-          }
-        }
-      }
-      &.right {
-        max-width: 100%;
-        width: 100%;
-        .media-box {
-          .media-item {
-            padding: 8px 0;
-          }
-        }
-      }
+      &.left,
+      &.right,
       &.wide {
         max-width: 100%;
         width: 100%;
-        .media-box {
-          .media-item {
-            padding: 8px 0;
+        .floater-box {
+          .floater-item {
+            padding: 8px 0 16px;
           }
         }
       }
@@ -155,37 +160,25 @@
 // ------------------------------------------------------------
 @media #{$xs} {
   .writer {
-    .media {
+    blockquote {
       max-width: 100%;
+    }
+    .floater {
       width: 100%;
-      .media-box {
+      .floater-box {
         width: 100%;
-        .media-item {
+        .floater-item {
           width: 100%;
         }
       }
-      &.left {
+      &.left,
+      &.right,
+      &.wide {
         max-width: 100%;
         width: 100%;
-        .media-box {
-          .media-item {
-            padding: 8px 0;
-          }
-        }
-      }
-      &.right {
-        width: 100%;
-        .media-box {
-          .media-item {
-            padding: 8px 0;
-          }
-        }
-      }
-      &.wide {
-        width: 100%;
-        .media-box {
-          .media-item {
-            padding: 8px 0;
+        .floater-box {
+          .floater-item {
+            padding: 8px 0 16px;
           }
         }
       }
@@ -196,6 +189,31 @@
 // Media Query 480px
 // -------------------------------------------------------------
 @media #{$s} {
+  .writer {
+    blockquote {
+      max-width: 100%;
+    }
+    .floater {
+      width: 100%;
+      .floater-box {
+        width: 100%;
+        .floater-item {
+          width: 100%;
+        }
+      }
+      &.left,
+      &.right,
+      &.wide {
+        max-width: 100%;
+        width: 100%;
+        .floater-box {
+          .floater-item {
+            padding: 8px 0 16px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Media Query 720px
