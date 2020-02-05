@@ -6,38 +6,38 @@ class Green extends React.Component {
     return (
       <div className="design-chips">
         <div className="design-chips-box">
-          <div className="design-chips-item wide">
+          <div className="design-chips-row">
             <h3 className="font-l lighter">Green</h3>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-900-bg green-000-cl">900</p>
+            <p className="font-xs text-center green-900-bg green-000-cl">900</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-800-bg green-000-cl">800</p>
+            <p className="font-xs text-center green-800-bg green-000-cl">800</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-700-bg green-000-cl">700</p>
+            <p className="font-xs text-center green-700-bg green-000-cl">700</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-600-bg green-000-cl">600</p>
+            <p className="font-xs text-center green-600-bg green-000-cl">600</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-500-bg green-000-cl">500</p>
+            <p className="font-xs text-center green-500-bg green-000-cl">500</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-400-bg green-000-cl">400</p>
+            <p className="font-xs text-center green-400-bg green-000-cl">400</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-300-bg green-000-cl">300</p>
+            <p className="font-xs text-center green-300-bg green-000-cl">300</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-200-bg green-900-cl">200</p>
+            <p className="font-xs text-center green-200-bg green-900-cl">200</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-100-bg green-900-cl">100</p>
+            <p className="font-xs text-center green-100-bg green-900-cl">100</p>
           </div>
           <div className="design-chips-item">
-            <p className="font-m p-24 green-000-bg green-900-cl">000</p>
+            <p className="font-xs text-center green-000-bg green-900-cl">000</p>
           </div>
         </div>
       </div>

@@ -94,7 +94,6 @@ figure {
 img,
 svg {
   @include appear-animation(2s);
-  background-color: red;
   border: 0;
   display: block;
   float: left;

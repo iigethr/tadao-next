@@ -40,25 +40,15 @@ class Design extends React.Component {
           <meta name="description" content={data.description} />
         </Head>
         <DesignHeader data={data} />
-        <div className="separator-xs" />
         <Gray />
-        <div className="separator-xs" />
         <Purple />
-        <div className="separator-xs" />
         <Blue />
-        <div className="separator-xs" />
         <Aqua />
-        <div className="separator-xs" />
         <Green />
-        <div className="separator-xs" />
         <Lime />
-        <div className="separator-xs" />
         <Yellow />
-        <div className="separator-xs" />
         <Orange />
-        <div className="separator-xs" />
         <Red />
-        <div className="separator-xs" />
         <Pink />
       </div>
     )

@@ -10,12 +10,20 @@ $class: "design-chips";
   width: 100%;
   .#{$class}-box {
     float: left;
-    padding: 16px;
+    padding: 24px;
     width: 100%;
+    .#{$class}-row {
+      float: left;
+      padding: 0 0 4px;
+      width: 100%;
+    }
     .#{$class}-item {
       float: left;
-      padding: 8px;
-      width: 50%;
+      padding: 0;
+      width: 20%;
+      p {
+        padding: 32px 0;
+      }
     }
   }
 }

@@ -9,9 +9,11 @@ class DesignMenu extends React.Component {
       <div className="design-menu">
         <div className="design-menu-box">
           <div className="design-menu-item">
-            <Link href="/design">
-              <a className="link-m blue wide hover-underline">Design</a>
-            </Link>
+            {/**
+              <Link href="/design">
+                <a className="link-m blue wide hover-underline">Design</a>
+              </Link>
+            **/}
           </div>
           <div className="design-menu-item">
             <Link href="/design/typography">
@@ -28,11 +30,13 @@ class DesignMenu extends React.Component {
               <a className="link-m blue wide hover-underline">Utilities</a>
             </Link>
           </div>
-          <div className="design-menu-item">
-            <Link href="/design/writer">
-              <a className="link-m blue wide hover-underline">Writer</a>
-            </Link>
-          </div>
+          {/**
+            <div className="design-menu-item">
+              <Link href="/design/writer">
+                <a className="link-m blue wide hover-underline">Writer</a>
+              </Link>
+            </div>
+          **/}
         </div>
       </div>
     )

@@ -8,6 +8,16 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  color: $gray-700;
+  hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
 p,
 .text {
@@ -15,7 +25,6 @@ p,
   display: block;
   margin: 0;
   padding: 0;
-  hyphens: auto;
   a {
     color: inherit;
     display: inline;
@@ -27,15 +36,6 @@ p,
     text-decoration: underline;
     vertical-align: bottom;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $gray-700;
 }
 
 blockquote {
@@ -56,9 +56,16 @@ ul {
   width: 100%;
   li {
     float: left;
-    margin: 0;
+    margin: 8px 0;
     padding: 0;
     width: 100%;
+  }
+  li:first-child {
+    margin-top: 0;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 }
 

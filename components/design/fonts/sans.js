@@ -9,8 +9,8 @@ class Sans extends React.Component {
         <div className="design-cards">
           <div className="design-cards-box">
             <div className="design-cards-row">
-              <h3 className="sans font-l lighter">Sans-serif</h3>
-              <p className="sans font-xs sans bold">Open Sans</p>
+              <h3 className="sans font-l">Sans-serif</h3>
+              <p className="sans font-xs">Open Sans <a href="https://fonts.google.com/" target="_blank">[source]</a></p>
               <div className="separator-xxs" />
               <p className="sans font-m">Cras mattis consecteturpurussitamet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
