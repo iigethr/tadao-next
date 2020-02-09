@@ -4,13 +4,16 @@
 import Head from "next/head"
 // Data
 import design from "js-yaml-loader!../../data/design.yml"
+import config from "js-yaml-loader!../../data/config.yml"
+
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {
     return {
-      design: design
+      design: design,
+      config: config
     }
   }
 

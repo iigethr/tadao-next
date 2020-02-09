@@ -4,8 +4,8 @@
 import React from "react"
 import Head from "next/head"
 // Components
+import Footer from "../components/footer"
 import Cookies from "../components/cookies"
-import Copyright from "../components/copyright"
 import DesignMenu from "../components/design/design_menu"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
@@ -18,6 +18,7 @@ class Design extends React.Component {
 
   render () {
     const { children } = this.props;
+    const config = children.props.config
     return (
       <div className="root white-bg">
         {/* Head */}
@@ -71,14 +72,7 @@ class Design extends React.Component {
           </main>
         </div>
 
-        {/* Footer */}
-        <footer className="universal footer">
-          <div className="universal-box">
-            <div className="universal-row">
-              <Copyright />
-            </div>
-          </div>
-        </footer>
+        <Footer config={config}/>
 
         {/* Advisory */}
         <div className="universal advisory">

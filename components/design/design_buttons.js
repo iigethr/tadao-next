@@ -7,10 +7,24 @@ class DesignButtons extends React.Component {
       <div className="design-content">
         <div className="design-content-box">
           <div className="design-content-row">
+            <p className="font-s wide"><strong>class:</strong> "button-xxl"</p>
             <a hreaf="#" className="button-xxl">
               Button
             </a>
-            <div className="divider-xs" />
+            <div className="separator-xs" />
+            <p className="font-s wide"><strong>class:</strong> "button-xxl outline"</p>
+            <a hreaf="#" className="button-xxl outline">
+              Button
+            </a>
+            <div className="separator-xxs" />
+            <a hreaf="#" className="button-xxl condense">
+              <span class="icon-xxl left"><img src={require("../../assets/images/512x512.png")} /></span>
+              Button
+            </a>
+
+
+
+
             <a hreaf="#" className="button-xxl condense">
               <span class="icon-xxl left"><img src={require("../../assets/images/512x512.png")} /></span>
               Button

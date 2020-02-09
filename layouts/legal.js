@@ -1,7 +1,8 @@
-// Main Layout
+// Legal Layout
 
 // Core
 import React from "react"
+import Head from "next/head"
 // Components
 import Footer from "../components/footer"
 import Cookies from "../components/cookies"
@@ -11,14 +12,19 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 class Design extends React.Component {
   componentDidMount() {
     ZahaAlignments.centerH()
-    console.log("Registered - Main Layout")
+    console.log("Registered - Design Layout")
   }
 
   render () {
     const { children } = this.props;
     const config = children.props.config
     return (
-      <div className="root">
+      <div className="root white-bg">
+        {/* Head */}
+        <Head>
+          <meta name="robots" content="noindex, nofollow, nosnippet, nocache, noimageindex, noarchive" />
+        </Head>
+
         {/* Notifications */}
         <div className="universal notifications">
           <div className="universal-box">
@@ -43,7 +49,14 @@ class Design extends React.Component {
               <div className="universal-row">
                 {/* Artboard */}
                 <div className="artboard-l center-h">
-                  { children }
+                  {/* Container */}
+                  <div className="container left">
+                    <div className="container-box">
+                      <div className="container-row">
+                        { children }
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -10,7 +10,15 @@ h4,
 h5,
 h6 {
   color: $gray-700;
+  float: left;
   hyphens: auto;
+  width: 100%;
+}
+
+p,
+.text {
+  float: left;
+  width: 100%;
 }
 
 h1,
@@ -59,6 +67,17 @@ ul {
     margin: 8px 0;
     padding: 0;
     width: 100%;
+    a {
+      color: inherit;
+      display: inline;
+      float: none;
+      font-size: inherit;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+      text-decoration: underline;
+      vertical-align: bottom;
+    }
   }
   li:first-child {
     margin-top: 0;

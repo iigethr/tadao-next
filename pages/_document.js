@@ -7,17 +7,18 @@ import Meta from "../components/meta"
 import Favicons from "../components/favicons"
 // Data
 import meta from "js-yaml-loader!../data/meta.yml"
+import config from "js-yaml-loader!../data/config.yml"
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps, meta: meta }
+    return { ...initialProps, meta, config }
   }
 
   render() {
     const meta = this.props.meta.meta
     return (
-      <Html lang={meta.lang}>
+      <Html lang={config.lang}>
         <Head>
           <Meta meta={meta} />
           <Favicons/>

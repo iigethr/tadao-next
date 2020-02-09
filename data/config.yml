@@ -1,0 +1,6 @@
+# Config Data
+
+config:
+  lang: "en-GB"
+  base_url: "http://localhost:3000/"
+  legal_url: "http://localhost:3000/legal"
