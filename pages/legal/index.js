@@ -1,4 +1,7 @@
 // Index
+
+// Core
+import Head from "next/head"
 import Link from "next/link"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
@@ -12,6 +15,9 @@ class Index extends React.Component {
   render () {
     return (
       <div>
+        <Head>
+          <title>Legal</title>
+        </Head>
         <div className="design-content">
           <div className="design-content-box">
             <div className="design-content-row">
