@@ -2,5 +2,5 @@
 
 config:
   lang: "en-GB"
-  base_url: "http://localhost:3000/"
-  legal_url: "http://localhost:3000/legal"
+  base_url: "https://tadao-next.now.sh/"
+  legal_url: "https://tadao-next.now.sh/legal"

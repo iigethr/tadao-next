@@ -5,7 +5,7 @@ import React from "react"
 import Head from "next/head"
 // Components
 import Footer from "../components/footer"
-import Cookies from "../components/cookies"
+import Advisory from "../components/advisory"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
@@ -24,15 +24,6 @@ class Design extends React.Component {
         <Head>
           <meta name="robots" content="noindex, nofollow, nosnippet, nocache, noimageindex, noarchive" />
         </Head>
-
-        {/* Notifications */}
-        <div className="universal notifications">
-          <div className="universal-box">
-            <div className="universal-row">
-            </div>
-          </div>
-        </div>
-
         {/* Header */}
         <header className="universal header">
           <div className="universal-box">
@@ -50,7 +41,7 @@ class Design extends React.Component {
                 {/* Artboard */}
                 <div className="artboard-l center-h">
                   {/* Container */}
-                  <div className="container left">
+                  <div className="container">
                     <div className="container-box">
                       <div className="container-row">
                         { children }
@@ -64,15 +55,7 @@ class Design extends React.Component {
         </div>
 
         <Footer config={config}/>
-
-        {/* Advisory */}
-        <div className="universal advisory">
-          <div className="universal-box">
-            <div className="universal-row">
-              <Cookies />
-            </div>
-          </div>
-        </div>
+        <Advisory />
       </div>
     )
   }

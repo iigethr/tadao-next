@@ -38,11 +38,6 @@ class Index extends React.Component {
                 </li>
                 <li className="font-l lighter">
                   <Link href="/legal">
-                    <a rel="noreferrer">EU-US and Swiss-US Privacy Shield policy</a>
-                  </Link>
-                </li>
-                <li className="font-l lighter">
-                  <Link href="/legal">
                     <a rel="noreferrer">List of third-party services</a>
                   </Link>
                 </li>

@@ -48,9 +48,10 @@ class Cookies extends React.Component {
           <div className="cookies-box `#{klass}`">
             <div className="cookies-row">
               <p className="font-s text-center">{message}</p>
+              <p className="font-s text-center">For more information you can visit our <a href="/legal" rel="noreferrer">Policies & Terms</a> section.</p>
             </div>
             <div className="cookies-row">
-              <a href="#" onClick={this.setCookie} className="button-m black center-h">{label}</a>
+              <a href="#" onClick={this.setCookie} className="button-m black center-h" rel="noreferrer">{label}</a>
             </div>
           </div>
         </div>

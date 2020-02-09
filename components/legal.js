@@ -7,7 +7,7 @@ class Legal extends React.Component {
       <div className="legal">
         <div className="legal-box">
           <div className="legal-item">
-            <a href={legal_url} rel="noreferrer" className="link-s center-h">Policies & Terms</a>
+            <a href={legal_url} className="link-s center-h" rel="noreferrer">Policies & Terms</a>
           </div>
         </div>
       </div>

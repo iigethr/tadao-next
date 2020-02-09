@@ -17,6 +17,7 @@ class MyDocument extends Document {
 
   render() {
     const meta = this.props.meta.meta
+    const config = this.props.config.config
     return (
       <Html lang={config.lang}>
         <Head>
