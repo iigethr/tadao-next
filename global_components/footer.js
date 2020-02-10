@@ -1,7 +1,7 @@
 // Footer
 
 // Components
-import Legal from "../components/legal"
+import LegalMenu from "../components/legal_menu"
 import Copyright from "../components/copyright"
 
 class Footer extends React.Component {
@@ -10,7 +10,7 @@ class Footer extends React.Component {
       <footer className="universal footer">
         <div className="universal-box">
           <div className="universal-row">
-            <Legal />
+            <LegalMenu />
           </div>
           <div className="universal-row">
             <Copyright />
