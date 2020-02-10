@@ -4,8 +4,8 @@
 import React from "react"
 import Head from "next/head"
 // Components
-import Footer from "../components/footer"
-import Cookies from "../components/cookies"
+import Footer from "../global_components/footer"
+import Advisory from "../global_components/advisory"
 import DesignMenu from "../components/design/design_menu"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
@@ -17,12 +17,15 @@ class Design extends React.Component {
   }
 
   render () {
-    const { children } = this.props;
+    const { children } = this.props
+    const meta = children.props.meta
     const config = children.props.config
     return (
       <div className="root white-bg">
         {/* Head */}
         <Head>
+          <title>{meta.title}</title>
+          <meta name="description" content={meta.description} />
           <meta name="robots" content="noindex, nofollow, nosnippet, nocache, noimageindex, noarchive" />
         </Head>
 
@@ -73,15 +76,7 @@ class Design extends React.Component {
         </div>
 
         <Footer config={config}/>
-
-        {/* Advisory */}
-        <div className="universal advisory">
-          <div className="universal-box">
-            <div className="universal-row">
-              <Cookies />
-            </div>
-          </div>
-        </div>
+        <Advisory />
       </div>
     )
   }

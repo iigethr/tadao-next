@@ -2,9 +2,12 @@
 
 // Core
 import React from "react"
+import Head from "next/head"
 // Components
-import Cookies from "../components/cookies"
-import Copyright from "../components/copyright"
+import Notifications from "../global_components/notifications"
+import Header from "../global_components/header"
+import Footer from "../global_components/footer"
+import Advisory from "../global_components/advisory"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
@@ -15,24 +18,19 @@ class Design extends React.Component {
   }
 
   render () {
-    const { children } = this.props;
+    const { children } = this.props
+    const meta = children.props.meta
+    const config = children.props.config
     return (
       <div className="root">
-        {/* Notifications */}
-        <div className="universal notifications">
-          <div className="universal-box">
-            <div className="universal-row">
-            </div>
-          </div>
-        </div>
+        {/* Head */}
+        <Head>
+          <title>{meta.title}</title>
+          <meta name="description" content={meta.description} />
+        </Head>
 
-        {/* Header */}
-        <header className="universal header">
-          <div className="universal-box">
-            <div className="universal-row">
-            </div>
-          </div>
-        </header>
+        <Notifications />
+        <Header />
 
         {/* Sticky */}
         <div className="sticky-footer">
@@ -49,23 +47,8 @@ class Design extends React.Component {
           </main>
         </div>
 
-        {/* Footer */}
-        <footer className="universal footer">
-          <div className="universal-box">
-            <div className="universal-row">
-              <Copyright />
-            </div>
-          </div>
-        </footer>
-
-        {/* Advisory */}
-        <div className="universal advisory">
-          <div className="universal-box">
-            <div className="universal-row">
-              <Cookies />
-            </div>
-          </div>
-        </div>
+        <Footer config={config}/>
+        <Advisory />
       </div>
     )
   }

@@ -21,10 +21,6 @@ class DesignButtons extends React.Component {
               <span class="icon-xxl left"><img src={require("../../assets/images/512x512.png")} /></span>
               Button
             </a>
-
-
-
-
             <a hreaf="#" className="button-xxl condense">
               <span class="icon-xxl left"><img src={require("../../assets/images/512x512.png")} /></span>
               Button
@@ -96,7 +92,6 @@ class DesignButtons extends React.Component {
             </a>
           </div>
         </div>
-
         <div className="design-content-box">
           <div className="design-content-row">
             <a hreaf="#" className="button-xxs condense">

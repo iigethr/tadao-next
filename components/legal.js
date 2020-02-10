@@ -2,7 +2,6 @@
 
 class Legal extends React.Component {
   render () {
-    const { legal_url } = this.props.config
     return (
       <div className="legal">
         <div className="legal-box">

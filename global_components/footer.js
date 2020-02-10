@@ -1,17 +1,16 @@
 // Footer
 
 // Components
-import Copyright from "../components/copyright"
 import Legal from "../components/legal"
+import Copyright from "../components/copyright"
 
 class Footer extends React.Component {
   render () {
-    const config = this.props.config
     return (
       <footer className="universal footer">
         <div className="universal-box">
           <div className="universal-row">
-            <Legal config={config}/>
+            <Legal />
           </div>
           <div className="universal-row">
             <Copyright />
