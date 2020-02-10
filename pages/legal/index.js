@@ -1,7 +1,5 @@
 // Index
 
-// Core
-import Link from "next/link"
 // Components
 import LegalMenu from "../../components/legal_menu"
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
@@ -25,9 +23,7 @@ class Index extends React.Component {
         <div className="design-content">
           <div className="design-content-box">
             <div className="design-content-row">
-              <Link href="/">
-                <a className="link-m gray underline">Back to Home Page</a>
-              </Link>
+              <a href="/" className="link-m gray underline">Back to Home Page</a>
             </div>
             <div className="design-content-row">
               <h1 className="font-xxl">{legal.title}</h1>
