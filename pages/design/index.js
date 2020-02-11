@@ -10,8 +10,7 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 class Index extends React.Component {
   static async getInitialProps() {
     return {
-      design: design,
-      config: config
+      design: design
     }
   }
 
