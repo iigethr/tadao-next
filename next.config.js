@@ -8,6 +8,7 @@ const withYml           = require("js-yaml-loader")
 
 // Note: Keep it Last here and withPlugins()
 const withTM  = require("next-transpile-modules")([
+  "react-ga",
   "js-cookie",
   "next-cookies",
   "@hankyo/hankyo",

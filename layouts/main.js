@@ -4,6 +4,7 @@
 import React from "react"
 import Head from "next/head"
 // Components
+import { initGA, logPageView } from "../lib/globals/google_analytics"
 import Notifications from "../lib/globals/notifications"
 import Header from "../lib/globals/header"
 import Footer from "../lib/globals/footer"
@@ -13,6 +14,11 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
   componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
     ZahaAlignments.centerH()
     console.log("Registered - Main Layout")
   }
