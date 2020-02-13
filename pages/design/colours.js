@@ -3,17 +3,17 @@
 // Core
 import Head from "next/head"
 // Components
-import DesignHeader from "../../components/design/design_header"
-import Gray from "../../components/design/colours/gray"
-import Purple from "../../components/design/colours/purple"
-import Blue from "../../components/design/colours/blue"
-import Aqua from "../../components/design/colours/aqua"
-import Green from "../../components/design/colours/green"
-import Lime from "../../components/design/colours/lime"
-import Yellow from "../../components/design/colours/yellow"
-import Orange from "../../components/design/colours/orange"
-import Red from "../../components/design/colours/red"
-import Pink from "../../components/design/colours/pink"
+import DesignHeader from "../../lib/components/design/design_header"
+import Gray from "../../lib/components/design/colours/gray"
+import Purple from "../../lib/components/design/colours/purple"
+import Blue from "../../lib/components/design/colours/blue"
+import Aqua from "../../lib/components/design/colours/aqua"
+import Green from "../../lib/components/design/colours/green"
+import Lime from "../../lib/components/design/colours/lime"
+import Yellow from "../../lib/components/design/colours/yellow"
+import Orange from "../../lib/components/design/colours/orange"
+import Red from "../../lib/components/design/colours/red"
+import Pink from "../../lib/components/design/colours/pink"
 // Data
 import colours from "js-yaml-loader!../../data/colours.yml"
 // Modules

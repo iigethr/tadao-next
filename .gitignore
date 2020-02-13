@@ -6,13 +6,12 @@
 .pnp.js
 tadao-next.code-workspace
 SETUP.md
-README-template.md
 
 # testing
 /coverage
 
 # next.js
-/.next/
+/.next
 /out/
 
 # production

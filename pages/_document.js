@@ -3,8 +3,8 @@
 // Core
 import Document, { Html, Head, Main, NextScript } from "next/document"
 // Components
-import Meta from "../components/meta"
-import Favicons from "../components/favicons"
+import Meta from "../lib/components/meta"
+import Favicons from "../lib/components/favicons"
 // Data
 import meta from "js-yaml-loader!../data/meta.yml"
 import config from "js-yaml-loader!../data/config.yml"

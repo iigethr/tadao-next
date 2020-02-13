@@ -3,10 +3,10 @@
 // Core
 import Head from "next/head"
 // Components
-import DesignHeader from "../../components/design/design_header"
-import Sans from "../../components/design/fonts/sans"
-import Serif from "../../components/design/fonts/serif"
-import Mono from "../../components/design/fonts/mono"
+import DesignHeader from "../../lib/components/design/design_header"
+import Sans from "../../lib/components/design/fonts/sans"
+import Serif from "../../lib/components/design/fonts/serif"
+import Mono from "../../lib/components/design/fonts/mono"
 // Data
 import typography from "js-yaml-loader!../../data/typography.yml"
 // Modules

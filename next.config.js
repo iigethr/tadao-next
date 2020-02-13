@@ -11,8 +11,7 @@ const withTM  = require("next-transpile-modules")([
   "js-cookie",
   "next-cookies",
   "@hankyo/hankyo",
-  "@iigethr/zaha_alignments",
-  "@iigethr/zaha_overlay"
+  "@iigethr/zaha_alignments"
 ])
 
 // withSass

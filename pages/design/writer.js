@@ -3,8 +3,8 @@
 // Core
 import Head from "next/head"
 // Components
-import DesignHeader from "../../components/design/design_header"
-import DesignWriter from "../../components/design/design_writer"
+import DesignHeader from "../../lib/components/design/design_header"
+import DesignWriter from "../../lib/components/design/design_writer"
 // Data
 import writer from "js-yaml-loader!../../data/writer.yml"
 // Modules

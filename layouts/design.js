@@ -4,9 +4,9 @@
 import React from "react"
 import Head from "next/head"
 // Components
-import Footer from "../global_components/footer"
-import Advisory from "../global_components/advisory"
-import DesignMenu from "../components/design/design_menu"
+import Footer from "../lib/globals/footer"
+import Advisory from "../lib/globals/advisory"
+import DesignMenu from "../lib/components/design/design_menu"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

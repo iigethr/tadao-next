@@ -3,8 +3,8 @@
 // Core
 import Head from "next/head"
 // Components
-import DesignHeader from "../../components/design/design_header"
-import DesignButtons from "../../components/design/design_buttons"
+import DesignHeader from "../../lib/components/design/design_header"
+import DesignButtons from "../../lib/components/design/design_buttons"
 // Data
 import utilities from "js-yaml-loader!../../data/utilities.yml"
 // Modules

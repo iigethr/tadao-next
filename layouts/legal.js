@@ -4,10 +4,10 @@
 import React from "react"
 import Head from "next/head"
 // Components
-import Notifications from "../global_components/notifications"
-import Header from "../global_components/legal/header"
-import Footer from "../global_components/footer"
-import Advisory from "../global_components/advisory"
+import Notifications from "../lib/globals/notifications"
+import Header from "../lib/globals/legal/header"
+import Footer from "../lib/globals/footer"
+import Advisory from "../lib/globals/advisory"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

@@ -1,7 +1,7 @@
 // Index
 
 // Components
-import LegalSectionMenu from "../../components/legal_section_menu"
+import LegalSectionMenu from "../../lib/components/legal_section_menu"
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"

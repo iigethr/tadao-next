@@ -1,7 +1,7 @@
 // Index
 
 // Components
-import Hero from "../components/hero"
+import Hero from "../lib/components/hero"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
