@@ -9,15 +9,26 @@ import Footer from "../lib/globals/footer"
 import Advisory from "../lib/globals/advisory"
 import DesignMenu from "../lib/components/design/design_menu"
 // Modules
+import cookies from "next-cookies"
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
-  componentDidMount() {
-    if (!window.GA_INITIALIZED) {
-      initGA()
-      window.GA_INITIALIZED = true
+  constructor(props, ctx) {
+    super(props)
+    const cookie = cookies(ctx).weLoveCookies
+    this.state = {
+      value: cookie
     }
-    logPageView()
+  }
+
+  componentDidMount() {
+    if ((this.state.value === "withMilk") || (process.env.NODE_ENV || process.env.NODE_ENV === "production")) {
+      if (!window.GA_INITIALIZED) {
+        initGA()
+        window.GA_INITIALIZED = true
+      }
+      logPageView()
+    }
 
     ZahaAlignments.centerH()
     console.log("Registered - Design Layout")
