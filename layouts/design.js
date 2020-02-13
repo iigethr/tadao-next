@@ -22,7 +22,7 @@ class Design extends React.Component {
   }
 
   componentDidMount() {
-    if ((this.state.value === "withMilk") || (process.env.NODE_ENV || process.env.NODE_ENV === "production")) {
+    if ((this.state.value === "withMilk") && (process.env.NODE_ENV || process.env.NODE_ENV === "production")) {
       if (!window.GA_INITIALIZED) {
         initGA()
         window.GA_INITIALIZED = true
