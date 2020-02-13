@@ -19,6 +19,7 @@ class Design extends React.Component {
       window.GA_INITIALIZED = true
     }
     logPageView()
+
     ZahaAlignments.centerH()
     console.log("Registered - Main Layout")
   }
