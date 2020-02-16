@@ -256,10 +256,9 @@ form {
     float: left;
     font-size: 12px;
     max-width: 100%;
-    padding: 10px 7px 11px 7px;
+    padding: 9px 7px 5px 7px;
     width: 100%;
     label {
-      background-color: orange;
       font-size: 16px !important;
       height: 16px!important;
       line-height: 16px !important;
@@ -267,7 +266,7 @@ form {
       display: inline-block;
       font-weight: normal;
       margin: 0;
-      padding: 0;
+      padding: 3px 0 0 0;
       -moz-box-orient: middle;
       vertical-align: middle;
     }
@@ -279,11 +278,11 @@ form {
     [type=radio]::after {
       appearance: none;
       background-color: $transparent;
-      height: 14px !important;
+      height: 16px !important;
       line-height: 0;
       margin: 0 4px 0 0!important;
       padding: 0 !important;
-      width: 14px !important;
+      width: 16px !important;
       position: relative;
       top: -2px;
     }
