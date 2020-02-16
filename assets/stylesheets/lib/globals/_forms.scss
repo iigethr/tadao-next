@@ -266,11 +266,15 @@ form {
       padding: 0;
     }
     [type=checkbox],
-    [type=radio] {
+    [type=radio],
+    [type=checkbox]::before,
+    [type=checkbox]::after,
+    [type=radio]::before,
+    [type=radio]::after {
       float: left;
-      height: 13px;
+      height: 15px;
       margin: 0 4px 0 1px;
-      width: 13px;
+      width: 15px;
     }
     [type=checkbox] {
       appearance: checkbox;
