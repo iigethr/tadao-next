@@ -7,7 +7,6 @@ form {
   @include border-box;
   @include clearfix;
   border: 0;
-  color: $gray;
   float: left;
   font-size: 16px;
   line-height: 24px;
@@ -19,6 +18,7 @@ form {
   *::after,
   *::before {
     @include border-box;
+    color: $gray;
     vertical-align: bottom;
   }
 
@@ -31,53 +31,36 @@ form {
     width: 100%;
     .form-row {
       float: left;
+      margin: 0;
       max-width: 100%;
+      padding: 0;
       width: 100%;
-      .field {
+      .form-item {
         float: left;
         margin: 0;
         max-width: 100%;
-        padding: 8px 16px;
-        text-align: left;
+        padding: 0;
         width: 100%;
-        // Form wrapper
-        .field-wrapper {
-          float: left;
-          max-width: 100%;
-          width: 100%;
-        }
       }
-      // &:first-of-type {
-      //   .field {
-      //     padding: 16px 16px 8px;
-      //   }
-      // }
-      // &:last-of-type {
-      //   .field {
-      //     padding: 8px 16px 16px;
-      //   }
-      // }
     }
   }
 
   legend {
+    @include font-l;
     color: $gray-700;
     float: left;
-    font-size: 20px;
-    font-weight: 100;
-    line-height: 32px;
+    font-weight: lighter;
     margin: 0;
     max-width: 100%;
-    padding: 16px;
+    padding: 0;
     width: 100%;
   }
 
   label {
+    @include font-m;
     color: $gray-900;
     float: left;
-    font-size: 14px;
     font-weight: lighter;
-    line-height: 24px;
     margin: 0;
     padding: 0;
     width: auto;
@@ -93,14 +76,13 @@ form {
 
   input,
   textarea {
+    @include font-m;
     appearance: none;
     background-color: $transparent;
     border: 0;
     box-shadow: none;
-    color: $gray;
     display: block;
     float: left;
-    font-size: 16px;
     max-width: 100%;
     outline: none;
     overflow: auto;
@@ -113,7 +95,10 @@ form {
   [type="search"],
   [type="tel"],
   [type="text"],
-  [type="url"] {
+  [type="url"],
+  [type="time"],
+  [type="week"],
+  [type="month"] {
     height: 32px;
     line-height: 32px;
     margin: 0;
@@ -156,29 +141,29 @@ form {
   // scss-lint:enable VendorPrefix
 
   select {
+    @include font-m;
     appearance: none;
-    // background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='black'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+    background-image: url('../images/512x512.png');
     background-color: $transparent;
-    // background-position: right 4px bottom 2px;
-    // background-repeat: no-repeat;
-    // background-size: 12px;
+    background-position: right 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
     border: 0;
     box-shadow: none;
     color: $transparent;
-    display: inline;
-    font-size: 16px;
-    line-height: 24px;
+    display: block;
+    float: left;
     margin: 0;
     max-width: 100%;
     outline: none;
-    overflow: auto;
-    padding: 0 24px 0 0;
+    overflow: hidden;
+    padding: 0 0px 0 0;
     text-shadow: 0 0 0 $black;
     width: 100%;
     option {
+      @include font-m;
       background-color: $transparent;
-      font-size: 16px;
-      line-height: 24px;
+      width: 100%;
     }
   }
 
@@ -190,26 +175,6 @@ form {
     max-width: 100%;
     padding: 3px 7px;
     width: 100%;
-  }
-
-  .file {
-    @include border-corner(4px);
-    float: left;
-    max-width: 100%;
-    padding: 0;
-    width: 100%;
-    [type=file] {
-      appearance: none;
-      background-color: $transparent;
-      filter: alpha(opacity = 0);
-      opacity: 0;
-      position: absolute;
-      width: 0;
-    }
-    label {
-      cursor: pointer;
-      position: relative;
-    }
   }
 
   .textarea {
@@ -239,13 +204,33 @@ form {
     }
   }
 
+  .file {
+    @include border-corner(4px);
+    float: left;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    [type=file] {
+      appearance: none;
+      background-color: $transparent;
+      filter: alpha(opacity = 0);
+      opacity: 0;
+      position: absolute;
+      width: 0;
+    }
+    label {
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
   .select {
     @include border-corner(4px);
     background-color: $white;
     border: 1px solid $gray-100;
     float: left;
     max-width: 100%;
-    padding: 6px 8px;
+    padding: 7px 8px;
     width: 100%;
     select {
       text-shadow: 0 0 0 $black;
