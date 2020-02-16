@@ -264,12 +264,12 @@ form {
       font-weight: normal;
       margin: 0;
       padding: 0;
-      width: auto;
     }
     [type=checkbox],
     [type=radio] {
       float: left;
       height: 13px;
+      margin: 0 4px 0 1px;
       width: 13px;
     }
     [type=checkbox] {
