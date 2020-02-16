@@ -256,17 +256,18 @@ form {
     float: left;
     font-size: 12px;
     max-width: 100%;
-    padding: 10px 7px 8px 7px;
+    padding: 10px 7px 11px 7px;
     width: 100%;
     label {
-      background-color: green;
       font-size: 16px;
-      line-height: 20px;
-      min-height: 20px;
+      line-height: 17px;
+      min-height: 17px;
       display: inline-block;
       font-weight: normal;
       margin: 0;
       padding: 0;
+      -moz-box-orient: bottom;
+      vertical-align: bottom;
     }
     [type=checkbox],
     [type=radio],
