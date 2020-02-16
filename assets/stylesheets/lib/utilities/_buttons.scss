@@ -4,24 +4,25 @@
 // -------------------------------------------------------------
 
 @mixin button-default {
-  @include border-corner(.25em);
   @include button-blue-theme;
-  appearance: none;
-  float: left;
-  font-weight: 100;
-  letter-spacing: .035em;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  width: auto;
+  appearance: none !important;
+  border: 0 !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  float: left !important;
+  font-weight: 100 !important;
+  letter-spacing: .030em !important;
+  text-align: center !important;
+  text-decoration: none !important;
   &.outline {
-    border: 1px solid;
+    border: 1px solid !important;
   }
 }
 
 @mixin button-size-xxs {
   font-size: 8px;
   line-height: 18px;
+  min-height: 18px;
   padding: 0 9px;
   &.pill {
     @include border-corner(9px);
@@ -37,6 +38,7 @@
 @mixin button-size-xs {
   font-size: 9px;
   line-height: 20px;
+  min-height: 20px;
   padding: 0 10px;
   &.pill {
     @include border-corner(10px);
@@ -52,6 +54,7 @@
 @mixin button-size-s {
   font-size: 10px;
   line-height: 22px;
+  min-height: 22px;
   padding: 0 11px;
   &.pill {
     @include border-corner(12px);
@@ -67,6 +70,7 @@
 @mixin button-size-m {
   font-size: 11px;
   line-height: 24px;
+  min-height: 24px;
   padding: 0 12px;
   &.pill {
     @include border-corner(12px);
@@ -82,6 +86,7 @@
 @mixin button-size-l {
   font-size: 12px;
   line-height: 32px;
+  min-height: 32px;
   padding: 0 16px;
   &.pill {
     @include border-corner(16px);
@@ -97,6 +102,7 @@
 @mixin button-size-xl {
   font-size: 13px;
   line-height: 40px;
+  min-height: 40px;
   padding: 0 20px;
   &.pill {
     @include border-corner(20px);
@@ -112,6 +118,7 @@
 @mixin button-size-xxl {
   font-size: 14px;
   line-height: 48px;
+  min-height: 48px;
   padding: 0 24px;
   &.pill {
     @include border-corner(24px);

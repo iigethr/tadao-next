@@ -4,11 +4,14 @@
 // -------------------------------------------------------------
 
 @mixin link-default {
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  display: block;
   float: left;
   letter-spacing: .030em;
   text-align: left;
   text-decoration: none;
-  width: auto;
 }
 
 @mixin link-xxs {

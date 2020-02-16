@@ -6,9 +6,11 @@
 @mixin divider-default {
   appearance: none !important;
   border: 0 !important;
+  box-sizing: border-box !important;
   display: block !important;
   float: left !important;
-  height: 1px !important;
+  height: 100% !important;
+  margin: 0 !important;
   padding: 0 !important;
   width: 0 !important;
 }
@@ -52,28 +54,28 @@
   margin: 0 96px !important;
 }
 
-@mixin divider-solid-line {
-  border-left: 1px solid $gray-300 !important;
-}
-
-@mixin divider-dashed-line {
+@mixin divider-dashed {
   border-left: 1px dashed $gray-300 !important;
 }
 
-@mixin divider-dotted-line {
+@mixin divider-dotted {
   border-left: 1px dotted $gray-300 !important;
+}
+
+@mixin divider-solid {
+  border-left: 1px solid $gray-300 !important;
 }
 
 // Classes
 // -------------------------------------------------------------
-.divider      { @include divider; }
-.divider-xxs  { @include divider-xxs; }
-.divider-xs   { @include divider-xs; }
-.divider-s    { @include divider-s; }
-.divider-m    { @include divider-m; }
-.divider-l    { @include divider-l; }
-.divider-xl   { @include divider-xl; }
-.divider-xxl  { @include divider-xxl; }
-.divider-solid-line   { @include divider-solid-line; }
-.divider-dashed-line  { @include divider-dashed-line; }
-.divider-dotted-line  { @include divider-dotted-line; }
+.divider        { @include divider; }
+.divider-xxs    { @include divider-xxs; }
+.divider-xs     { @include divider-xs; }
+.divider-s      { @include divider-s; }
+.divider-m      { @include divider-m; }
+.divider-l      { @include divider-l; }
+.divider-xl     { @include divider-xl; }
+.divider-xxl    { @include divider-xxl; }
+.divider-dashed { @include divider-dashed; }
+.divider-dotted { @include divider-dotted; }
+.divider-solid  { @include divider-solid; }

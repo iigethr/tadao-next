@@ -5,6 +5,7 @@ import Head from "next/head"
 // Components
 import DesignHeader from "../../lib/components/design/design_header"
 import DesignButtons from "../../lib/components/design/design_buttons"
+import DesignLinks from "../../lib/components/design/design_links"
 // Data
 import utilities from "js-yaml-loader!../../data/utilities.yml"
 // Modules
@@ -32,6 +33,9 @@ class Writer extends React.Component {
         </Head>
         <DesignHeader data={data} />
         <DesignButtons />
+        <hr className="separator-m" />
+        <DesignLinks />
+        <hr className="separator-xxl" />
       </div>
     )
   }
