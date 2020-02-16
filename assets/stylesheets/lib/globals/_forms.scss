@@ -57,7 +57,9 @@ form {
     width: 100%;
   }
 
-  label {
+  label,
+  .label,
+  .label-reference {
     @include font-m;
     color: $gray-900;
     float: left;
@@ -73,6 +75,10 @@ form {
     &.required::after {
       content: " *";
     }
+  }
+  .label-reference {
+    @include font-s;
+    color: $gray;
   }
 
   input,
@@ -150,6 +156,7 @@ form {
     background-repeat: no-repeat;
     background-size: 24px 24px;
     border: 0;
+    border-radius: 0;
     box-shadow: none;
     color: $transparent;
     display: block;
@@ -159,7 +166,7 @@ form {
     outline: none;
     overflow: hidden;
     padding: 0 0px 0 0;
-    text-shadow: 0 0 0 $black;
+    text-shadow: 0 0 0 $gray;
     width: 100%;
     option {
       @include font-m;
@@ -242,7 +249,7 @@ form {
   }
 
   .checkbox,
-  .radiobutton {
+  .radio {
     @include border-corner(4px);
     background-color: $white;
     border: 1px solid $gray-100;
@@ -308,48 +315,6 @@ form {
       float: left;
       margin: 0;
       padding: 0;
-    }
-  }
-
-  .label,
-  .label-reference,
-  .reference {
-    font-size: 12px;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    width: auto;
-  }
-
-  .label,
-  .label-reference {
-    line-height: inherit;
-    vertical-align: baseline;
-  }
-
-  .reference {
-    float: left;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .form-card {
-    float: left;
-    max-width: 100%;
-    width: 100%;
-    .form-card-box {
-      background-color: $white;
-      border: 1px solid $gray-100;
-      border-radius: 4px;
-      float: left;
-      max-width: 100%;
-      padding: 16px;
-      width: 100%;
-      .form-card-item {
-        float: left;
-        max-width: 100%;
-        width: 100%;
-      }
     }
   }
 
