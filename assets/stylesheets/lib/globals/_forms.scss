@@ -260,9 +260,10 @@ form {
     width: 100%;
     label {
       background-color: green;
-      font-size: 16px;
-      line-height: 16px;
-      min-height: 16px;
+      font-size: 16px !important;
+      height: 16px!important;
+      line-height: 16px !important;
+      min-height: 16px!important;
       display: inline-block;
       font-weight: normal;
       margin: 0;
@@ -280,8 +281,8 @@ form {
       background-color: $transparent;
       float: left;
       height: 14px !important;
-      line-height: 14px;
-      margin: 0 4px 0 2px;
+      line-height: 0;
+      margin: 0!important;
       padding: 0 !important;
       width: 14px !important;
     }
