@@ -259,6 +259,7 @@ form {
     padding: 10px 7px 11px 7px;
     width: 100%;
     label {
+      background-color: green;
       font-size: 16px;
       line-height: 16px;
       min-height: 16px;
@@ -266,8 +267,8 @@ form {
       font-weight: normal;
       margin: 0;
       padding: 0;
-      -moz-box-orient: bottom;
-      vertical-align: bottom;
+      -moz-box-orient: middle;
+      vertical-align: middle;
     }
     [type=checkbox],
     [type=radio],
@@ -278,10 +279,11 @@ form {
       appearance: none;
       background-color: $transparent;
       float: left;
-      height: 16px !important;
-      line-height: 16px;
+      height: 14px !important;
+      line-height: 14px;
       margin: 0 4px 0 2px;
-      width: 16px !important;
+      padding: 0 !important;
+      width: 14px !important;
     }
     [type=checkbox] {
       appearance: checkbox;
