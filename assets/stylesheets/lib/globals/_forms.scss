@@ -279,12 +279,13 @@ form {
     [type=radio]::after {
       appearance: none;
       background-color: $transparent;
-      float: left;
       height: 14px !important;
       line-height: 0;
-      margin: 0!important;
+      margin: 0 4px 0 0!important;
       padding: 0 !important;
       width: 14px !important;
+      position: relative;
+      top: 0px;
     }
     [type=checkbox] {
       appearance: checkbox;
