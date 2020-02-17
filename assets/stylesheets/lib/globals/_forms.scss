@@ -14,13 +14,19 @@ form {
   *,
   *::after,
   *::before {
-    @include border-box;
     color: $gray;
-    vertical-align: bottom;
-    -webkit-tap-highlight-color: $transparent;
   }
 
   fieldset {
+    border: 0;
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  &.form {
     border: 0;
     float: left;
     margin: 0;
@@ -37,7 +43,7 @@ form {
         float: left;
         margin: 0;
         max-width: 100%;
-        padding: 0;
+        padding: 8px;
         width: 100%;
       }
     }
@@ -276,29 +282,6 @@ form {
     }
   }
 
-  .date {
-    @include clearfix-left;
-    background-color: $white;
-    border: 1px solid $gray-100;
-    float: left;
-    padding: 7px;
-    width: auto;
-    [type=date],
-    [type=date]::-webkit-calendar-picker-indicator,
-    [type=date]::-webkit-input-placeholder,
-    [type=date]::-webkit-inner-spin-button {
-      appearance: none;
-      background-color: $transparent;
-      border: 0;
-      display: inline-block;
-      visibility: hidden;
-      width: auto;
-    }
-    select {
-      width: auto;
-    }
-  }
-
   .submit {
     float: left;
     max-width: 100%;
@@ -312,18 +295,25 @@ form {
     }
   }
 
-  .form-nav {
+  .input,
+  .textarea,
+  .select,
+  .checkbox,
+  .radio,
+  .file,
+  .submit input,
+  .form-errors-row {
+    @include border-corner(4px);
+  }
+
+  .form-menu {
     float: left;
-    max-width: 100%;
     width: 100%;
-    .form-nav-box {
+    .form-menu-box {
       float: left;
-      max-width: 100%;
-      padding: 8px;
       width: 100%;
-      .form-nav-item {
+      .form-menu-row {
         float: left;
-        max-width: 100%;
         width: 100%;
       }
     }
@@ -331,22 +321,26 @@ form {
 
   .form-errors {
     float: left;
-    max-width: 100%;
     width: 100%;
     .form-errors-box {
-      @include clear-list;
       float: left;
-      max-width: 100%;
-      padding: 4px;
       width: 100%;
-      .form-errors-item {
+      .form-errors-row {
+        border: 1px solid $red;
+        background-color: $red-000;
+        color: $red;
         float: left;
-        max-width: 100%;
-        padding: 4px;
+        margin: 4px 0;
+        padding: 7px;
         width: 100%;
         p {
           color: $red;
-          text-decoration: underline;
+        }
+        &:first-child {
+          margin: 0 0 4px;
+        }
+        &:last-child {
+          margin: 4px 0 0;
         }
       }
     }
