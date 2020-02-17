@@ -8,10 +8,7 @@ form {
   @include clearfix;
   border: 0;
   float: left;
-  font-size: 16px;
-  line-height: 24px;
   margin: 0;
-  max-width: 100%;
   padding: 0;
   width: 100%;
   *,
@@ -64,6 +61,7 @@ form {
     color: $gray-900;
     float: left;
     font-weight: lighter;
+    display: block;
     margin: 0;
     padding: 0;
     width: auto;
@@ -76,8 +74,9 @@ form {
       content: " *";
     }
   }
+
   .label-reference {
-    @include font-s;
+    @include font-xs;
     color: $gray;
   }
 
@@ -96,16 +95,16 @@ form {
     width: 100%;
   }
 
-  [type="email"],
-  [type="number"],
-  [type="password"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"],
-  [type="time"],
-  [type="week"],
-  [type="month"] {
+  [type=email],
+  [type=number],
+  [type=password],
+  [type=search],
+  [type=tel],
+  [type=text],
+  [type=url],
+  [type=time],
+  [type=week],
+  [type=month] {
     height: 32px;
     line-height: 32px;
     margin: 0;
@@ -122,35 +121,10 @@ form {
     width: 100%;
   }
 
-  // scss-lint:disable PseudoElement
-  // scss-lint:disable VendorPrefix
-  ::-webkit-input-placeholder,
-  :-moz-placeholder,
-  ::-moz-placeholder,
-  :-ms-input-placeholder {
-    color: $transparent;
-    line-height: 1;
-  }
-
-  :focus::-webkit-input-placeholder,
-  :focus:-moz-placeholder,
-  :focus::-moz-placeholder,
-  :focus:-ms-input-placeholder {
-    color: $transparent;
-    opacity: 0;
-  }
-
-  :invalid,
-  :invalid:focus {
-    box-shadow: 0 0 0 $transparent;
-  }
-  // scss-lint:enable PseudoElement
-  // scss-lint:enable VendorPrefix
-
   select {
     @include font-m;
     appearance: none;
-    background-image: url('../images/512x512.png');
+    background-image: url("../images/icons/down.png");
     background-color: $transparent;
     background-position: right 0 bottom 0;
     background-repeat: no-repeat;
@@ -176,7 +150,6 @@ form {
   }
 
   .input {
-    @include border-corner(4px);
     background-color: $white;
     border: 1px solid $gray-100;
     float: left;
@@ -186,7 +159,6 @@ form {
   }
 
   .textarea {
-    @include border-corner(4px);
     background-color: $white;
     border: 1px solid $gray-100;
     float: left;
@@ -212,28 +184,7 @@ form {
     }
   }
 
-  .file {
-    @include border-corner(4px);
-    float: left;
-    max-width: 100%;
-    padding: 0;
-    width: 100%;
-    [type=file] {
-      appearance: none;
-      background-color: $transparent;
-      filter: alpha(opacity = 0);
-      opacity: 0;
-      position: absolute;
-      width: 0;
-    }
-    label {
-      cursor: pointer;
-      position: relative;
-    }
-  }
-
   .select {
-    @include border-corner(4px);
     background-color: $white;
     border: 1px solid $gray-100;
     float: left;
@@ -250,7 +201,6 @@ form {
 
   .checkbox,
   .radio {
-    @include border-corner(4px);
     background-color: $white;
     border: 1px solid $gray-100;
     float: left;
@@ -259,6 +209,7 @@ form {
     padding: 9px 7px 5px 7px;
     width: 100%;
     label {
+      color: $gray;
       font-size: 16px !important;
       height: 16px!important;
       line-height: 16px !important;
@@ -294,8 +245,38 @@ form {
     }
   }
 
+  .file {
+    background-color: $white;
+    border: 1px solid $gray-100;
+    float: left;
+    max-width: 100%;
+    padding: 7px;
+    width: 100%;
+    [type=file] {
+      appearance: none;
+      background-color: $transparent;
+      filter: alpha(opacity = 0);
+      opacity: 0;
+      position: absolute;
+      width: 0;
+    }
+    label {
+      @include font-m;
+      appearance: none;
+      background-image: url("../images/icons/file.png");
+      background-color: $transparent;
+      background-position: left 0 bottom 0;
+      background-repeat: no-repeat;
+      background-size: 18px 24px;
+      color: $gray;
+      cursor: pointer;
+      padding: 0 0 0 26px;
+      position: relative;
+      width: 100%;
+    }
+  }
+
   .date {
-    @include border-corner(4px);
     @include clearfix-left;
     background-color: $white;
     border: 1px solid $gray-100;
@@ -348,7 +329,6 @@ form {
     }
   }
 
-  // Form errors
   .form-errors {
     float: left;
     max-width: 100%;
@@ -370,6 +350,27 @@ form {
         }
       }
     }
+  }
+
+  ::-webkit-input-placeholder,
+  :-moz-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder {
+    color: $transparent;
+    line-height: 1;
+  }
+
+  :focus::-webkit-input-placeholder,
+  :focus:-moz-placeholder,
+  :focus::-moz-placeholder,
+  :focus:-ms-input-placeholder {
+    color: $transparent;
+    opacity: 0;
+  }
+
+  :invalid,
+  :invalid:focus {
+    box-shadow: 0 0 0 $transparent;
   }
 }
 
