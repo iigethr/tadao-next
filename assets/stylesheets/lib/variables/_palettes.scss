@@ -18,160 +18,160 @@ $deep-black: rgba(0, 0, 0, 1) !default;
 
 // Gray
 // -------------------------------------------------------------
-$gray-000: #f9f9fa !default;
-$gray-100: #e4e5e8 !default;
-$gray-200: #cfd0d6 !default;
-$gray-300: #babcc3 !default;
-$gray-400: #a5a7b1 !default;
-$gray-500: #90939f !default;
-$gray-600: #7b7f8d !default;
-$gray-700: #686b78 !default;
-$gray-800: #565963 !default;
-$gray-900: #44464e !default;
+$gray-000: #f2f2f2 !default;
+$gray-100: #e6e6e6 !default;
+$gray-200: #cccccc !default;
+$gray-300: #b3b3b3 !default;
+$gray-400: #999999 !default;
+$gray-500: #808080 !default;
+$gray-600: #666666 !default;
+$gray-700: #4d4d4d !default;
+$gray-800: #333333 !default;
+$gray-900: #1a1a1a !default;
 
 // Gray Default
 $gray: $gray-500 !default;
 
 // Purple
 // -------------------------------------------------------------
-$purple-000: #faf4ff !default;
-$purple-100: #e7cdff !default;
-$purple-200: #d4a6ff !default;
-$purple-300: #c27eff !default;
-$purple-400: #af57ff !default;
-$purple-500: #9c30ff !default;
-$purple-600: #8909ff !default;
-$purple-700: #7500e1 !default;
-$purple-800: #6100b9 !default;
-$purple-900: #4c0092 !default;
+$purple-000: #f2e5ff !default;
+$purple-100: #e5ccff !default;
+$purple-200: #cc99ff !default;
+$purple-300: #b266ff !default;
+$purple-400: #9933ff !default;
+$purple-500: #7f00ff !default;
+$purple-600: #6600cc !default;
+$purple-700: #4c0099 !default;
+$purple-800: #330066 !default;
+$purple-900: #190033 !default;
 
 // Purple Default
 $purple: $purple-500 !default;
 
 // Blue
 // -------------------------------------------------------------
-$blue-000: #f4f7ff !default;
-$blue-100: #cdd9ff !default;
-$blue-200: #a6baff !default;
-$blue-300: #7e9cff !default;
-$blue-400: #577eff !default;
-$blue-500: #3060ff !default;
-$blue-600: #0942ff !default;
-$blue-700: #0034e1 !default;
-$blue-800: #002bb9 !default;
-$blue-900: #002292 !default;
+$blue-000: #e5ecff !default;
+$blue-100: #ccd9ff !default;
+$blue-200: #99b3ff !default;
+$blue-300: #668cff !default;
+$blue-400: #3366ff !default;
+$blue-500: #0040ff !default;
+$blue-600: #0033cc !default;
+$blue-700: #002699 !default;
+$blue-800: #001966 !default;
+$blue-900: #000d33 !default;
 
 // Blue Default
 $blue: $blue-500 !default;
 
 // Aqua
 // -------------------------------------------------------------
-$aqua-000: #f4fffc !default;
-$aqua-100: #cdfff3 !default;
-$aqua-200: #a6ffea !default;
-$aqua-300: #7effe1 !default;
-$aqua-400: #57ffd7 !default;
-$aqua-500: #30ffce !default;
-$aqua-600: #09ffc5 !default;
-$aqua-700: #00e1ab !default;
-$aqua-800: #00b98d !default;
-$aqua-900: #00926f !default;
+$aqua-000: #e5fff9 !default;
+$aqua-100: #ccfff2 !default;
+$aqua-200: #99ffe6 !default;
+$aqua-300: #66ffd9 !default;
+$aqua-400: #33ffcc !default;
+$aqua-500: #00ffbf !default;
+$aqua-600: #00cc99 !default;
+$aqua-700: #009973 !default;
+$aqua-800: #00664d !default;
+$aqua-900: #003326 !default;
 
 // Aqua Default
 $aqua: $aqua-500 !default;
 
 // Green
 // -------------------------------------------------------------
-$green-000: #f4fff7 !default;
-$green-100: #cdffda !default;
-$green-200: #a6ffbd !default;
-$green-300: #7effa0 !default;
-$green-400: #57ff83 !default;
-$green-500: #30ff66 !default;
-$green-600: #09ff49 !default;
-$green-700: #00e13b !default;
-$green-800: #00b930 !default;
-$green-900: #009226 !default;
+$green-000: #e5ffec !default;
+$green-100: #ccffd9 !default;
+$green-200: #99ffb3 !default;
+$green-300: #66ff8c !default;
+$green-400: #33ff66 !default;
+$green-500: #00ff40 !default;
+$green-600: #00cc33 !default;
+$green-700: #009926 !default;
+$green-800: #00661a !default;
+$green-900: #00330d !default;
 
 // Green Default
 $green: $green-500 !default;
 
 // Lime
 // -------------------------------------------------------------
-$lime-000: #f9fff4 !default;
-$lime-100: #e6ffcd !default;
-$lime-200: #d2ffa6 !default;
-$lime-300: #beff7e !default;
-$lime-400: #aaff57 !default;
-$lime-500: #96ff30 !default;
-$lime-600: #82ff09 !default;
-$lime-700: #6fe100 !default;
-$lime-800: #5bb900 !default;
-$lime-900: #489200 !default;
+$lime-000: #f2ffe5 !default;
+$lime-100: #e6ffcc !default;
+$lime-200: #ccff99 !default;
+$lime-300: #b3ff66 !default;
+$lime-400: #99ff33 !default;
+$lime-500: #80ff00 !default;
+$lime-600: #66cc00 !default;
+$lime-700: #4d9900 !default;
+$lime-800: #336600 !default;
+$lime-900: #1a3300 !default;
 
 // Lime Default
 $lime: $lime-500 !default;
 
 // Yellow
 // -------------------------------------------------------------
-$yellow-000: #fffcf4 !default;
-$yellow-100: #fff3cd !default;
-$yellow-200: #ffe9a6 !default;
-$yellow-300: #ffdf7e !default;
-$yellow-400: #ffd657 !default;
-$yellow-500: #ffcc30 !default;
-$yellow-600: #ffc209 !default;
-$yellow-700: #e1a900 !default;
-$yellow-800: #b98c00 !default;
-$yellow-900: #926e00 !default;
+$yellow-000: #fff9e5 !default;
+$yellow-100: #fff2cc !default;
+$yellow-200: #ffe699 !default;
+$yellow-300: #ffd966 !default;
+$yellow-400: #ffcc33 !default;
+$yellow-500: #ffbf00 !default;
+$yellow-600: #cc9900 !default;
+$yellow-700: #997300 !default;
+$yellow-800: #664d00 !default;
+$yellow-900: #332600 !default;
 
 // Yellow Default
 $yellow: $yellow-500 !default;
 
 // Orange
 // -------------------------------------------------------------
-$orange-000: #fff7f4 !default;
-$orange-100: #ffdacd !default;
-$orange-200: #ffbca6 !default;
-$orange-300: #ff9f7e !default;
-$orange-400: #ff8157 !default;
-$orange-500: #ff6430 !default;
-$orange-600: #ff4709 !default;
-$orange-700: #e13800 !default;
-$orange-800: #b92f00 !default;
-$orange-900: #922500 !default;
+$orange-000: #fff0e5 !default;
+$orange-100: #ffe1cc !default;
+$orange-200: #ffc499 !default;
+$orange-300: #ffa666 !default;
+$orange-400: #ff8833 !default;
+$orange-500: #ff6a00 !default;
+$orange-600: #cc5500 !default;
+$orange-700: #994000 !default;
+$orange-800: #662b00 !default;
+$orange-900: #331500 !default;
 
 // Orange Default
 $orange: $orange-500 !default;
 
 // Red
 // -------------------------------------------------------------
-$red-000: #fff4f4 !default;
-$red-100: #ffcdcd !default;
-$red-200: #ffa6a6 !default;
-$red-300: #ff7e7e !default;
-$red-400: #ff5757 !default;
-$red-500: #ff3030 !default;
-$red-600: #ff0909 !default;
-$red-700: #e10000 !default;
-$red-800: #b90000 !default;
-$red-900: #920000 !default;
+$red-000: #ffe8e5 !default;
+$red-100: #ffd0cc !default;
+$red-200: #ffa299 !default;
+$red-300: #ff7366 !default;
+$red-400: #ff4433 !default;
+$red-500: #ff1500 !default;
+$red-600: #cc1100 !default;
+$red-700: #990d00 !default;
+$red-800: #660900 !default;
+$red-900: #330400 !default;
 
 // Red Default
 $red: $red-500 !default;
 
 // Pink
 // -------------------------------------------------------------
-$pink-000: #fff4fa !default;
-$pink-100: #ffcde6 !default;
-$pink-200: #ffa6d3 !default;
-$pink-300: #ff7ebf !default;
-$pink-400: #ff57ac !default;
-$pink-500: #ff3098 !default;
-$pink-600: #ff0984 !default;
-$pink-700: #e10071 !default;
-$pink-800: #b9005d !default;
-$pink-900: #920049 !default;
+$pink-000: #ffe5f2 !default;
+$pink-100: #ffcce6 !default;
+$pink-200: #ff99cc !default;
+$pink-300: #ff66b3 !default;
+$pink-400: #ff3399 !default;
+$pink-500: #ff0080 !default;
+$pink-600: #cc0066 !default;
+$pink-700: #99004d !default;
+$pink-800: #660033 !default;
+$pink-900: #33001a !default;
 
 // Pink Default
 $pink: $pink-500 !default;
