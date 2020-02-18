@@ -55,15 +55,15 @@
   blockquote {
     @include font-l;
     float: left;
-    padding: 32px 32px 64px;
     max-width: 80%;
+    padding: 32px 32px 64px;
   }
   .floater {
     display: block;
     float: left;
     margin: 0;
-    padding: 0;
     max-width: 100%;
+    padding: 0;
     .floater-box {
       display: block;
       float: left;
@@ -103,15 +103,14 @@
       }
     }
   }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.writer :first-child {
-  margin-top: 0;
-}
-
-.writer :last-child {
-  margin-bottom: 0;
-}
 
 // Media Query 240px
 // -------------------------------------------------------------

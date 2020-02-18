@@ -16,23 +16,23 @@
 
 // 1) Variables
 // ------------------------------------------------------------
-@import "lib/variables/_breakpoints";
-@import "lib/variables/_fonts";
-@import "lib/variables/_palettes";
+@import "lib/variables/breakpoints";
+@import "lib/variables/fonts";
+@import "lib/variables/palettes";
 
 // 2) Mixins
 // ------------------------------------------------------------
-@import "lib/mixins/_animations";
-@import "lib/mixins/_borders";
-@import "lib/mixins/_button_themes";
-@import "lib/mixins/_clearfixes";
-@import "lib/mixins/_fixed";
-@import "lib/mixins/_link_themes";
-@import "lib/mixins/_lists";
-@import "lib/mixins/_shadows";
-@import "lib/mixins/_sizes";
-@import "lib/mixins/_sticky";
-@import "lib/mixins/_visibilities";
+@import "lib/mixins/animations";
+@import "lib/mixins/borders";
+@import "lib/mixins/button_themes";
+@import "lib/mixins/clearfixes";
+@import "lib/mixins/fixed";
+@import "lib/mixins/link_themes";
+@import "lib/mixins/lists";
+@import "lib/mixins/shadows";
+@import "lib/mixins/sizes";
+@import "lib/mixins/sticky";
+@import "lib/mixins/visibilities";
 
 // 3) Global
 // ------------------------------------------------------------
@@ -66,39 +66,39 @@
 
 // 6) Utilities
 // ------------------------------------------------------------
-@import "lib/utilities/_buttons";
-@import "lib/utilities/_icons";
-@import "lib/utilities/_links";
-@import "lib/utilities/_dividers";
-@import "lib/utilities/_separators";
+@import "lib/utilities/buttons";
+@import "lib/utilities/icons";
+@import "lib/utilities/links";
+@import "lib/utilities/dividers";
+@import "lib/utilities/separators";
 
 // 7) Components
 // ------------------------------------------------------------
-@import "lib/components/_hero";
-@import "lib/components/_legal_menu";
-@import "lib/components/_legal_section_menu";
-@import "lib/components/_cookies";
-@import "lib/components/_copyright";
+@import "lib/components/hero";
+@import "lib/components/legal_menu";
+@import "lib/components/legal_section_menu";
+@import "lib/components/cookies";
+@import "lib/components/copyright";
 // Design WIP
-@import "lib/components/design/_design_menu";
-@import "lib/components/design/_design_chips";
-@import "lib/components/design/_design_content";
-@import "lib/components/design/_design_cards";
+@import "lib/components/design/design_menu";
+@import "lib/components/design/design_chips";
+@import "lib/components/design/design_content";
+@import "lib/components/design/design_cards";
 
 // 8) Overriders
 // ------------------------------------------------------------
-@import "lib/overriders/_alerts";
-@import "lib/overriders/_alignments";
-@import "lib/overriders/_centers";
-@import "lib/overriders/_colours";
-@import "lib/overriders/_cursors";
-@import "lib/overriders/_displays";
-@import "lib/overriders/_floats";
-@import "lib/overriders/_font_families";
-@import "lib/overriders/_font_weights";
-@import "lib/overriders/_line_heights";
-@import "lib/overriders/_margins";
-@import "lib/overriders/_misc";
-@import "lib/overriders/_paddings";
-@import "lib/overriders/_positions";
-@import "lib/overriders/_underlines";
+@import "lib/overriders/alerts";
+@import "lib/overriders/alignments";
+@import "lib/overriders/centers";
+@import "lib/overriders/colours";
+@import "lib/overriders/cursors";
+@import "lib/overriders/displays";
+@import "lib/overriders/floats";
+@import "lib/overriders/font_families";
+@import "lib/overriders/font_weights";
+@import "lib/overriders/line_heights";
+@import "lib/overriders/margins";
+@import "lib/overriders/misc";
+@import "lib/overriders/paddings";
+@import "lib/overriders/positions";
+@import "lib/overriders/underlines";

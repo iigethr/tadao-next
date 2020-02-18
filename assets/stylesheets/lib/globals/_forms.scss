@@ -39,13 +39,12 @@ form {
       max-width: 100%;
       padding: 0;
       width: 100%;
-      .form-item {
+      .form-group {
         float: left;
         margin: 0;
-        max-width: 100%;
-        width: 50%;
+        width: 100%;
       }
-      .form-group {
+      .form-item {
         float: left;
         margin: 0;
         max-width: 100%;
@@ -66,29 +65,31 @@ form {
 
   label,
   .label,
+  .label-group,
   .label-reference {
     @include font-m;
     color: $gray-900;
+    display: block;
     float: left;
     font-weight: lighter;
-    display: block;
     margin: 0;
+    min-height: 24;
     padding: 0;
     i {
       color: $gray-100;
       font-weight: normal;
     }
-    &.required:after,
     &.required::after {
       content: " *";
     }
   }
 
-  label {
+  label,
+  .label {
     width: auto;
   }
 
-  .label {
+  .label-group {
     width: 100%;
   }
 
@@ -142,8 +143,8 @@ form {
   select {
     @include font-m;
     appearance: none;
-    background-image: url("../images/icons/down.png");
     background-color: $transparent;
+    background-image: url("../images/icons/down.png");
     background-position: right 0 bottom 0;
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -224,19 +225,19 @@ form {
     float: left;
     font-size: 12px;
     max-width: 100%;
-    padding: 9px 7px 5px 7px;
+    padding: 9px 7px 5px;
     width: 100%;
     label {
-      color: $gray;
-      font-size: 16px !important;
-      height: 16px!important;
-      line-height: 16px !important;
-      min-height: 16px!important;
-      display: inline-block;
-      font-weight: normal;
-      margin: 0;
-      padding: 3px 0 0 0;
       -moz-box-orient: middle;
+      color: $gray;
+      display: inline-block;
+      font-size: 16px !important;
+      font-weight: normal;
+      height: 16px !important;
+      line-height: 16px !important;
+      margin: 0;
+      min-height: 16px !important;
+      padding: 3px 0 0;
       vertical-align: middle;
     }
     [type=checkbox],
@@ -251,9 +252,9 @@ form {
       line-height: 0;
       margin: 0 4px 0 0;
       padding: 0;
-      width: 16px;
       position: relative;
       top: -2px;
+      width: 16px;
     }
     [type=checkbox] {
       appearance: checkbox;
@@ -281,8 +282,8 @@ form {
     label {
       @include font-m;
       appearance: none;
-      background-image: url("../images/icons/file.png");
       background-color: $transparent;
+      background-image: url("../images/icons/file.png");
       background-position: left 0 bottom 0;
       background-repeat: no-repeat;
       background-size: 18px 24px;
@@ -328,8 +329,8 @@ form {
       float: left;
       width: 100%;
       .form-errors-row {
-        border: 1px solid $red;
         background-color: $red-000;
+        border: 1px solid $red;
         color: $red;
         float: left;
         margin: 4px 0;
@@ -348,19 +349,9 @@ form {
     }
   }
 
-  ::-webkit-input-placeholder,
-  :-moz-placeholder,
-  ::-moz-placeholder,
-  :-ms-input-placeholder {
+  ::placeholder {
     color: $transparent;
     line-height: 1;
-  }
-
-  :focus::-webkit-input-placeholder,
-  :focus:-moz-placeholder,
-  :focus::-moz-placeholder,
-  :focus:-ms-input-placeholder {
-    color: $transparent;
     opacity: 0;
   }
 
@@ -369,36 +360,44 @@ form {
     box-shadow: 0 0 0 $transparent;
   }
 
+  // scss-lint:disable MergeableSelector
   // Configuration Classes
-
-  &.form {
-    .form-row {
-      .form-item {
-        padding: 8px 24px;
-      }
-      .form-group {
-        padding: 0 0 8px;
-        .form-item {
-          padding: 8px 24px 0;
-        }
-        .label,
-        .label-reference {
-          position: relative;
-          padding: 0 24px;
-          top: 8px;
-        }
-      }
-    }
-  }
 
   legend {
     padding: 8px 24px;
   }
 
-  .form-menu,
+  label,
+  .label {
+    padding: 0 0 8px;
+  }
+
+  .label-group {
+    padding: 0 24px;
+  }
+
+  &.form {
+    .form-row {
+      .form-group {
+        padding: 8px 0 0;
+        .form-item {
+          padding: 8px 24px;
+        }
+      }
+      .form-item {
+        padding: 8px 24px;
+      }
+    }
+  }
+
   .form-errors {
-    .form-menu-box,
     .form-errors-box {
+      padding: 8px 24px;
+    }
+  }
+
+  .form-menu {
+    .form-menu-box {
       padding: 8px 24px;
     }
   }
@@ -413,36 +412,17 @@ form {
   .form-errors-row {
     @include border-corner(4px);
   }
+  // scss-lint:enable MergeableSelector
 }
 
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
-  form {
-    &.form {
-      .form-row {
-        .form-item {
-          max-width: 100%;
-          width: 100%;
-        }
-      }
-    }
-  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$xs} {
-  form {
-    &.form {
-      .form-row {
-        .form-item {
-          max-width: 100%;
-          width: 100%;
-        }
-      }
-    }
-  }
 }
 
 // Media Query 480px

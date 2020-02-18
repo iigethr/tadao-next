@@ -35,12 +35,12 @@ body {
   font-family: $sans;
   letter-spacing: .03em;
   min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
   overflow-x: hidden;
   overflow-y: scroll;
   overscroll-behavior: contain;
   scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch
 }
 
 ::-webkit-scrollbar,
