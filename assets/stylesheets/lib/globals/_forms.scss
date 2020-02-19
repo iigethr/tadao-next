@@ -140,34 +140,6 @@ form {
     width: 100%;
   }
 
-  select {
-    @include font-m;
-    appearance: none;
-    background-color: $transparent;
-    background-image: url("../images/icons/down.png");
-    background-position: right 0 bottom 0;
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    color: $transparent;
-    display: block;
-    float: left;
-    margin: 0;
-    max-width: 100%;
-    outline: none;
-    overflow: hidden;
-    padding: 0;
-    text-shadow: 0 0 0 $gray;
-    width: 100%;
-    option {
-      @include font-m;
-      background-color: $transparent;
-      width: 100%;
-    }
-  }
-
   .input {
     background-color: $white;
     border: 1px solid $gray-100;
@@ -203,6 +175,36 @@ form {
     }
   }
 
+  select {
+    appearance: none;
+    background-color: $transparent;
+    background-image: url("../images/icons/circle.png");
+    background-position: right 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: $transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 100%;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    text-shadow: 0 0 0 $gray;
+    width: 100%;
+    option {
+      @include font-m;
+      background-color: $transparent;
+      width: 100%;
+    }
+  }
+
   .select {
     background-color: $white;
     border: 1px solid $gray-100;
@@ -225,42 +227,71 @@ form {
     float: left;
     font-size: 12px;
     max-width: 100%;
-    padding: 9px 7px 5px;
+    padding: 7px;
     width: 100%;
     label {
       -moz-box-orient: middle;
       color: $gray;
+      cursor: pointer;
       display: inline-block;
-      font-size: 16px !important;
+      font-size: 14px;
       font-weight: normal;
-      height: 16px !important;
-      line-height: 16px !important;
+      line-height: 24px;
       margin: 0;
-      min-height: 16px !important;
-      padding: 3px 0 0;
+      padding: 0;
       vertical-align: middle;
+      .checkmark {
+        background-color: $gray-100;
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        display: block;
+        float: left;
+        height: 24px;
+        margin: 0 7px 0 0;
+        padding: 0;
+        width: 24px;
+      }
+      input:checked ~ .checkmark {
+        background-image: url("../images/icons/circle.png");
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+      }
     }
     [type=checkbox],
-    [type=radio],
-    [type=checkbox]::before,
-    [type=checkbox]::after,
-    [type=radio]::before,
-    [type=radio]::after {
+    [type=radio] {
       appearance: none;
       background-color: $transparent;
-      height: 16px;
-      line-height: 0;
-      margin: 0 4px 0 0;
-      padding: 0;
-      position: relative;
-      top: -2px;
-      width: 16px;
+      cursor: pointer;
+      filter: alpha(opacity = 0);
+      height: 0;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 0;
     }
-    [type=checkbox] {
-      appearance: checkbox;
+  }
+
+  .checkbox {
+    label {
+      .checkmark {
+        @include border-corner(12px);
+        background-image: url("../images/icons/checkbox_unchecked.png");
+      }
+      input:checked ~ .checkmark {
+        background-image: url("../images/icons/checkbox_checked.png");
+      }
     }
-    [type=radio] {
-      appearance: radio;
+  }
+
+  .radio {
+    label {
+      .checkmark {
+        @include border-corner(4px);
+        background-image: url("../images/icons/radio_unchecked.png");
+      }
+      input:checked ~ .checkmark {
+        background-image: url("../images/icons/radio_checked.png");
+      }
     }
   }
 
@@ -271,28 +302,30 @@ form {
     max-width: 100%;
     padding: 7px;
     width: 100%;
-    [type=file] {
-      appearance: none;
-      background-color: $transparent;
-      filter: alpha(opacity = 0);
-      opacity: 0;
-      position: absolute;
-      width: 0;
-    }
     label {
       @include font-m;
       appearance: none;
       background-color: $transparent;
-      background-image: url("../images/icons/file.png");
-      background-position: left 0 bottom 0;
+      background-image: url("../images/icons/circle.png");
       background-repeat: no-repeat;
-      background-size: 18px 24px;
+      background-size: 24px 24px;
       color: $gray;
       cursor: pointer;
-      font-size: 12px !important;
-      padding: 0 0 0 26px;
+      font-size: 14px !important;
+      padding: 0 0 0 32px;
       position: relative;
       width: 100%;
+    }
+    [type=file] {
+      appearance: none;
+      background-color: $transparent;
+      cursor: pointer;
+      filter: alpha(opacity = 0);
+      height: 0;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 0;
     }
   }
 

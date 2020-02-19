@@ -6,6 +6,9 @@ linters:
   EmptyLineBetweenBlocks:
     enabled: false
 
+  HexLength:
+    enabled: false
+
   ImportantRule:
     enabled: false
     # exclude:
