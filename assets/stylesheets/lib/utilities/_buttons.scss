@@ -124,7 +124,7 @@
     @include border-corner(24px);
   }
   &.outline {
-    line-height: 46px !important;
+    line-height: 46px;
     padding: 0 23px;
   }
   &.condense {

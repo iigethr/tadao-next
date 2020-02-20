@@ -1,13 +1,12 @@
 // Design Layout
 
-// Core
+// Components
 import React from "react"
 import Head from "next/head"
-// Components
-import { initGA, logPageView } from "../lib/globals/google_analytics"
 import Footer from "../lib/globals/footer"
 import Advisory from "../lib/globals/advisory"
 import DesignMenu from "../lib/components/design/design_menu"
+import { initGA, logPageView } from "../lib/globals/google_analytics"
 // Modules
 import cookies from "next-cookies"
 import ZahaAlignments from "@iigethr/zaha_alignments"
@@ -29,7 +28,6 @@ class Design extends React.Component {
       }
       logPageView()
     }
-
     ZahaAlignments.centerH()
     console.log("Registered - Design Layout")
   }

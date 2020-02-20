@@ -18,7 +18,6 @@
 
 @mixin icon-xxs {
   @include icon-default;
-  @at-root .link-xxs .icon-xxs { margin: 3px 0 5px; }
   @at-root .outline .icon-xxs { margin: 3px 0; }
   height: 10px;
   margin: 4px 0;
@@ -28,62 +27,56 @@
 
 @mixin icon-xs {
   @include icon-default;
-  @at-root .link-xs .icon-xs { margin: 3px 0 5px; }
   @at-root .outline .icon-xs { margin: 3px 0; }
   height: 12px;
   margin: 4px 0;
-  &.left { margin-right: 2px; }
-  &.right { margin-left: 2px; }
-}
-
-@mixin icon-s {
-  @include icon-default;
-  @at-root .link-s .icon-s { margin: 3px 0 5px; }
-  @at-root .outline .icon-s { margin: 3px 0; }
-  height: 14px;
-  margin: 4px 0;
-  &.left { margin-right: 3px; }
-  &.right { margin-left: 3px; }
-}
-
-@mixin icon-m {
-  @include icon-default;
-  @at-root .link-m .icon-m { margin: 3px 0 5px; }
-  @at-root .outline .icon-m { margin: 3px 0; }
-  height: 16px;
-  margin: 4px 0;
-  &.left { margin-right: 3px; }
-  &.right { margin-left: 3px; }
-}
-
-@mixin icon-l {
-  @include icon-default;
-  @at-root .link-l .icon-l { margin: 5px 0 7px; }
-  @at-root .outline .icon-l { margin: 5px 0; }
-  height: 20px;
-  margin: 6px 0;
   &.left { margin-right: 4px; }
   &.right { margin-left: 4px; }
 }
 
+@mixin icon-s {
+  @include icon-default;
+  @at-root .outline .icon-s { margin: 3px 0; }
+  height: 14px;
+  margin: 4px 0;
+  &.left { margin-right: 6px; }
+  &.right { margin-left: 6px; }
+}
+
+@mixin icon-m {
+  @include icon-default;
+  @at-root .outline .icon-m { margin: 3px 0; }
+  height: 16px;
+  margin: 4px 0;
+  &.left { margin-right: 8px; }
+  &.right { margin-left: 8px; }
+}
+
+@mixin icon-l {
+  @include icon-default;
+  @at-root .outline .icon-l { margin: 5px 0; }
+  height: 20px;
+  margin: 6px 0;
+  &.left { margin-right: 10px; }
+  &.right { margin-left: 10px; }
+}
+
 @mixin icon-xl {
   @include icon-default;
-  @at-root .link-xl .icon-xl { margin: 7px 0 9px; }
   @at-root .outline .icon-xl { margin: 7px 0; }
   height: 24px;
   margin: 8px 0;
-  &.left { margin-right: 5px; }
-  &.right { margin-left: 5px; }
+  &.left { margin-right: 12px; }
+  &.right { margin-left: 12px; }
 }
 
 @mixin icon-xxl {
   @include icon-default;
-  @at-root .link-xxl .icon-xxl { margin: 8px 0 10px; }
-  @at-root .outline .icon-xxl { margin: 8px 0; }
-  height: 30px;
-  margin: 9px 0;
-  &.left { margin-right: 6px; }
-  &.right { margin-left: 6px; }
+  @at-root .outline .icon-xxl { margin: 7px 0; }
+  height: 32px;
+  margin: 8px 0;
+  &.left { margin-right: 16px; }
+  &.right { margin-left: 16px; }
 }
 
 // Classes

@@ -2,6 +2,7 @@
 
 // Core
 import Head from "next/head"
+import DesignHeader from "../../lib/components/design/design_header"
 // Data
 import design from "js-yaml-loader!../../data/design.yml"
 // Modules
@@ -27,6 +28,7 @@ class Index extends React.Component {
           <title>{data.name}</title>
           <meta name="description" content={data.description} />
         </Head>
+        <DesignHeader data={data} />
       </div>
     )
   }

@@ -349,9 +349,11 @@ form {
     width: 100%;
     .form-menu-box {
       float: left;
+      padding: 4px 0;
       width: 100%;
       .form-menu-row {
         float: left;
+        padding: 4px 0;
         width: 100%;
       }
     }
@@ -414,13 +416,13 @@ form {
   &.form {
     .form-row {
       .form-group {
-        padding: 8px 0 0;
+        padding: 16px 0 8px;
         .form-item {
           padding: 8px 24px;
         }
       }
       .form-item {
-        padding: 8px 24px;
+        padding: 16px 24px;
       }
     }
   }
