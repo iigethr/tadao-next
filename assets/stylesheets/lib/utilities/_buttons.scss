@@ -33,6 +33,9 @@
   &.condense {
     padding: 0 4px;
   }
+  &.condense.outline {
+    padding: 0 3px;
+  }
 }
 
 @mixin button-size-xs {
@@ -48,6 +51,9 @@
   }
   &.condense {
     padding: 0 4px;
+  }
+  &.condense.outline {
+    padding: 0 3px;
   }
 }
 
@@ -65,6 +71,9 @@
   &.condense {
     padding: 0 4px;
   }
+  &.condense.outline {
+    padding: 0 3px;
+  }
 }
 
 @mixin button-size-m {
@@ -80,6 +89,9 @@
   }
   &.condense {
     padding: 0 4px;
+  }
+  &.condense.outline {
+    padding: 0 3px;
   }
 }
 
@@ -97,6 +109,9 @@
   &.condense {
     padding: 0 6px;
   }
+  &.condense.outline {
+    padding: 0 5px;
+  }
 }
 
 @mixin button-size-xl {
@@ -104,6 +119,7 @@
   line-height: 40px;
   min-height: 40px;
   padding: 0 20px;
+
   &.pill {
     @include border-corner(20px);
   }
@@ -113,25 +129,63 @@
   &.condense {
     padding: 0 8px;
   }
+  &.condense.outline {
+    padding: 0 7px;
+  }
 }
 
 @mixin button-size-xxl {
   font-size: 18px;
   line-height: 48px;
   min-height: 48px;
-  padding: 0 24px;
+  padding: 0 16px;
+
+  .icon {
+    float: left;
+    display: block;
+    height: 32px;
+    margin: 8px 0;
+    width: 32px;
+    &.left { margin: 8px 16px 8px 0; }
+    &.right { margin: 8px 0 8px 16px; }
+  }
+
+  &.outline {
+    line-height: 46px;
+    padding: 0 15px;
+    .icon {
+      margin: 7px 0;
+    }
+    .left.icon {
+      margin: 7px 16px 7px 0;
+    }
+    .right.icon {
+      margin: 7px 0 7px 16px;
+    }
+  }
+
   &.pill {
     @include border-corner(24px);
   }
-  &.outline {
-    line-height: 46px;
-    padding: 0 23px;
-  }
+
   &.condense {
     padding: 0 8px;
   }
-  &.condense.outline {
+  &.condense-left {
+    padding: 0 16px 0 8px;
+  }
+  &.condense-right {
+    padding: 0 8px 0 16px;
+  }
+
+  &.outline.condense {
     padding: 0 7px;
+  }
+  &.outline.condense-left {
+    padding: 0 15px 0 7px;
+  }
+  &.outline.condense-right {
+    padding: 0 7px 0 15px;
   }
 }
 

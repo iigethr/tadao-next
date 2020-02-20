@@ -16,6 +16,14 @@ $class: "design-content";
       float: left;
       padding: 8px;
       width: 100%;
+      .#{$class}-left {
+        float: left;
+        width: 50%;
+      }
+      .#{$class}-right {
+        float: right;
+        width: 50%;
+      }
     }
   }
 }
@@ -26,6 +34,13 @@ $class: "design-content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
+        .#{$class}-left {
+          width: 100%;
+        }
+        .#{$class}-right {
+          margin: 32px 0 0 0;
+          width: 100%;
+        }
       }
     }
   }
@@ -37,6 +52,13 @@ $class: "design-content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
+        .#{$class}-left {
+          width: 100%;
+        }
+        .#{$class}-right {
+          margin: 32px 0 0 0;
+          width: 100%;
+        }
       }
     }
   }
@@ -48,6 +70,13 @@ $class: "design-content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
+        .#{$class}-left {
+          width: 100%;
+        }
+        .#{$class}-right {
+          margin: 32px 0 0 0;
+          width: 100%;
+        }
       }
     }
   }
