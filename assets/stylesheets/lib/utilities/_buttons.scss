@@ -14,6 +14,7 @@
   letter-spacing: .030em !important;
   text-align: center !important;
   text-decoration: none !important;
+  width: auto;
   &.outline {
     border: 1px solid !important;
   }
@@ -80,18 +81,48 @@
   font-size: 12px;
   line-height: 24px;
   min-height: 24px;
-  padding: 0 12px;
+  padding: 0 8px;
+
+  .icon {
+    display: block;
+    float: left;
+    height: 16px;
+    margin: 4px 0;
+    &.left { margin: 4px 8px 4px 0; }
+    &.right { margin: 4px 0 4px 8px; }
+  }
+
   &.pill {
     @include border-corner(12px);
   }
-  &.outline {
-    line-height: 22px;
-  }
+
   &.condense {
     padding: 0 4px;
   }
-  &.condense.outline {
-    padding: 0 3px;
+  &.condense-left {
+    padding: 0 8px 0 4px;
+  }
+  &.condense-right {
+    padding: 0 4px 0 8px;
+  }
+
+  &.outline {
+    line-height: 22px;
+    padding: 0 7px;
+    &.condense {
+      padding: 0 3px;
+    }
+    &.condense-left {
+      padding: 0 7px 0 3px;
+    }
+    &.condense-right {
+      padding: 0 3px 0 7px;
+    }
+    .icon {
+      margin: 3px 0;
+      &.left { margin: 3px 8px 3px 0; }
+      &.right { margin: 3px 0 3px 8px; }
+    }
   }
 }
 
@@ -99,18 +130,48 @@
   font-size: 14px;
   line-height: 32px;
   min-height: 32px;
-  padding: 0 16px;
+  padding: 0 10px;
+
+  .icon {
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 6px 0;
+    &.left { margin: 6px 10px 6px 0; }
+    &.right { margin: 6px 0 6px 10px; }
+  }
+
   &.pill {
     @include border-corner(16px);
   }
-  &.outline {
-    line-height: 30px;
-  }
+
   &.condense {
     padding: 0 6px;
   }
-  &.condense.outline {
-    padding: 0 5px;
+  &.condense-left {
+    padding: 0 10px 0 6px;
+  }
+  &.condense-right {
+    padding: 0 6px 0 10px;
+  }
+
+  &.outline {
+    line-height: 30px;
+    padding: 0 9px;
+    &.condense {
+      padding: 0 5px;
+    }
+    &.condense-left {
+      padding: 0 9px 0 5px;
+    }
+    &.condense-right {
+      padding: 0 5px 0 9px;
+    }
+    .icon {
+      margin: 5px 0;
+      &.left { margin: 5px 10px 5px 0; }
+      &.right { margin: 5px 0 5px 10px; }
+    }
   }
 }
 
@@ -118,19 +179,48 @@
   font-size: 16px;
   line-height: 40px;
   min-height: 40px;
-  padding: 0 20px;
+  padding: 0 12px;
+
+  .icon {
+    display: block;
+    float: left;
+    height: 24px;
+    margin: 8px 0;
+    &.left { margin: 8px 12px 8px 0; }
+    &.right { margin: 8px 0 8px 12px; }
+  }
 
   &.pill {
     @include border-corner(20px);
   }
-  &.outline {
-    line-height: 38px;
-  }
+
   &.condense {
     padding: 0 8px;
   }
-  &.condense.outline {
-    padding: 0 7px;
+  &.condense-left {
+    padding: 0 12px 0 8px;
+  }
+  &.condense-right {
+    padding: 0 8px 0 12px;
+  }
+
+  &.outline {
+    line-height: 38px;
+    padding: 0 11px;
+    &.condense {
+      padding: 0 7px;
+    }
+    &.condense-left {
+      padding: 0 11px 0 7px;
+    }
+    &.condense-right {
+      padding: 0 7px 0 11px;
+    }
+    .icon {
+      margin: 7px 0;
+      &.left { margin: 7px 12px 7px 0; }
+      &.right { margin: 7px 0 7px 12px; }
+    }
   }
 }
 
@@ -141,27 +231,12 @@
   padding: 0 16px;
 
   .icon {
-    float: left;
     display: block;
+    float: left;
     height: 32px;
     margin: 8px 0;
-    width: 32px;
     &.left { margin: 8px 16px 8px 0; }
     &.right { margin: 8px 0 8px 16px; }
-  }
-
-  &.outline {
-    line-height: 46px;
-    padding: 0 15px;
-    .icon {
-      margin: 7px 0;
-    }
-    .left.icon {
-      margin: 7px 16px 7px 0;
-    }
-    .right.icon {
-      margin: 7px 0 7px 16px;
-    }
   }
 
   &.pill {
@@ -178,14 +253,23 @@
     padding: 0 8px 0 16px;
   }
 
-  &.outline.condense {
-    padding: 0 7px;
-  }
-  &.outline.condense-left {
-    padding: 0 15px 0 7px;
-  }
-  &.outline.condense-right {
-    padding: 0 7px 0 15px;
+  &.outline {
+    line-height: 46px;
+    padding: 0 15px;
+    &.condense {
+      padding: 0 7px;
+    }
+    &.condense-left {
+      padding: 0 15px 0 7px;
+    }
+    &.condense-right {
+      padding: 0 7px 0 15px;
+    }
+    .icon {
+      margin: 7px 0;
+      &.left { margin: 7px 16px 7px 0; }
+      &.right { margin: 7px 0 7px 16px; }
+    }
   }
 }
 
