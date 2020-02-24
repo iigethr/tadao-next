@@ -46,8 +46,8 @@ class Privacy extends React.Component {
 
                 <h3>Cookies</h3>
 
-                <p>Cookies are small data files that are placed on your computer as you browse our website. Most websites do this too.</p>
-                <p>They improve things by:</p>
+                <p>Cookies are small data files that are placed on your computer as you browse our website. Most websites do this too. <br />
+                They improve things by:</p>
                 <ol>
                   <li>Remembering settings, so you don’t have to keep re-entering them whenever you visit a new page</li>
                   <li>Remembering information you’ve given (eg your postcode) so you don’t need to keep entering it</li>
