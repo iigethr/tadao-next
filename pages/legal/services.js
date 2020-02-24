@@ -1,15 +1,19 @@
 // Services
 
-// Core
-import Link from "next/link"
 // Components
+import Link from "next/link"
+// Data
+import legal from "js-yaml-loader!../../data/legal/legal.yml"
 import legal_services from "js-yaml-loader!../../data/legal/legal_services.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Services extends React.Component {
   static async getInitialProps() {
-    return { legal_services: legal_services }
+    return {
+      legal: legal,
+      legal_services: legal_services
+    }
   }
 
   componentDidMount() {
@@ -18,6 +22,7 @@ class Services extends React.Component {
   }
 
   render () {
+    const legal = this.props.legal.legal
     const legal_services = this.props.legal_services.legal_services
     return (
       <div>
@@ -30,10 +35,17 @@ class Services extends React.Component {
             </div>
             <div className="design-content-row">
               <h1 className="font-xxl">{legal_services.title}</h1>
-              <p className="font-l lighter">{legal_services.description}</p>
             </div>
-            <div className="separator-s" />
             <div className="design-content-row">
+              <div className="writer">
+                <p>Basecamp uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed.</p>
+                <p>The list of third-party services are:</p>
+                <ol>
+                  <li><a href="https://www.github.com/">Github</a> is a US-based global company that provides hosting for software development version control using Git.</li>
+                  <li><a href="https://www.zeit.co/">Zeit Now</a> is the optimal workflow for frontend teams. All-in-one: Static and JAMstack deployment, Serverless Functions, and Global CDN.</li>
+                </ol>
+                <h5>Questions about Third-party Services should be sent to {legal.email}.</h5>
+              </div>
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
 // Legal Layout
 
-// Core
+// Components
 import React from "react"
 import Head from "next/head"
-// Components
 import { initGA, logPageView } from "../lib/globals/google_analytics"
 import Notifications from "../lib/globals/notifications"
 import Header from "../lib/globals/legal/header"

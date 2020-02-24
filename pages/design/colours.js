@@ -1,8 +1,7 @@
 // Colours
 
-// Core
-import Head from "next/head"
 // Components
+import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 import Gray from "../../lib/components/design/colours/gray"
 import Purple from "../../lib/components/design/colours/purple"

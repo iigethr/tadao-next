@@ -1,8 +1,7 @@
 // Writer
 
-// Core
-import Head from "next/head"
 // Components
+import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 import DesignButtons from "../../lib/components/design/design_buttons"
 import DesignLinks from "../../lib/components/design/design_links"

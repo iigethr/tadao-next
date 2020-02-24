@@ -1,8 +1,7 @@
 // Typography
 
-// Core
-import Head from "next/head"
 // Components
+import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 import Sans from "../../lib/components/design/fonts/sans"
 import Serif from "../../lib/components/design/fonts/serif"

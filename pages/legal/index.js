@@ -1,7 +1,8 @@
 // Index
 
 // Components
-import LegalSectionMenu from "../../lib/components/legal_section_menu"
+import LegalSectionMenu from "../../lib/components/legal/legal_section_menu"
+// Data
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
@@ -27,7 +28,7 @@ class Index extends React.Component {
             </div>
             <div className="design-content-row">
               <h1 className="font-xxl">{legal.title}</h1>
-              <p className="font-l lighter">{legal.description}</p>
+              <p className="font-xl lighter">{legal.description}</p>
             </div>
           </div>
         </div>

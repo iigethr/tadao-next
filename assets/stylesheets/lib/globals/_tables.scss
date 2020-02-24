@@ -7,38 +7,33 @@ table {
   @include clearfix-left;
   border-collapse: collapse;
   border-spacing: 0;
+  font-size: 16px !important;
+  line-height: 24px !important;
   margin: 0 0 24px;
   padding: 0;
   width: 100%;
   thead {
-    background-color: $blue-000;
-    padding: 4px;
+    background-color: $gray-000;
+    padding: 16px;
     text-align: left;
     width: 100%;
     tr,
     th {
-      border: 1px solid $blue-100;
+      border: 1px solid $gray-100;
+      padding: 8px 16px;
       width: auto;
     }
   }
   tbody {
     background-color: $white;
-    padding: 4px;
     text-align: left;
     width: 100%;
     tr,
     td {
-      border: 1px solid $gray-100;
+      border: 1px solid $gray-000;
+      padding: 8px 16px;
       width: auto;
     }
-  }
-  a,
-  tr,
-  th,
-  td {
-    font-size: 16px !important;
-    line-height: 24px !important;
-    padding: 4px;
   }
 }
 

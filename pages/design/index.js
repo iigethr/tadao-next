@@ -1,6 +1,6 @@
 // Index
 
-// Core
+// Components
 import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 // Data
