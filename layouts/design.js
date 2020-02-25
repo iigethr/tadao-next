@@ -60,7 +60,6 @@ class Design extends React.Component {
             </div>
           </div>
         </header>
-
         {/* Sticky */}
         <div className="sticky-footer">
           {/* Main */}
@@ -69,6 +68,21 @@ class Design extends React.Component {
               <div className="universal-row">
                 {/* Artboard */}
                 <div className="artboard-l center-h">
+                  <div className="container">
+                    <div className="container-box">
+                      <div className="container-row">
+
+                        <div className="design-content">
+                          <div className="design-content-box">
+                            <div className="design-content-row">
+                              <a href="/" className="link-m gray underline">Back to Home Page</a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
                   {/* Container */}
                   <div className="container col-xxs-1-1 left">
                     <div className="container-box">
