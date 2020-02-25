@@ -114,6 +114,10 @@
     blockquote {
       max-width: 100%;
     }
+    ol,
+    ul {
+      padding: 16px 0px 32px;
+    }
     .floater {
       width: 100%;
       .floater-box {
@@ -143,6 +147,10 @@
   .writer {
     blockquote {
       max-width: 100%;
+    }
+    ol,
+    ul {
+      padding: 16px 0px 32px;
     }
     .floater {
       width: 100%;

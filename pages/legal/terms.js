@@ -51,7 +51,7 @@ class Terms extends React.Component {
                   <li>The failure of the Company to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and the Company and govern your use of the Service, superceding any prior agreements between you and the Company (including, but not limited to, any prior versions of the Terms of Service).</li>
                 </ol>
                 <p>Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes.</p>
-                <h5>Questions about the Terms of Service should be sent to {legal.email}.</h5>
+                <h4>Can't find what you're looking for? Ask a human {legal.email}</h4>
               </div>
             </div>
           </div>
