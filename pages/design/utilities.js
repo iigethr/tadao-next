@@ -33,8 +33,7 @@ class Writer extends React.Component {
         <DesignHeader data={data} />
         <DesignButtons />
         <hr className="separator-m" />
-        {/* <DesignLinks /> */}
-        <hr className="separator-m" />
+        <DesignLinks />
       </div>
     )
   }
