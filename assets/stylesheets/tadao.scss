@@ -75,10 +75,11 @@
 // ------------------------------------------------------------
 @import "lib/components/navigation";
 @import "lib/components/hero";
-@import "lib/components/legal_menu";
-@import "lib/components/legal_section_menu";
-@import "lib/components/cookies";
+@import "lib/components/legal_navigation";
 @import "lib/components/copyright";
+@import "lib/components/cookies";
+// Legal WIP
+@import "lib/components/legal/legal_section_menu";
 // Design WIP
 @import "lib/components/design/design_menu";
 @import "lib/components/design/design_chips";

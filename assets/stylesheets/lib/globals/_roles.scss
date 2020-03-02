@@ -24,7 +24,7 @@
 }
 
 .footer {
-  min-height: 56px;
+  min-height: 72px;
 }
 
 .advisory {
@@ -48,7 +48,7 @@
   float: left;
   margin: 0;
   max-width: 100%;
-  min-height: calc(100vh - (80px + 56px)); // Minus the height of the header and footer.
+  min-height: calc(100vh - (80px + 72px)); // Minus the height of the header and footer.
   padding: 0;
   width: 100%;
 }

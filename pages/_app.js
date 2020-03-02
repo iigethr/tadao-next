@@ -4,9 +4,12 @@
 import React from "react"
 import App from "next/app"
 // Layouts
-import MainLayout from "../layouts/main"
+import PrimaryLayout from "../layouts/primary"
+import SecondaryLayout from "../layouts/secondary"
+
 import LegalLayout from "../layouts/legal"
 import DesignLayout from "../layouts/design"
+
 // SCSS
 import "../assets/stylesheets/tadao.scss"
 // Data
@@ -37,11 +40,23 @@ class MyApp extends App {
           <Component {...pageProps} {...meta} {...config} {...project} />
         </LegalLayout>
       )
+    } else if (router.pathname.startsWith("/sections")) {
+      return (
+        <SecondaryLayout>
+          <Component {...pageProps} {...meta} {...config} {...project} />
+        </SecondaryLayout>
+      )
+    } else if (router.pathname.startsWith("/campaigns")) {
+      return (
+        <PrimaryLayout>
+          <Component {...pageProps} {...meta} {...config} {...project} />
+        </PrimaryLayout>
+      )
     } else {
       return (
-        <MainLayout>
+        <PrimaryLayout>
           <Component {...pageProps} {...meta} {...config} {...project} />
-        </MainLayout>
+        </PrimaryLayout>
       )
     }
   }
