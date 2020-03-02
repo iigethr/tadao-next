@@ -75,9 +75,18 @@
 // ------------------------------------------------------------
 @import "lib/components/navigation";
 @import "lib/components/hero";
+
+@import "lib/components/breadcrumbs";
+
+@import "lib/components/aside";
+@import "lib/components/aside_navigation";
+@import "lib/components/section";
+@import "lib/components/content";
+
 @import "lib/components/legal_navigation";
 @import "lib/components/copyright";
 @import "lib/components/cookies";
+
 // Legal WIP
 @import "lib/components/legal/legal_section_menu";
 // Design WIP

@@ -19,14 +19,78 @@ class Index extends React.Component {
     const sections = this.props.sections.sections
     return (
       <div>
-        <div className="design-content">
-          <div className="design-content-box">
-            <div className="design-content-row">
-              <a href="/" className="link-m gray underline">Back to Home Page</a>
+        {/* Container Top */}
+        <div className="container-top left">
+          <div className="container-top-box">
+            <div className="container-top-row">
+              {/* Breadcrumbs */}
+              <div className="breadcrumbs">
+                <div className="breadcrumbs-box">
+                  <div className="breadcrumbs-item">
+                    <a href="/" className="link-s gray underline">Back to Home Page</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="design-content-row">
-              <h1 className="font-xxl">{sections.title}</h1>
-              <p className="font-xl lighter">{sections.description}</p>
+          </div>
+        </div>
+
+        {/* Container */}
+        <div className="container">
+          <div className="container-box">
+            <div className="container-row">
+
+              {/* Aside */}
+              <div className="aside left">
+                <div className="aside-box">
+                  <div className="aside-row">
+
+                    <div className="aside-navigation">
+                      <div className="aside-navigation-box">
+                        <div className="aside-navigation-item">
+                          <a href="/sections" className="link-m blue underline">Sections</a>
+                        </div>
+                        <div className="aside-navigation-item">
+                          <a href="/sections" className="link-m blue underline">Sections</a>
+                        </div>
+                        <div className="aside-navigation-item">
+                          <a href="/sections" className="link-m blue underline">Sections</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              {/* Section */}
+              <div className="section left">
+                <div className="section-box">
+                  <div className="section-row">
+
+                    <div className="content">
+                      <div className="content-box">
+                        <div className="content-row">
+                          <h1 className="font-xxl">{sections.title}</h1>
+                          <p className="font-xl lighter">{sections.description}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr className="separator-s" />
+
+        {/* Container Bottom */}
+        <div className="container-bottom left">
+          <div className="container-bottom-box">
+            <div className="container-bottom-row">
             </div>
           </div>
         </div>
