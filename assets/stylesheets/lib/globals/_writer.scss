@@ -43,9 +43,19 @@
     @include font-m;
     margin: 0 0 24px;
   }
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child,
+  p:first-child,
+  .text:first-child {
+    margin-top: 0 !important;
+  }
   ol,
   ul {
-    padding: 16px 32px 32px;
+    padding: 8px 32px 16px;
   }
   blockquote {
     @include font-l;

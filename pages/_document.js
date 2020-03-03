@@ -1,8 +1,7 @@
 // _document
 
-// Core
-import Document, { Html, Head, Main, NextScript } from "next/document"
 // Components
+import Document, { Html, Head, Main, NextScript } from "next/document"
 import Meta from "../lib/components/meta"
 import Favicons from "../lib/components/favicons"
 // Data

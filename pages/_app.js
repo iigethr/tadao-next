@@ -1,21 +1,18 @@
 // _app
 
-// Core
+// Components
 import React from "react"
 import App from "next/app"
 // Layouts
+import CampaignLayout from "../layouts/campaign"
 import PrimaryLayout from "../layouts/primary"
 import SecondaryLayout from "../layouts/secondary"
-
-import LegalLayout from "../layouts/legal"
-import DesignLayout from "../layouts/design"
-
-// SCSS
-import "../assets/stylesheets/tadao.scss"
 // Data
 import meta from "js-yaml-loader!../data/meta.yml"
 import config from "js-yaml-loader!../data/config.yml"
 import project from "js-yaml-loader!../data/project.yml"
+// SCSS
+import "../assets/stylesheets/tadao.scss"
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -28,25 +25,13 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, router, config, project } = this.props
-    if (router.pathname.startsWith("/design")) {
+    if (router.pathname.startsWith("/campaigns")) {
       return (
-        <DesignLayout>
+        <CampaignLayout>
           <Component {...pageProps} {...meta} {...config} {...project} />
-        </DesignLayout>
+        </CampaignLayout>
       )
-    } else if (router.pathname.startsWith("/legal")) {
-      return (
-        <LegalLayout>
-          <Component {...pageProps} {...meta} {...config} {...project} />
-        </LegalLayout>
-      )
-    } else if (router.pathname.startsWith("/sections")) {
-      return (
-        <SecondaryLayout>
-          <Component {...pageProps} {...meta} {...config} {...project} />
-        </SecondaryLayout>
-      )
-    } else if (router.pathname.startsWith("/campaigns")) {
+    } else if (router.pathname === "/") {
       return (
         <PrimaryLayout>
           <Component {...pageProps} {...meta} {...config} {...project} />
@@ -54,12 +39,11 @@ class MyApp extends App {
       )
     } else {
       return (
-        <PrimaryLayout>
+        <SecondaryLayout>
           <Component {...pageProps} {...meta} {...config} {...project} />
-        </PrimaryLayout>
+        </SecondaryLayout>
       )
     }
   }
 }
-
 export default MyApp

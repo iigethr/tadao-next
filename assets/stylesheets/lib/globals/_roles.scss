@@ -19,10 +19,6 @@
   min-height: 80px;
 }
 
-.main {
-  padding: 32px 0;
-}
-
 .footer {
   min-height: 72px;
 }
@@ -53,77 +49,49 @@
   width: 100%;
 }
 
-.container,
-.container-top,
-.container-left,
-.container-center,
-.container-middle,
-.container-right,
-.container-bottom {
-  float: left;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-  width: 100%;
-  .container-box,
-  .container-top-box,
-  .container-left-box,
-  .container-center-box,
-  .container-middle-box,
-  .container-right-box,
-  .container-bottom-box {
+// Layout Setup
+.main {
+  padding: 32px 0;
+  .top {
     float: left;
-    margin: 0;
-    max-width: 100%;
-    padding: 0;
+    padding: 8px 24px;
     width: 100%;
-    .container-row,
-    .container-top-row,
-    .container-left-row,
-    .container-center-row,
-    .container-middle-row,
-    .container-right-row,
-    .container-bottom-row {
+  }
+  .middle {
+    float: left;
+    width: 100%;
+    .aside {
       float: left;
-      margin: 0;
-      max-width: 100%;
-      padding: 0;
-      width: 100%;
+      width: 240px;
     }
+    .section {
+      float: left;
+      width: 720px;
+      &.wide {
+        width: 100%;
+      }
+    }
+  }
+  .bottom {
+    float: left;
+    padding: 8px 24px;
+    width: 100%;
   }
 }
 
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$xxs} {
-  .header {
-    min-height: 40px;
-  }
-  .sticky-footer {
-    min-height: calc(100vh - (40px + 80px)); // Minus the height of the header and footer.
-  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$xs} {
-  .header {
-    min-height: 40px;
-  }
-  .sticky-footer {
-    min-height: calc(100vh - (40px + 80px)); // Minus the height of the header and footer.
-  }
 }
 
 // Media Query 480px
 // -------------------------------------------------------------
 @media #{$s} {
-  .header {
-    min-height: 40px;
-  }
-  .sticky-footer {
-    min-height: calc(100vh - (40px + 80px)); // Minus the height of the header and footer.
-  }
 }
 
 // Media Query 720px

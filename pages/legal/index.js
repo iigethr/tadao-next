@@ -1,7 +1,8 @@
 // Index
 
 // Components
-import LegalSectionMenu from "../../lib/components/legal/legal_section_menu"
+import Link from "next/link"
+import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Data
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
 // Modules
@@ -21,18 +22,41 @@ class Index extends React.Component {
     const legal = this.props.legal.legal
     return (
       <div>
-        <div className="design-content">
-          <div className="design-content-box">
-            <div className="design-content-row">
-              <a href="/" className="link-m gray underline">Back to Home Page</a>
-            </div>
-            <div className="design-content-row">
-              <h1 className="font-xxl">{legal.title}</h1>
-              <p className="font-xl lighter">{legal.description}</p>
+        <div className="top">
+          <div className="breadcrumbs">
+            <div className="breadcrumbs-box">
+              <div className="breadcrumbs-item">
+                <Link href="/"><a href="/" className="link-s gray underline">Back to Home Page</a></Link>
+              </div>
             </div>
           </div>
         </div>
-        <LegalSectionMenu />
+
+        <div className="middle">
+          <aside className="aside">
+            <AsideNavigation />
+          </aside>
+          <section className="section">
+            <div className="content">
+              <div className="content-box">
+                <div className="content-row writer">
+                  <h1>{legal.title}</h1>
+                  <p>{legal.description}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div className="bottom">
+          <div className="breadcrumbs">
+            <div className="breadcrumbs-box">
+              <div className="breadcrumbs-item">
+                <Link href="/"><a className="link-s gray underline">Back to Home Page</a></Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

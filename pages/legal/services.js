@@ -2,6 +2,7 @@
 
 // Components
 import Link from "next/link"
+import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Data
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
 import legal_services from "js-yaml-loader!../../data/legal/legal_services.yml"
@@ -26,33 +27,50 @@ class Services extends React.Component {
     const legal_services = this.props.legal_services.legal_services
     return (
       <div>
-        <div className="design-content">
-          <div className="design-content-box">
-            <div className="design-content-row">
-              <Link href="/legal">
-                <a className="link-m gray underline">Back to the Legal Section</a>
-              </Link>
+        <div className="top">
+          <div className="breadcrumbs">
+            <div className="breadcrumbs-box">
+              <div className="breadcrumbs-item">
+                <Link href="/legal"><a className="link-s gray underline">Back</a></Link>
+              </div>
             </div>
-            <div className="design-content-row">
-              <h1 className="font-xxl">{legal_services.title}</h1>
-            </div>
-            <div className="design-content-row">
-              <div className="writer">
-                <p>The Service uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed.</p>
-                <p>The list of third-party services are:</p>
-                <ol>
-                  <li>
-                    <a href="https://www.github.com/">Github</a> is a US-based global company that provides hosting for software development version control using Git.
-                  </li>
-                  <li>
-                    <a href="https://www.zeit.co/">Zeit Now</a> is the optimal workflow for frontend teams. All-in-one: Static and JAMstack deployment, Serverless Functions, and Global CDN.
-                  </li>
-                  <li>
-                    <a href="https://analytics.google.com/">Google Analytics</a> is a web analytics service offered by Google that tracks and reports website traffic, currently as a platform inside the Google Marketing Platform brand.
-                  </li>
-                </ol>
+          </div>
+        </div>
 
-                <h4>Can't find what you're looking for? Ask a human {legal.email}</h4>
+        <div className="middle">
+          <aside className="aside">
+            <AsideNavigation />
+          </aside>
+          <section className="section">
+            <div className="content">
+              <div className="content-box">
+                <div className="content-row writer">
+                  <h1>{legal_services.title}</h1>
+                  <p>The Service uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed.</p>
+                  <p>The list of third-party services are:</p>
+                  <ol>
+                    <li>
+                      <a href="https://www.github.com/">Github</a> is a US-based global company that provides hosting for software development version control using Git.
+                    </li>
+                    <li>
+                      <a href="https://www.zeit.co/">Zeit Now</a> is the optimal workflow for frontend teams. All-in-one: Static and JAMstack deployment, Serverless Functions, and Global CDN.
+                    </li>
+                    <li>
+                      <a href="https://analytics.google.com/">Google Analytics</a> is a web analytics service offered by Google that tracks and reports website traffic, currently as a platform inside the Google Marketing Platform brand.
+                    </li>
+                  </ol>
+                  <h4>Can't find what you're looking for? Ask a human: {legal.email}</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div className="bottom">
+          <div className="breadcrumbs">
+            <div className="breadcrumbs-box">
+              <div className="breadcrumbs-item">
+                <Link href="/legal"><a className="link-s gray underline">Back</a></Link>
               </div>
             </div>
           </div>

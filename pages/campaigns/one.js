@@ -6,7 +6,8 @@ import Notifications from "../../lib/globals/notifications"
 import Header from "../../lib/globals/header"
 import Footer from "../../lib/globals/footer"
 import Advisory from "../../lib/globals/advisory"
-import Hero from "../../lib/components/campaigns/hero"
+// Sub level
+import Hero from "../../lib/components/campaigns/one/hero"
 // Data
 import config from "js-yaml-loader!../../data/config.yml"
 import campaigns from "js-yaml-loader!../../data/campaigns/campaigns.yml"

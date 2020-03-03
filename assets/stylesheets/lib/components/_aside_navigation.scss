@@ -10,11 +10,11 @@ $class: "aside-navigation";
   width: 100%;
   .#{$class}-box {
     float: left;
-    padding: 24px;
+    padding: 28px 24px;
     width: 100%;
     .#{$class}-item {
       float: left;
-      padding: 8px;
+      padding: 4px 8px;
       width: 100%;
     }
   }
