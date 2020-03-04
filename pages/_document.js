@@ -26,6 +26,7 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="mobile-web-app-capable" content="yes" />
           <link rel="manifest" href="site.webmanifest.json" />
+          <link rel="apple-touch-icon" href="apple-touch-icon.png" />
           <Meta meta={meta} />
           <Favicons/>
           <Splashscreens />
