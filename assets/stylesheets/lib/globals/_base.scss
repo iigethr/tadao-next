@@ -10,6 +10,8 @@
   letter-spacing: .03em;
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
   -webkit-tap-highlight-color: $transparent;
 }
 

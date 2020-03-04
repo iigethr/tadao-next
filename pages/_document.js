@@ -23,6 +23,7 @@ class MyDocument extends Document {
           {/* PWA */}
           <link rel="manifest" href="site.webmanifest.json" />
           <meta name="theme-color" content="#FFFFFF"/>
+          <meta name="apple-mobile-web-app-capable" content="yes" />
           <Meta meta={meta} />
           <Favicons/>
         </Head>

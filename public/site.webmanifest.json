@@ -16,6 +16,7 @@
   ],
   "background_color": "#ffffff",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "/?source=pwa",
   "theme_color": "#ffffff"
