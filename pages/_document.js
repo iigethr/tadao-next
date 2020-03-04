@@ -21,6 +21,11 @@ class MyDocument extends Document {
     return (
       <Html lang={config.lang}>
         <Head>
+          {/* PWA */}
+          <meta name="theme-color" content="#FFFFFF"/>
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <link rel="manifest" href="site.webmanifest.json" />
           <Meta meta={meta} />
           <Favicons/>
           <Splashscreens />
