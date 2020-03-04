@@ -22,8 +22,8 @@ class MyDocument extends Document {
       <Html lang={config.lang}>
         <Head>
           <Meta meta={meta} />
-          <Splashscreens />
           <Favicons/>
+          <Splashscreens />
         </Head>
         <body id="body">
           <div className="body-root">
