@@ -4,6 +4,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
 import Meta from "../lib/components/meta"
 import Favicons from "../lib/components/favicons"
+import Splashscreens from "../lib/components/splashscreens"
 // Data
 import meta from "js-yaml-loader!../data/meta.yml"
 import config from "js-yaml-loader!../data/config.yml"
@@ -20,12 +21,9 @@ class MyDocument extends Document {
     return (
       <Html lang={config.lang}>
         <Head>
-          {/* PWA */}
-          <link rel="manifest" href="site.webmanifest.json" />
-          <meta name="theme-color" content="#FFFFFF"/>
-          <meta name="apple-mobile-web-app-capable" content="yes" />
           <Meta meta={meta} />
           <Favicons/>
+          <Splashscreens />
         </Head>
         <body id="body">
           <div className="body-root">
