@@ -20,6 +20,9 @@ class MyDocument extends Document {
     return (
       <Html lang={config.lang}>
         <Head>
+          {/* PWA */}
+          <link rel="manifest" href="site.webmanifest.json" />
+          <meta name="theme-color" content="#FFFFFF"/>
           <Meta meta={meta} />
           <Favicons/>
         </Head>

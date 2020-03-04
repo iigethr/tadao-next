@@ -5,6 +5,7 @@ const withImages        = require("next-optimized-images")
 const withCss           = require("@zeit/next-css")
 const withSass          = require("@zeit/next-sass")
 const withYml           = require("js-yaml-loader")
+const withPWA           = require('next-pwa')
 
 // Note: Keep it Last here and withPlugins()
 const withTM  = require("next-transpile-modules")([
@@ -38,6 +39,14 @@ const nextEnvConfig = {
   }
 }
 
+// nextPwaConfig
+const nextPWAConfig = {
+  pwa: {
+    dest: "public"
+  }
+}
+
+
 const nextConfig = {
   webpack: (config) => {
     config.node = { // eslint-disable-line no-param-reassign
@@ -49,6 +58,7 @@ const nextConfig = {
 
 module.exports = withPlugins([
   [nextEnvConfig],
+  [withPWA, nextPWAConfig],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
