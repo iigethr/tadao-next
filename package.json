@@ -20,18 +20,19 @@
     "imagemin-svgo": "^7.1.0",
     "isomorphic-unfetch": "^3.0.0",
     "js-yaml-loader": "^1.2.2",
-    "next": "9.2.2",
+    "next": "9.3.0",
     "next-compose-plugins": "^2.2.0",
     "next-cookies": "^2.0.3",
     "next-optimized-images": "^2.5.5",
-    "next-pwa": "^2.2.0",
-    "next-transpile-modules": "^3.0.2",
+    "next-pwa": "^2.3.0",
+    "next-transpile-modules": "^3.1.0",
     "node-sass": "^4.13.1",
+    "npm-check-updates": "^4.0.4",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-ga": "^2.7.0"
   },
   "devDependencies": {
-    "cypress": "^4.0.2"
+    "cypress": "^4.1.0"
   }
 }
