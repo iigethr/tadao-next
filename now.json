@@ -8,15 +8,5 @@
       "HANKYO_SECRET_ACCESS_TOKEN": "@hankyo_secret_access_token",
       "PROJECT_SLUG": "@project_slug"
     }
-  },
-  "routes": [
-    {
-      "src": "^/service-worker.js$",
-      "dest": "/_next/static/service-worker.js",
-      "headers": {
-        "cache-control": "public, max-age=43200, immutable",
-        "Service-Worker-Allowed": "/"
-      }
-    }
-  ]
+  }
 }

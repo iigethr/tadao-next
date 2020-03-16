@@ -5,8 +5,8 @@ const withImages        = require("next-optimized-images")
 const withCss           = require("@zeit/next-css")
 const withSass          = require("@zeit/next-sass")
 const withYml           = require("js-yaml-loader")
-// const withPWA           = require('next-pwa')
-const withOffline       = require('next-offline')
+const withPWA           = require('next-pwa')
+// const withOffline       = require('next-offline')
 
 // Note: Keep it Last here and withPlugins()
 const withTM  = require("next-transpile-modules")([
@@ -58,7 +58,7 @@ const nextConfig = {
 
 module.exports = withPlugins([
   [nextEnvConfig],
-  [withOffline],
+  [withPWA, withPWAConfig],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
