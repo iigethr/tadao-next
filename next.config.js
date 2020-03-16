@@ -39,14 +39,6 @@ const nextEnvConfig = {
   }
 }
 
-// nextPwaConfig
-const nextPWAConfig = {
-  pwa: {
-    dest: "public"
-  }
-}
-
-
 const nextConfig = {
   webpack: (config) => {
     config.node = { // eslint-disable-line no-param-reassign
@@ -58,7 +50,7 @@ const nextConfig = {
 
 module.exports = withPlugins([
   [nextEnvConfig],
-  [withPWA, nextPWAConfig],
+  [withPWA],
   [withCss],
   [withSass, withSassConfig],
   [withImages, withImagesConfig],
