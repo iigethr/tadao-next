@@ -18,6 +18,6 @@
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "https://tadao-next.now.sh",
+  "start_url": "/",
   "theme_color": "#ffffff"
 }
