@@ -1,16 +1,14 @@
 // _app
 
+// Data
+import data from "js-yaml-loader!../data/project.yml"
 // Components
 import React from "react"
 import App from "next/app"
 // Layouts
-import CampaignLayout from "../layouts/campaign"
-import PrimaryLayout from "../layouts/primary"
-import SecondaryLayout from "../layouts/secondary"
-// Data
-import meta from "js-yaml-loader!../data/meta.yml"
-import config from "js-yaml-loader!../data/config.yml"
-import project from "js-yaml-loader!../data/project.yml"
+import Campaign from "../layouts/campaign"
+import Primary from "../layouts/primary"
+import Secondary from "../layouts/secondary"
 // SCSS
 import "../assets/stylesheets/tadao.scss"
 
@@ -20,28 +18,28 @@ class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
-    return { pageProps, meta: meta, config: config, project: project }
+    return { pageProps, project: data }
   }
 
   render() {
-    const { Component, pageProps, router, config, project } = this.props
-    if (router.pathname.startsWith("/campaigns")) {
+    const { Component, pageProps, router, project } = this.props
+    if (router.pathname.startsWith("/campaign")) {
       return (
-        <CampaignLayout>
-          <Component {...pageProps} {...meta} {...config} {...project} />
-        </CampaignLayout>
+        <Campaign>
+          <Component {...pageProps} {...project} />
+        </Campaign>
       )
     } else if (router.pathname === "/") {
       return (
-        <PrimaryLayout>
-          <Component {...pageProps} {...meta} {...config} {...project} />
-        </PrimaryLayout>
+        <Primary>
+          <Component {...pageProps} {...project} />
+        </Primary>
       )
     } else {
       return (
-        <SecondaryLayout>
-          <Component {...pageProps} {...meta} {...config} {...project} />
-        </SecondaryLayout>
+        <Secondary>
+          <Component {...pageProps}{...project} />
+        </Secondary>
       )
     }
   }

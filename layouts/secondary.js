@@ -12,7 +12,7 @@ import Advisory from "../lib/globals/advisory"
 import cookies from "next-cookies"
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
-class Design extends React.Component {
+class Secondary extends React.Component {
   constructor(props, ctx) {
     super(props)
     const cookie = cookies(ctx).weLoveCookies
@@ -36,13 +36,12 @@ class Design extends React.Component {
 
   render () {
     const { children } = this.props
-    const meta = children.props.meta
-    const config = children.props.config
+    const project = children.props.project
     return (
       <div className="root white-bg">
         <Head>
-          <title>{meta.title}</title>
-          <meta name="description" content={meta.description} />
+          <title>{project.meta_title}</title>
+          <meta name="description" content={project.meta_description} />
         </Head>
         <Notifications />
         <Header />
@@ -57,11 +56,11 @@ class Design extends React.Component {
             </div>
           </main>
         </div>
-        <Footer config={config}/>
+        <Footer />
         <Advisory />
       </div>
     )
   }
 }
 
-export default Design
+export default Secondary

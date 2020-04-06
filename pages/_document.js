@@ -1,25 +1,23 @@
 // _document
 
+// Data
+import data from "js-yaml-loader!../data/project.yml"
 // Components
 import Document, { Html, Head, Main, NextScript } from "next/document"
 import Meta from "../lib/components/meta"
-// Data
-import meta from "js-yaml-loader!../data/meta.yml"
-import config from "js-yaml-loader!../data/config.yml"
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps, meta, config }
+    return { ...initialProps, data }
   }
 
   render() {
-    const meta = this.props.meta.meta
-    const config = this.props.config.config
+    const project = this.props.data.project
     return (
-      <Html lang={config.lang}>
+      <Html lang={project.meta_lang}>
         <Head>
-          <Meta meta={meta} />
+          <Meta project={project} />
           {/* PWA */}
           <meta name="theme-color" content="#FFFFFF"/>
           <meta name="apple-mobile-web-app-capable" content="yes" />

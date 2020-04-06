@@ -14,7 +14,7 @@ import Orange from "../../lib/components/design/colours/orange"
 import Red from "../../lib/components/design/colours/red"
 import Pink from "../../lib/components/design/colours/pink"
 // Data
-import colours from "js-yaml-loader!../../data/colours.yml"
+import colours from "js-yaml-loader!../../data/design/colours.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

@@ -5,7 +5,7 @@ import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 import DesignWriter from "../../lib/components/design/design_writer"
 // Data
-import writer from "js-yaml-loader!../../data/writer.yml"
+import writer from "js-yaml-loader!../../data/design/writer.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

@@ -1,4 +1,4 @@
-// Writer
+// Utilities
 
 // Components
 import Head from "next/head"
@@ -6,7 +6,7 @@ import DesignHeader from "../../lib/components/design/design_header"
 import DesignButtons from "../../lib/components/design/design_buttons"
 import DesignLinks from "../../lib/components/design/design_links"
 // Data
-import utilities from "js-yaml-loader!../../data/utilities.yml"
+import utilities from "js-yaml-loader!../../data/design/utilities.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

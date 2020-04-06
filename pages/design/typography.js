@@ -7,7 +7,7 @@ import Sans from "../../lib/components/design/fonts/sans"
 import Serif from "../../lib/components/design/fonts/serif"
 import Mono from "../../lib/components/design/fonts/mono"
 // Data
-import typography from "js-yaml-loader!../../data/typography.yml"
+import typography from "js-yaml-loader!../../data/design/typography.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
