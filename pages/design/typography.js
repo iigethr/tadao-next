@@ -1,4 +1,4 @@
-// Typography
+// Design - Typography
 
 // Components
 import Head from "next/head"

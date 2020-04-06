@@ -1,4 +1,4 @@
-// Index
+// Design - Index
 
 // Components
 import Head from "next/head"

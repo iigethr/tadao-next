@@ -1,6 +1,8 @@
 User-agent: *
 Crawl-delay: 120
 Disallow: /assets
+Disallow: /campaigns
+Disallow: /campaigns/*
 Disallow: /components
 Disallow: /layouts
 Disallow: /design

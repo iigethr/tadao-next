@@ -1,19 +1,19 @@
-// Campaign - Index
+// Campaigns - Index
 
 // Components
 import Head from "next/head"
 import Notifications from "../../lib/globals/notifications"
 import Header from "../../lib/globals/header"
 import Footer from "../../lib/globals/footer"
-import Hero from "../../lib/components/campaign/hero"
+import Hero from "../../lib/components/campaigns/hero"
 // Data
-import campaigns from "js-yaml-loader!../../data/campaigns/campaigns.yml"
+import data from "js-yaml-loader!../../data/campaigns/campaign.yml"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {
-    return { campaigns: campaigns }
+    return { data: data }
   }
 
   componentDidMount() {
@@ -22,12 +22,12 @@ class Index extends React.Component {
   }
 
   render () {
-    const campaigns = this.props.campaigns.campaigns
+    const campaign = this.props.data.campaign
     return (
       <div>
         <Head>
-          <title>{campaigns.title}</title>
-          <meta name="description" content={campaigns.description} />
+          <title>{campaign.title}</title>
+          <meta name="description" content={campaign.description} />
         </Head>
         <Notifications />
         <Header />
@@ -36,7 +36,7 @@ class Index extends React.Component {
             <div className="universal-box">
               <div className="universal-row">
                 <div className="artboard-l center-h">
-                  <Hero campaigns={campaigns} />
+                  <Hero campaign={campaign} />
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-// Colours
+// Design - Colours
 
 // Components
 import Head from "next/head"

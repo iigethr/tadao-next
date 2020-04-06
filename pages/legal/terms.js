@@ -1,11 +1,11 @@
-// Terms
+// Legal - Terms
 
-// Components
-import Link from "next/link"
-import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Data
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
 import legal_terms from "js-yaml-loader!../../data/legal/legal_terms.yml"
+// Components
+import Link from "next/link"
+import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

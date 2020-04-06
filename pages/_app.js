@@ -6,7 +6,7 @@ import data from "js-yaml-loader!../data/project.yml"
 import React from "react"
 import App from "next/app"
 // Layouts
-import Campaign from "../layouts/campaign"
+import Campaigns from "../layouts/campaigns"
 import Primary from "../layouts/primary"
 import Secondary from "../layouts/secondary"
 // SCSS
@@ -23,11 +23,11 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, router, project } = this.props
-    if (router.pathname.startsWith("/campaign")) {
+    if (router.pathname.startsWith("/campaigns")) {
       return (
-        <Campaign>
+        <Campaigns>
           <Component {...pageProps} {...project} />
-        </Campaign>
+        </Campaigns>
       )
     } else if (router.pathname === "/") {
       return (

@@ -1,9 +1,9 @@
-// Index
+// Sections - Index
 
-// Components
-import Link from "next/link"
 // Data
 import sections from "js-yaml-loader!../../data/sections/sections.yml"
+// Components
+import Link from "next/link"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 

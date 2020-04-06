@@ -1,4 +1,4 @@
-// Campaign Layout
+// Campaigns Layout
 
 // Components
 import React from "react"
@@ -9,7 +9,7 @@ import Advisory from "../lib/globals/advisory"
 import cookies from "next-cookies"
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
-class Campaign extends React.Component {
+class Campaigns extends React.Component {
   constructor(props, ctx) {
     super(props)
     const cookie = cookies(ctx).weLoveCookies
@@ -28,7 +28,7 @@ class Campaign extends React.Component {
     }
 
     ZahaAlignments.centerH()
-    console.log("Registered - Campaign Layout")
+    console.log("Registered - Campaigns Layout")
   }
 
   render () {
@@ -47,4 +47,4 @@ class Campaign extends React.Component {
   }
 }
 
-export default Campaign
+export default Campaigns

@@ -1,4 +1,4 @@
-// Utilities
+// Design - Utilities
 
 // Components
 import Head from "next/head"

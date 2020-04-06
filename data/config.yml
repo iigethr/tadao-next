@@ -1,6 +1,0 @@
-# Config Data
-
-config:
-  lang: "en-GB"
-  base_url: "https://tadao-next.now.sh/"
-  legal_url: "https://tadao-next.now.sh/legal"

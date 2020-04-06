@@ -1,11 +1,11 @@
-// Privacy
+// Legal - Privacy
 
-// Components
-import Link from "next/link"
-import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Data
 import legal from "js-yaml-loader!../../data/legal/legal.yml"
 import legal_privacy from "js-yaml-loader!../../data/legal/legal_privacy.yml"
+// Components
+import Link from "next/link"
+import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
