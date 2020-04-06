@@ -8,5 +8,6 @@
       "HANKYO_SECRET_ACCESS_TOKEN": "@hankyo_secret_access_token",
       "PROJECT_SLUG": "@project_slug"
     }
-  }
+  },
+  "trailingSlash": false
 }
