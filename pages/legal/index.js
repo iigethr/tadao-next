@@ -1,7 +1,7 @@
 // Legal - Index
 
 // Data
-import legal from "js-yaml-loader!../../data/legal/legal.yml"
+import data from "js-yaml-loader!../../data/legal/legal.yml"
 // Components
 import Link from "next/link"
 import AsideNavigation from "../../lib/components/legal/aside_navigation"
@@ -10,7 +10,7 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {
-    return { legal: legal }
+    return { data: data }
   }
 
   componentDidMount() {
@@ -19,7 +19,7 @@ class Index extends React.Component {
   }
 
   render () {
-    const legal = this.props.legal.legal
+    const { title, description } = this.props.data.legal
     return (
       <div>
         <div className="top">
@@ -40,8 +40,8 @@ class Index extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{legal.title}</h1>
-                  <p>{legal.description}</p>
+                  <h1>{title}</h1>
+                  <p>{description}</p>
                 </div>
               </div>
             </div>

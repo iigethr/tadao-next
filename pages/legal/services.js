@@ -1,8 +1,7 @@
 // Legal - Services
 
 // Data
-import legal from "js-yaml-loader!../../data/legal/legal.yml"
-import legal_services from "js-yaml-loader!../../data/legal/legal_services.yml"
+import data from "js-yaml-loader!../../data/legal/legal.yml"
 // Components
 import Link from "next/link"
 import AsideNavigation from "../../lib/components/legal/aside_navigation"
@@ -11,10 +10,7 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Services extends React.Component {
   static async getInitialProps() {
-    return {
-      legal: legal,
-      legal_services: legal_services
-    }
+    return { data: data }
   }
 
   componentDidMount() {
@@ -23,8 +19,7 @@ class Services extends React.Component {
   }
 
   render () {
-    const legal = this.props.legal.legal
-    const legal_services = this.props.legal_services.legal_services
+    const { email, title_services } = this.props.data.legal
     return (
       <div>
         <div className="top">
@@ -45,7 +40,7 @@ class Services extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{legal_services.title}</h1>
+                  <h1>{title_services}</h1>
                   <p>The Service uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed.</p>
                   <p>The list of third-party services are:</p>
                   <ol>
@@ -59,7 +54,7 @@ class Services extends React.Component {
                       <a href="https://analytics.google.com/">Google Analytics</a> is a web analytics service offered by Google that tracks and reports website traffic, currently as a platform inside the Google Marketing Platform brand.
                     </li>
                   </ol>
-                  <h4>Can't find what you're looking for? Ask a human: {legal.email}</h4>
+                  <h4>Can't find what you're looking for? Ask a human: {email}</h4>
                 </div>
               </div>
             </div>

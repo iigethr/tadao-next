@@ -6,3 +6,6 @@ legal:
   company: "The Company"
   service: "The Website"
   email: "legal@iigethr.com"
+  title_privacy: "Privacy Policy"
+  title_terms: "Terms & Conditions"
+  title_services: "List of third-party services"

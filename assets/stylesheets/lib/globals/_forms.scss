@@ -78,7 +78,7 @@ form {
       font-weight: normal;
     }
     &.required::after {
-      content: " *";
+      content: "*";
     }
   }
 
@@ -271,13 +271,11 @@ form {
   .checkbox {
     label {
       .checkmark {
-        @include border-corner(12px);
+        @include border-corner(4px);
         background-color: $gray-100;
-        // background-image: url("../images/icons/checkbox_unchecked.png");
       }
       input:checked ~ .checkmark {
-        background-color: $gray-100;
-        background-image: url("../images/icons/checkbox_checked.png");
+        background-color: $gray-300;
       }
     }
   }
@@ -285,12 +283,11 @@ form {
   .radio {
     label {
       .checkmark {
-        @include border-corner(4px);
+        @include border-corner(12px);
         background-color: $gray-100;
-        // background-image: url("../images/icons/radio_unchecked.png");
       }
       input:checked ~ .checkmark {
-        background-image: url("../images/icons/radio_checked.png");
+        background-color: $gray-300;
       }
     }
   }

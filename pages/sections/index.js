@@ -1,7 +1,7 @@
 // Sections - Index
 
 // Data
-import sections from "js-yaml-loader!../../data/sections/sections.yml"
+import data from "js-yaml-loader!../../data/sections/section.yml"
 // Components
 import Link from "next/link"
 // Modules
@@ -9,7 +9,7 @@ import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {
-    return { sections: sections }
+    return { data: data }
   }
 
   componentDidMount() {
@@ -18,7 +18,7 @@ class Index extends React.Component {
   }
 
   render () {
-    const sections = this.props.sections.sections
+    const sections = this.props.data.section
     return (
       <div>
         <div className="top">

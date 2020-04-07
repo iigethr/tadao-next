@@ -10,13 +10,13 @@
   letter-spacing: .03em;
   margin: 0;
   padding: 0;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
   -webkit-tap-highlight-color: $transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 html {
-  background-color: $purple-500;
+  background-color: $white;
 }
 
 html,
@@ -32,7 +32,7 @@ body {
   @include border-box;
   @include clearfix;
   @include font-m;
-  background-color: $purple-500;
+  background-color: $white;
   color: $gray-400;
   font-family: $sans;
   letter-spacing: .03em;
@@ -53,6 +53,10 @@ body::-webkit-scrollbar {
   visibility: hidden;
 }
 
+.body-root {
+  @include appear-animation(.50s);
+}
+
 .body-root,
 .root {
   display: block;
@@ -60,10 +64,6 @@ body::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.body-root {
-  @include appear-animation(.50s);
 }
 
 a,
@@ -81,10 +81,13 @@ button,
 }
 
 figure {
+  @include appear-animation(2s);
   border: 0;
   display: block;
   float: left;
   margin: 0;
+  max-height: 100%;
+  max-width: 100%;
   overflow: hidden;
   padding: 0;
   figcaption {
@@ -104,6 +107,7 @@ svg {
   margin: 0;
   max-height: 100%;
   max-width: 100%;
+  overflow: hidden;
   padding: 0;
 }
 
