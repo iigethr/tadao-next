@@ -4,6 +4,7 @@
 import data from "js-yaml-loader!../../data/legal/legal.yml"
 // Components
 import Link from "next/link"
+import Head from "next/head"
 import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
@@ -22,6 +23,9 @@ class Terms extends React.Component {
     const { service, company, email, title_terms } = this.props.data.legal
     return (
       <div>
+        <Head>
+          <title>{title_terms}</title>
+        </Head>
         <div className="top">
           <div className="breadcrumbs">
             <div className="breadcrumbs-box">

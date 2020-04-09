@@ -3,6 +3,7 @@
 // Data
 import data from "js-yaml-loader!../../data/legal/legal.yml"
 // Components
+import Head from "next/head"
 import Link from "next/link"
 import AsideNavigation from "../../lib/components/legal/aside_navigation"
 // Modules
@@ -22,6 +23,9 @@ class Privacy extends React.Component {
     const { email, title_privacy } = this.props.data.legal
     return (
       <div>
+        <Head>
+          <title>{title_privacy}</title>
+        </Head>
         <div className="top">
           <div className="breadcrumbs">
             <div className="breadcrumbs-box">
