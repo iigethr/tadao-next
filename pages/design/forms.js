@@ -6,8 +6,6 @@ import DesignHeader from "../../lib/components/design/design_header"
 import DesignForm from "../../lib/components/design/design_form"
 // Data
 import forms from "js-yaml-loader!../../data/design/forms.yml"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Forms extends React.Component {
   static async getInitialProps() {
@@ -17,7 +15,6 @@ class Forms extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Design Page - Forms")
   }
 

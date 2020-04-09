@@ -6,8 +6,6 @@ import data from "js-yaml-loader!../../data/sections/section.yml"
 import Head from "next/head"
 import Link from "next/link"
 import AsideNavigation from "../../lib/components/sections/aside_navigation"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {
@@ -15,7 +13,6 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Sections Page - Index")
   }
 

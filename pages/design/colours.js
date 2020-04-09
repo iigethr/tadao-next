@@ -15,8 +15,6 @@ import Red from "../../lib/components/design/colours/red"
 import Pink from "../../lib/components/design/colours/pink"
 // Data
 import colours from "js-yaml-loader!../../data/design/colours.yml"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Design extends React.Component {
   static async getInitialProps() {
@@ -26,7 +24,6 @@ class Design extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Design Page - Colours")
   }
 

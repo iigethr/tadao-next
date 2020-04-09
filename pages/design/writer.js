@@ -6,8 +6,6 @@ import DesignHeader from "../../lib/components/design/design_header"
 import DesignWriter from "../../lib/components/design/design_writer"
 // Data
 import writer from "js-yaml-loader!../../data/design/writer.yml"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Writer extends React.Component {
   static async getInitialProps() {
@@ -17,7 +15,6 @@ class Writer extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Design Page - Writer")
   }
 

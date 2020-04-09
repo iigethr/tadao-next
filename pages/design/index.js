@@ -5,8 +5,6 @@ import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 // Data
 import design from "js-yaml-loader!../../data/design/design.yml"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   static async getInitialProps() {
@@ -16,7 +14,6 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Design Page - Index")
   }
 

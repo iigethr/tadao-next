@@ -6,8 +6,6 @@ import data from "js-yaml-loader!../../data/legal/legal.yml"
 import Head from "next/head"
 import Link from "next/link"
 import AsideNavigation from "../../lib/components/legal/aside_navigation"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Privacy extends React.Component {
   static async getInitialProps() {
@@ -15,7 +13,6 @@ class Privacy extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Legal Page - Privacy")
   }
 

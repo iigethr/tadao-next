@@ -8,8 +8,6 @@ import Serif from "../../lib/components/design/fonts/serif"
 import Mono from "../../lib/components/design/fonts/mono"
 // Data
 import typography from "js-yaml-loader!../../data/design/typography.yml"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Typography extends React.Component {
   static async getInitialProps() {
@@ -19,7 +17,6 @@ class Typography extends React.Component {
   }
 
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Design Page - Typography")
   }
 

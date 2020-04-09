@@ -2,12 +2,9 @@
 
 // Components
 import Hero from "../lib/components/hero"
-// Modules
-import ZahaAlignments from "@iigethr/zaha_alignments"
 
 class Index extends React.Component {
   componentDidMount() {
-    ZahaAlignments.centerH()
     console.log("Registered a Page - Index")
   }
 
