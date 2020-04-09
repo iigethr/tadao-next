@@ -2,7 +2,7 @@
 
 // Components
 import React from "react"
-import Head from "next/head"
+import Meta from "../lib/components/meta"
 import { initGA, logPageView } from "../lib/globals/google_analytics"
 import Notifications from "../lib/globals/notifications"
 import Header from "../lib/globals/header"
@@ -39,10 +39,7 @@ class Secondary extends React.Component {
     const project = children.props.project
     return (
       <div className="root white-bg">
-        <Head>
-          <title>{project.meta_title}</title>
-          <meta name="description" content={project.meta_description} />
-        </Head>
+        <Meta project={project} />
         <Notifications />
         <Header />
         <div className="sticky-footer">

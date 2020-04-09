@@ -2,7 +2,7 @@
 
 // Components
 import React from "react"
-import Head from "next/head"
+import Meta from "../lib/components/meta"
 import { initGA, logPageView } from "../lib/globals/google_analytics"
 import Advisory from "../lib/globals/advisory"
 // Modules
@@ -36,10 +36,7 @@ class Campaigns extends React.Component {
     const project = children.props.project
     return (
       <div className="root pink-500-bg">
-        <Head>
-          <title>{project.meta_title}</title>
-          <meta name="description" content={project.meta_description} />
-        </Head>
+        <Meta project={project} />
         { children }
         <Advisory />
       </div>
