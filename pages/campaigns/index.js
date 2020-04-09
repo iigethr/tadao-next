@@ -23,11 +23,12 @@ class Index extends React.Component {
 
   render () {
     const campaign = this.props.data.campaign
+    const { meta_title, meta_description } = campaign
     return (
       <div>
         <Head>
-          <title>{campaign.title}</title>
-          <meta name="description" content={campaign.description} />
+          <title>{meta_title}</title>
+          <meta name="description" content={meta_description} />
         </Head>
         <Notifications />
         <Header />

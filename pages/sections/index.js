@@ -3,7 +3,9 @@
 // Data
 import data from "js-yaml-loader!../../data/sections/section.yml"
 // Components
+import Head from "next/head"
 import Link from "next/link"
+import AsideNavigation from "../../lib/components/sections/aside_navigation"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
@@ -18,9 +20,13 @@ class Index extends React.Component {
   }
 
   render () {
-    const sections = this.props.data.section
+    const { meta_title, meta_description, title, description } = this.props.data.section
     return (
       <div>
+        <Head>
+          <title>{meta_title}</title>
+          <meta name="description" content={meta_description} />
+        </Head>
         <div className="top">
           <div className="breadcrumbs">
             <div className="breadcrumbs-box">
@@ -33,30 +39,15 @@ class Index extends React.Component {
 
         <div className="middle">
           <aside className="aside">
-            <nav className="aside-navigation">
-              <div className="aside-navigation-box">
-                <div className="aside-navigation-item">
-                  <h3>Sections</h3>
-                </div>
-                <div className="aside-navigation-item">
-                  <Link href="/sections"><a className="link-m blue underline">Sections</a></Link>
-                </div>
-                <div className="aside-navigation-item">
-                  <Link href="/sections"><a className="link-m blue underline">Sections</a></Link>
-                </div>
-                <div className="aside-navigation-item">
-                  <Link href="/sections"><a className="link-m blue underline">Sections</a></Link>
-                </div>
-              </div>
-            </nav>
+            <AsideNavigation />
           </aside>
 
           <section className="section">
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1 className="font-xxl">{sections.title}</h1>
-                  <p className="font-xl lighter">{sections.description}</p>
+                  <h1 className="font-xxl">{title}</h1>
+                  <p className="font-xl lighter">{description}</p>
                 </div>
               </div>
             </div>
