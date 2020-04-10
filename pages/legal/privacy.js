@@ -17,13 +17,12 @@ class Privacy extends React.Component {
   }
 
   render () {
-    const { email } = this.props.data.legal
-    const { meta_title, meta_description, title } = this.props.data.privacy
+    const legal = this.props.data.legal
     return (
       <div>
         <Head>
-          <title>{meta_title}</title>
-          <meta name="description" content={meta_description} />
+          <title>{legal.privacy.meta_title}</title>
+          <meta name="description" content={legal.privacy.meta_description} />
         </Head>
         <div className="top">
           <div className="breadcrumbs">
@@ -43,7 +42,7 @@ class Privacy extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{title}</h1>
+                  <h1>{legal.privacy.title}</h1>
                   <p>We are strongly committed to protecting the privacy of users of this website. We collect data on this website via: Google Analytics</p>
                   <p>Google Analytics is a web analysis service provided by Google Inc. (“Google”). We use this service on our website to collect standard internet log information and details of visitor behaviour patterns. We do this to make sure it’s meeting its users’ needs and to understand how we could do it better. Google Analytics stores information about what pages you visit, how long you are on the site, how you got here and what you click on. This information is only processed in a way which does not identify anyone and we do not make any attempt to find out the identities of those visiting our website.</p>
                   <p>Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services. Google may use the Data collected to contextualize and personalize the ads of its own advertising network.</p>
@@ -67,7 +66,7 @@ class Privacy extends React.Component {
                     <strong>Name: of the Cookie:</strong> <mark>_ga</mark> <mark>_gat</mark> <mark>_gid</mark><br />
                     <strong>Purpose:</strong> These cookies are associated with Google Universal Analytics. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.
                   </p>
-                  <h4>Can't find what you're looking for? Ask a human {email}</h4>
+                  <h4>Can't find what you're looking for? Ask a human {legal.email}</h4>
                 </div>
               </div>
             </div>

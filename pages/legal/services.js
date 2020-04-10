@@ -17,13 +17,12 @@ class Services extends React.Component {
   }
 
   render () {
-    const { email } = this.props.data.legal
-    const { meta_title, meta_description, title } = this.props.data.services
+    const legal = this.props.data.legal
     return (
       <div>
         <Head>
-          <title>{meta_title}</title>
-          <meta name="description" content={meta_description} />
+          <title>{legal.services.meta_title}</title>
+          <meta name="description" content={legal.services.meta_description} />
         </Head>
         <div className="top">
           <div className="breadcrumbs">
@@ -43,7 +42,7 @@ class Services extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{title}</h1>
+                  <h1>{legal.services.title}</h1>
                   <p>The Service uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed.</p>
                   <p>The list of third-party services are:</p>
                   <ol>
@@ -57,7 +56,7 @@ class Services extends React.Component {
                       <a href="https://analytics.google.com/">Google Analytics</a> is a web analytics service offered by Google that tracks and reports website traffic, currently as a platform inside the Google Marketing Platform brand.
                     </li>
                   </ol>
-                  <h4>Can't find what you're looking for? Ask a human: {email}</h4>
+                  <h4>Can't find what you're looking for? Ask a human: {legal.email}</h4>
                 </div>
               </div>
             </div>
