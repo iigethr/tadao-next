@@ -10,3 +10,24 @@ legal:
   company: "The Company"
   service: "The Website"
   email: "legal@iigethr.com"
+
+privacy:
+  # Metatags
+  meta_title: "Privacy Policy | Tadao + Next"
+  meta_description: "See our privacy policies & terms and how it relates to you while using our service."
+  # -------
+  title: "Privacy Policy"
+
+services:
+  # Metatags
+  meta_title: "List of Third-party Services | Tadao + Next"
+  meta_description: "All the third-party sub-processors that we use to provide our service."
+  # -------
+  title: "List of Third-party Services"
+
+terms:
+  # Metatags
+  meta_title: "Terms & Conditions | Tadao + Next"
+  meta_description: "All the terms & conditions that you agree to when you use our service."
+  # -------
+  title: "Terms & Conditions"

@@ -2,7 +2,6 @@
 
 // Data
 import data from "js-yaml-loader!../../data/legal/legal.yml"
-import subdata from "js-yaml-loader!../../data/legal/services.yml"
 // Components
 import Head from "next/head"
 import Link from "next/link"
@@ -10,7 +9,7 @@ import AsideNavigation from "../../lib/components/legal/aside_navigation"
 
 class Services extends React.Component {
   static async getInitialProps() {
-    return { data: data, subdata: subdata }
+    return { data: data }
   }
 
   componentDidMount() {
@@ -19,7 +18,7 @@ class Services extends React.Component {
 
   render () {
     const { email } = this.props.data.legal
-    const { meta_title, meta_description, title } = this.props.subdata.services
+    const { meta_title, meta_description, title } = this.props.data.services
     return (
       <div>
         <Head>
