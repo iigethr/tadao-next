@@ -19,6 +19,7 @@ SETUP.md
 # misc
 .DS_Store
 .env*
+.editorconfig
 
 # debug
 npm-debug.log*
