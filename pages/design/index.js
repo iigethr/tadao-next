@@ -4,7 +4,7 @@
 import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 // Data
-import design from "js-yaml-loader!../../data/design/design.yml"
+// import design from "js-yaml-loader!../../data/design/design.yml"
 
 class Index extends React.Component {
   static async getInitialProps() {

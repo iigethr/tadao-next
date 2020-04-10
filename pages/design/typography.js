@@ -7,7 +7,7 @@ import Sans from "../../lib/components/design/fonts/sans"
 import Serif from "../../lib/components/design/fonts/serif"
 import Mono from "../../lib/components/design/fonts/mono"
 // Data
-import typography from "js-yaml-loader!../../data/design/typography.yml"
+// import typography from "js-yaml-loader!../../data/design/typography.yml"
 
 class Typography extends React.Component {
   static async getInitialProps() {

@@ -5,7 +5,7 @@ import Head from "next/head"
 import DesignHeader from "../../lib/components/design/design_header"
 import DesignForm from "../../lib/components/design/design_form"
 // Data
-import forms from "js-yaml-loader!../../data/design/forms.yml"
+// import forms from "js-yaml-loader!../../data/design/forms.yml"
 
 class Forms extends React.Component {
   static async getInitialProps() {

@@ -6,7 +6,7 @@ import DesignHeader from "../../lib/components/design/design_header"
 import DesignButtons from "../../lib/components/design/design_buttons"
 import DesignLinks from "../../lib/components/design/design_links"
 // Data
-import utilities from "js-yaml-loader!../../data/design/utilities.yml"
+// import utilities from "js-yaml-loader!../../data/design/utilities.yml"
 
 class Writer extends React.Component {
   static async getInitialProps() {
