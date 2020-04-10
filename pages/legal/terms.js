@@ -2,6 +2,7 @@
 
 // Data
 import data from "js-yaml-loader!../../data/legal/legal.yml"
+import subdata from "js-yaml-loader!../../data/legal/terms.yml"
 // Components
 import Link from "next/link"
 import Head from "next/head"
@@ -9,7 +10,7 @@ import AsideNavigation from "../../lib/components/legal/aside_navigation"
 
 class Terms extends React.Component {
   static async getInitialProps() {
-    return { data: data }
+    return { data: data, subdata: subdata }
   }
 
   componentDidMount() {
@@ -17,11 +18,13 @@ class Terms extends React.Component {
   }
 
   render () {
-    const { service, company, email, title_terms } = this.props.data.legal
+    const { service, company, email } = this.props.data.legal
+    const { meta_title, meta_description, title } = this.props.subdata.terms
     return (
       <div>
         <Head>
-          <title>{title_terms}</title>
+          <title>{meta_title}</title>
+          <meta name="description" content={meta_description} />
         </Head>
         <div className="top">
           <div className="breadcrumbs">
@@ -41,7 +44,7 @@ class Terms extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{title_terms}</h1>
+                  <h1>{title}</h1>
                   <p>By using {service} ("Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). {company} ("Company", "we", "us" and/or "our") reserves the right to update and change these Terms of Service without notice.</p>
                   <ol>
                     <li>Your use of the Service is at your sole risk. The Service is provided on an “as is” and “as available” basis.</li>

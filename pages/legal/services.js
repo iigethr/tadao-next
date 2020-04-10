@@ -2,6 +2,7 @@
 
 // Data
 import data from "js-yaml-loader!../../data/legal/legal.yml"
+import subdata from "js-yaml-loader!../../data/legal/services.yml"
 // Components
 import Head from "next/head"
 import Link from "next/link"
@@ -9,7 +10,7 @@ import AsideNavigation from "../../lib/components/legal/aside_navigation"
 
 class Services extends React.Component {
   static async getInitialProps() {
-    return { data: data }
+    return { data: data, subdata: subdata }
   }
 
   componentDidMount() {
@@ -17,11 +18,13 @@ class Services extends React.Component {
   }
 
   render () {
-    const { email, title_services } = this.props.data.legal
+    const { email } = this.props.data.legal
+    const { meta_title, meta_description, title } = this.props.subdata.services
     return (
       <div>
         <Head>
-          <title>{title_services}</title>
+          <title>{meta_title}</title>
+          <meta name="description" content={meta_description} />
         </Head>
         <div className="top">
           <div className="breadcrumbs">
@@ -41,7 +44,7 @@ class Services extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{title_services}</h1>
+                  <h1>{title}</h1>
                   <p>The Service uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed.</p>
                   <p>The list of third-party services are:</p>
                   <ol>

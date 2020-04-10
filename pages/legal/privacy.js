@@ -2,6 +2,7 @@
 
 // Data
 import data from "js-yaml-loader!../../data/legal/legal.yml"
+import subdata from "js-yaml-loader!../../data/legal/privacy.yml"
 // Components
 import Head from "next/head"
 import Link from "next/link"
@@ -9,7 +10,7 @@ import AsideNavigation from "../../lib/components/legal/aside_navigation"
 
 class Privacy extends React.Component {
   static async getInitialProps() {
-    return { data: data }
+    return { data: data, subdata: subdata }
   }
 
   componentDidMount() {
@@ -17,11 +18,13 @@ class Privacy extends React.Component {
   }
 
   render () {
-    const { email, title_privacy } = this.props.data.legal
+    const { email } = this.props.data.legal
+    const { meta_title, meta_description, title } = this.props.subdata.privacy
     return (
       <div>
         <Head>
-          <title>{title_privacy}</title>
+          <title>{meta_title}</title>
+          <meta name="description" content={meta_description} />
         </Head>
         <div className="top">
           <div className="breadcrumbs">
@@ -41,7 +44,7 @@ class Privacy extends React.Component {
             <div className="content">
               <div className="content-box">
                 <div className="content-row writer">
-                  <h1>{title_privacy}</h1>
+                  <h1>{title}</h1>
                   <p>We are strongly committed to protecting the privacy of users of this website. We collect data on this website via: Google Analytics</p>
                   <p>Google Analytics is a web analysis service provided by Google Inc. (“Google”). We use this service on our website to collect standard internet log information and details of visitor behaviour patterns. We do this to make sure it’s meeting its users’ needs and to understand how we could do it better. Google Analytics stores information about what pages you visit, how long you are on the site, how you got here and what you click on. This information is only processed in a way which does not identify anyone and we do not make any attempt to find out the identities of those visiting our website.</p>
                   <p>Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services. Google may use the Data collected to contextualize and personalize the ads of its own advertising network.</p>

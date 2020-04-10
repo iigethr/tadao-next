@@ -1,7 +1,9 @@
 # Section Data
 
-section:
-  meta_title: "Section | Tadao + Next"
+sections:
+  # Metatags
+  meta_title: "Sections | Tadao + Next"
   meta_description: "Donec id elit non mi porta gravida at eget metus, vel scelerisque nisl consectetur et."
-  title: "Section"
+  # -------
+  title: "Sections"
   description: "Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui."

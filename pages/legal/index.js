@@ -17,12 +17,12 @@ class Index extends React.Component {
   }
 
   render () {
-    const { title, description } = this.props.data.legal
+    const { meta_title, meta_description, title, description } = this.props.data.legal
     return (
       <div>
         <Head>
-          <title>{title}</title>
-          <meta name="description" content={description} />
+          <title>{meta_title}</title>
+          <meta name="description" content={meta_description} />
         </Head>
         <div className="top">
           <div className="breadcrumbs">

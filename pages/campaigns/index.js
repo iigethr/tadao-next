@@ -7,7 +7,7 @@ import Header from "../../lib/globals/header"
 import Footer from "../../lib/globals/footer"
 import Hero from "../../lib/components/campaigns/hero"
 // Data
-import data from "js-yaml-loader!../../data/campaigns/campaign.yml"
+import data from "js-yaml-loader!../../data/campaigns/campaigns.yml"
 
 class Index extends React.Component {
   static async getInitialProps() {
@@ -19,8 +19,8 @@ class Index extends React.Component {
   }
 
   render () {
-    const campaign = this.props.data.campaign
-    const { meta_title, meta_description } = campaign
+    const campaigns = this.props.data.campaigns
+    const { meta_title, meta_description } = campaigns
     return (
       <div>
         <Head>
@@ -34,7 +34,7 @@ class Index extends React.Component {
             <div className="universal-box">
               <div className="universal-row">
                 <div className="artboard-l center-h">
-                  <Hero campaign={campaign} />
+                  <Hero campaigns={campaigns} />
                 </div>
               </div>
             </div>

@@ -1,11 +1,12 @@
 # Legal Data
 
 legal:
+  # Metatags
+  meta_title: "Policies & Terms | Tadao + Next"
+  meta_description: "The rough print and the fine print. We try to make all our policies as clear, fair, and readable as possible."
+  # -------
   title: "Policies & Terms"
   description: "The rough print and the fine print. We try to make all our policies as clear, fair, and readable as possible."
   company: "The Company"
   service: "The Website"
   email: "legal@iigethr.com"
-  title_privacy: "Privacy Policy"
-  title_terms: "Terms & Conditions"
-  title_services: "List of third-party services"

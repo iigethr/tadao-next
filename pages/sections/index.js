@@ -1,7 +1,7 @@
 // Sections - Index
 
 // Data
-import data from "js-yaml-loader!../../data/sections/section.yml"
+import data from "js-yaml-loader!../../data/sections/sections.yml"
 // Components
 import Head from "next/head"
 import Link from "next/link"
@@ -17,7 +17,7 @@ class Index extends React.Component {
   }
 
   render () {
-    const { meta_title, meta_description, title, description } = this.props.data.section
+    const { meta_title, meta_description, title, description } = this.props.data.sections
     return (
       <div>
         <Head>
