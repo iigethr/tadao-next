@@ -17,6 +17,7 @@ SETUP.md
 /build
 
 # misc
+.now
 .DS_Store
 .env*
 .editorconfig

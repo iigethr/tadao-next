@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "tadao-next",
   "public": false,
   "build": {
     "env": {
