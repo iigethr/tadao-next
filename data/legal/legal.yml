@@ -31,3 +31,17 @@ legal:
     meta_description: "All the terms & conditions that you agree to when you use our service."
     # -------
     title: "Terms & Conditions"
+
+  sections:
+    - id: 1
+      slug: "12345678"
+      title: "Mollis Fermentum Euismod Ultricies Lorem"
+      body: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum."
+    - id: 2
+      slug: "87654321"
+      title: "Vehicula Cras Consectetur Magna Condimentum"
+      body: "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus."
+    - id: 3
+      slug: "18273645"
+      title: "Purus Ullamcorper Etiam"
+      body: "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo."

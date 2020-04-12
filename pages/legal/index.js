@@ -17,7 +17,7 @@ class Index extends React.Component {
   }
 
   render () {
-    const { meta_title, meta_description, title, description } = this.props.data.legal
+    const { meta_title, meta_description, title, description, sections } = this.props.data.legal
     return (
       <div>
         <Head>
@@ -44,6 +44,7 @@ class Index extends React.Component {
                 <div className="content-row writer">
                   <h1>{title}</h1>
                   <p>{description}</p>
+                  <p>{sections.length}</p>
                 </div>
               </div>
             </div>
