@@ -28,15 +28,14 @@ class Index extends React.Component {
           <div className="breadcrumbs">
             <div className="breadcrumbs-box">
               <div className="breadcrumbs-item">
-                <Link href="/"><a href="/" className="link-s gray underline">Back to Home Page</a></Link>
+                <Link href="/"><a className="link-s gray underline">Back to Home Page</a></Link>
               </div>
             </div>
           </div>
         </div>
-
         <div className="middle">
           <aside className="aside">
-            <AsideNavigation />
+            <AsideNavigation sections={sections} />
           </aside>
           <section className="section">
             <div className="content">
@@ -44,13 +43,11 @@ class Index extends React.Component {
                 <div className="content-row writer">
                   <h1>{title}</h1>
                   <p>{description}</p>
-                  <p>{sections.length}</p>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
         <div className="bottom">
           <div className="breadcrumbs">
             <div className="breadcrumbs-box">
