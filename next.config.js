@@ -5,7 +5,7 @@ const withImages        = require("next-optimized-images")
 const withCss           = require("@zeit/next-css")
 const withSass          = require("@zeit/next-sass")
 const withYml           = require("js-yaml-loader")
-const withPWA           = require('next-pwa')
+const withPWA           = require("next-pwa")
 // const withOffline       = require('next-offline')
 
 // Note: Keep it Last here and withPlugins()

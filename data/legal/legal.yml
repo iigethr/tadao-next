@@ -19,7 +19,7 @@ legal:
       slug: "terms"
       title: "Terms & Conditions"
       body: >-
-        <p>By using *default_service ("Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). *default_company ("Company", "we", "us" and/or "our") reserves the right to update and change these Terms of Service without notice.</p>
+        <p>By using *default_company ("Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). *default_company ("Company", "we", "us" and/or "our") reserves the right to update and change these Terms of Service without notice.</p>
         <ol>
           <li>Your use of the Service is at your sole risk. The Service is provided on an “as is” and “as available” basis.</li>
           <li>You understand that the Company uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Service.</li>

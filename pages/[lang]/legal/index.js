@@ -1,26 +1,23 @@
-// Sections - Index
+// Legal - Index
 
 // Data
-import data from "js-yaml-loader!../../data/sections/sections.yml"
-import hankyo from "../../data/hankyo/project.json"
+import data from "js-yaml-loader!../../../data/legal/legal.yml"
 // Components
 import Head from "next/head"
 import Link from "next/link"
-import AsideNavigation from "../../lib/components/sections/aside_navigation"
+import AsideNavigation from "../../../lib/components/legal/aside_navigation"
 
 class Index extends React.Component {
   static async getInitialProps() {
-    return { data: data, hankyo: hankyo }
+    return { data: data }
   }
 
   componentDidMount() {
-    console.log(hankyo)
-    console.log("Registered a Sections Page - Index")
+    console.log("Registered a Legal Page - Index")
   }
 
   render () {
-    const { meta_title, meta_description, title, description } = this.props.data.sections
-    const hankyo = this.props.hankyo
+    const { meta_title, meta_description, title, description, sections } = this.props.data.legal
     return (
       <div>
         <Head>
@@ -36,27 +33,21 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
-
         <div className="middle">
           <aside className="aside">
-            <AsideNavigation />
+            <AsideNavigation sections={sections} />
           </aside>
-
           <section className="section">
             <div className="content">
               <div className="content-box">
-              <div className="content-row writer">
-                  <h1 className="font-xxl">{hankyo.project.sections[0].title}</h1>
-                </div>
                 <div className="content-row writer">
-                  <h1 className="font-xxl">{title}</h1>
-                  <p className="font-xl lighter">{description}</p>
+                  <h1>{title}</h1>
+                  <p>{description}</p>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
         <div className="bottom">
           <div className="breadcrumbs">
             <div className="breadcrumbs-box">

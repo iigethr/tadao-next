@@ -17,6 +17,11 @@ form {
     color: $gray;
   }
 
+  .honeypot {
+    display: none;
+    visibility: hidden;
+  }
+
   fieldset {
     border: 0;
     float: left;
@@ -284,6 +289,66 @@ form {
     label {
       .checkmark {
         @include border-corner(12px);
+        background-color: $gray-100;
+      }
+      input:checked ~ .checkmark {
+        background-color: $gray-300;
+      }
+    }
+  }
+
+  .gdpr {
+    background-color: $white;
+    border: 0;
+    float: left;
+    font-size: 12px;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+    label {
+      color: $gray;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 24px;
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+      .checkmark {
+        background-color: $gray-100;
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        display: block;
+        float: left;
+        height: 24px;
+        margin: 0 7px 0 0;
+        padding: 0;
+        width: 24px;
+      }
+      input:checked ~ .checkmark {
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+      }
+    }
+    [type=checkbox] {
+      appearance: none;
+      background-color: $transparent;
+      border: 0;
+      color: $transparent;
+      filter: alpha(opacity = 0);
+      height: 0;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 0;
+    }
+  }
+
+  .gdpr {
+    label {
+      .checkmark {
+        @include border-corner(4px);
         background-color: $gray-100;
       }
       input:checked ~ .checkmark {
