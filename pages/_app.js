@@ -23,7 +23,7 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, router, project } = this.props
-    if (router.pathname.startsWith("/campaigns")) {
+    if (router.pathname.startsWith("/[lang]/campaigns")) {
       return (
         <Campaigns>
           <Component {...pageProps} {...project} />
