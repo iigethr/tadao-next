@@ -5,6 +5,8 @@ import data from "js-yaml-loader!../data/project.yml"
 // Components
 import React from "react"
 import App from "next/app"
+// Helpers
+import i18n from "../helpers/i18n"
 // Layouts
 import Campaigns from "../layouts/campaigns"
 import Primary from "../layouts/primary"
@@ -14,31 +16,33 @@ import "../assets/stylesheets/tadao.scss"
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
+    const project = data
+    const currentLang = i18n.lang(ctx)
     let pageProps = {}
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
-    return { pageProps, project: data }
+    return { pageProps, project, currentLang }
   }
 
   render() {
-    const { Component, pageProps, router, project } = this.props
-    if (router.pathname.startsWith("/[lang]/campaigns")) {
+    const { Component, pageProps, router, project, currentLang } = this.props
+    if (router.pathname === "/[lang]/campaigns") {
       return (
         <Campaigns>
-          <Component {...pageProps} {...project} />
+          <Component {...pageProps} {...project} currentLang={currentLang} />
         </Campaigns>
       )
-    } else if (router.pathname === "/") {
+    } else if (router.pathname === "/" || router.pathname === "/[lang]") {
       return (
         <Primary>
-          <Component {...pageProps} {...project} />
+          <Component {...pageProps} {...project} currentLang={currentLang} />
         </Primary>
       )
     } else {
       return (
         <Secondary>
-          <Component {...pageProps}{...project} />
+          <Component {...pageProps}{...project} currentLang={currentLang} />
         </Secondary>
       )
     }

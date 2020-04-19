@@ -2,6 +2,7 @@
 
 // Components
 import Head from "next/head"
+import Link from "next/link"
 import Notifications from "../../../lib/globals/notifications"
 import Header from "../../../lib/globals/header"
 import Footer from "../../../lib/globals/footer"
@@ -21,6 +22,7 @@ class Index extends React.Component {
   render () {
     const campaigns = this.props.data.campaigns
     const { meta_title, meta_description } = campaigns
+    const currentLang = this.props.currentLang
     return (
       <div>
         <Head>
@@ -28,7 +30,7 @@ class Index extends React.Component {
           <meta name="description" content={meta_description} />
         </Head>
         <Notifications />
-        <Header />
+        <Header currentLang={currentLang} />
         <div className="sticky-footer">
           <main className="universal main">
             <div className="universal-box">

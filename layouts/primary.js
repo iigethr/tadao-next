@@ -37,11 +37,12 @@ class Primary extends React.Component {
   render () {
     const { children } = this.props
     const project = children.props.project
+    const currentLang = children.props.currentLang
     return (
       <div className="root purple-500-bg">
         <Meta project={project} />
         <Notifications />
-        <Header />
+        <Header currentLang={currentLang} />
         <div className="sticky-footer">
           <main className="universal main">
             <div className="universal-box">

@@ -1,7 +1,7 @@
 // Index
 
 // Components
-import Hero from "../lib/components/hero"
+import Hero from "../../lib/components/hero"
 // Modules
 import ZahaAlignments from "@iigethr/zaha_alignments"
 
@@ -13,8 +13,6 @@ class Index extends React.Component {
 
   render () {
     const project = this.props.project
-    const currentLang = this.props.currentLang
-    console.log(currentLang)
     return (
       <div>
         <Hero project={project} />

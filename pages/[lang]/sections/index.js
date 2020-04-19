@@ -1,12 +1,12 @@
 // Sections - Index
 
 // Data
-import data from "js-yaml-loader!../../data/sections/sections.yml"
-import hankyo from "../../data/hankyo/project.json"
+import data from "js-yaml-loader!../../../data/sections/sections.yml"
+import hankyo from "../../../data/hankyo/project.json"
 // Components
 import Head from "next/head"
 import Link from "next/link"
-import AsideNavigation from "../../lib/components/sections/aside_navigation"
+import AsideNavigation from "../../../lib/components/sections/aside_navigation"
 
 class Index extends React.Component {
   static async getInitialProps() {
