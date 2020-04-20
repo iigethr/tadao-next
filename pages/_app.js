@@ -2,6 +2,7 @@
 
 // Data
 import data from "js-yaml-loader!../data/project.yml"
+import dataForeign from "js-yaml-loader!../data/project_foreign.yml"
 // Components
 import React from "react"
 import App from "next/app"
@@ -16,12 +17,21 @@ import "../assets/stylesheets/tadao.scss"
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
-    const project = data
     const currentLang = i18n.lang(ctx)
+
+    let project = data
+    if (currentLang === "en") {
+      project = data
+    } else {
+      project = dataForeign
+    }
+
+
     let pageProps = {}
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
+
     return { pageProps, project, currentLang }
   }
 
