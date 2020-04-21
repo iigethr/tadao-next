@@ -4,19 +4,24 @@
   "description": "A basic kickstart setup for NextJS. It comes pre-installed with Tadao - A Minimal and Lightweight Design System.",
   "icons": [
     {
-      "src": "favicon/android-chrome-192x192.png",
-      "sizes": "192x192",
+      "src": "/icons/android-chrome128px128px.png",
+      "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "favicon/android-chrome-512x512.png",
+      "src": "/icons/android-chrome196px196px.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome512px512px.png",
       "sizes": "512x512",
       "type":"image/png"
     }
   ],
-  "background_color": "#ffffff",
+  "background_color": "#FFFFFF",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "scope": "/",
   "start_url": "https://tadao-next.now.sh/",
   "theme_color": "#ffffff"
